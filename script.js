@@ -1,12 +1,12 @@
-// --- START OF FILE script.js (FINAL VERSION) ---
+--- START OF FILE script.js ---
 
+// Wait for the DOM to be fully loaded and parsed
 document.addEventListener('DOMContentLoaded', () => {
 
     // Select essential elements
     const languageSelector = document.getElementById('languageSelector');
     const htmlElement = document.documentElement;
-    // Get elements here, but requery inside updateLanguage if needed
-    let translatableElements = document.querySelectorAll('[data-key]');
+    const translatableElements = document.querySelectorAll('[data-key]');
 
     // --- Basic Check ---
     if (!languageSelector) {
@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return; // Stop execution if selector is missing
     }
     if (translatableElements.length === 0) {
-        console.warn("Warning: No elements with 'data-key' attribute initially found for translation.");
+        console.warn("Warning: No elements with 'data-key' attribute found for translation.");
     }
 
 
@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Learn More",
             features_title: "Features",
             features_text: "Discover the subtle animations and the ease of switching languages using the selector above.",
+            // --- NEW Box Translations (EN) ---
             quickstart_title: "Quick Start Guide",
             box_welcome_title: "Welcome to the University",
             box_studies_title: "Studies & Organization",
@@ -38,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Arrival",
             box_language_title: "Language",
             box_finance_title: "Finances",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Your Company Name. All rights reserved."
         },
         de: {
@@ -48,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Mehr erfahren",
             features_title: "Funktionen",
             features_text: "Entdecken Sie die subtilen Animationen und die Leichtigkeit des Sprachwechsels mit der obigen Auswahl.",
+            // --- NEW Box Translations (DE - from prompt) ---
             quickstart_title: "Quick Start Guide",
             box_welcome_title: "Willkommen an der Hochschule",
             box_studies_title: "Studium & Organisation",
@@ -58,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Anreise",
             box_language_title: "Sprache",
             box_finance_title: "Finanzielles",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Ihr Firmenname. Alle Rechte vorbehalten."
         },
         hi: {
@@ -68,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "और अधिक जानें",
             features_title: "विशेषताएँ",
             features_text: "ऊपर दिए गए चयनकर्ता का उपयोग करके सूक्ष्म एनिमेशन और भाषाओं को बदलने में आसानी का पता लगाएं।",
+            // --- NEW Box Translations (HI) ---
             quickstart_title: "त्वरित आरंभ गाइड",
             box_welcome_title: "विश्वविद्यालय में आपका स्वागत है",
             box_studies_title: "अध्ययन और संगठन",
@@ -78,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "आगमन",
             box_language_title: "भाषा",
             box_finance_title: "वित्त",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 आपकी कंपनी का नाम। सर्वाधिकार सुरक्षित।"
         },
         ar: {
@@ -88,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "اعرف المزيد",
             features_title: "الميزات",
             features_text: "اكتشف الرسوم المتحركة الدقيقة وسهولة تبديل اللغات باستخدام المحدد أعلاه.",
+            // --- NEW Box Translations (AR) ---
             quickstart_title: "دليل البدء السريع",
             box_welcome_title: "مرحبا بكم في الجامعة",
             box_studies_title: "الدراسة والتنظيم",
@@ -98,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "الوصول",
             box_language_title: "اللغة",
             box_finance_title: "الأمور المالية",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 اسم شركتك. كل الحقوق محفوظة."
         },
         es: {
@@ -108,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Aprende más",
             features_title: "Características",
             features_text: "Descubre las sutiles animaciones y la facilidad de cambiar de idioma usando el selector de arriba.",
+            // --- NEW Box Translations (ES) ---
             quickstart_title: "Guía de Inicio Rápido",
             box_welcome_title: "Bienvenido a la Universidad",
             box_studies_title: "Estudios y Organización",
@@ -118,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Llegada",
             box_language_title: "Idioma",
             box_finance_title: "Finanzas",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Nombre de tu Compañía. Todos los derechos reservados."
         },
         zh: {
@@ -128,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "了解更多",
             features_title: "特点",
             features_text: "发现微妙的动画以及使用上面的选择器轻松切换语言。",
+            // --- NEW Box Translations (ZH) ---
             quickstart_title: "快速入门指南",
             box_welcome_title: "欢迎来到大学",
             box_studies_title: "学习与组织",
@@ -138,6 +149,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "抵达",
             box_language_title: "语言",
             box_finance_title: "财务",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 您的公司名称。版权所有。"
         }
     };
@@ -160,31 +172,38 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlElement.setAttribute('lang', lang);
         htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
-        // Re-query elements *inside* the function in case DOM changes
-        const currentTranslatableElements = document.querySelectorAll('[data-key]');
-        if (currentTranslatableElements.length === 0) {
-            console.warn("Warning: No elements with 'data-key' attribute found during update attempt!");
-        }
-
         // Update all elements with data-key attribute
-        currentTranslatableElements.forEach(element => {
+        translatableElements.forEach(element => {
             const key = element.getAttribute('data-key');
+            // Need to check if the key exists in the potentially reassigned selectedTranslations
             const translation = selectedTranslations ? selectedTranslations[key] : undefined;
 
-            if (translation !== undefined) {
-                // Use innerHTML only when necessary (e.g., footer copyright, links)
-                if (key === 'footer_text' || element.tagName === 'A') {
-                    element.innerHTML = translation;
+
+            if (translation !== undefined) { // Check if the key exists for the selected language
+                // Use innerHTML for keys that might contain HTML entities like © or links
+                 // Adjusted condition: Use innerHTML for footer or if element is an anchor or if key specifically needs it
+                 if (key === 'footer_text' || element.tagName === 'A' || element.closest('.quickstart-box h3')) { // Target H3 inside the box links as well for safety if needed, but textContent usually fine for H3
+                     // Check if the element is the H3 inside the box OR the anchor itself
+                     if (element.tagName === 'H3' && element.closest('.quickstart-box')) {
+                         element.textContent = translation; // Prefer textContent for headings unless HTML is needed
+                     } else {
+                          element.innerHTML = translation; // Use innerHTML for footer, main CTA button, etc.
+                     }
                 } else {
                     element.textContent = translation;
                 }
             } else {
                  // Fallback to English if a specific translation is missing
-                 const fallbackTranslation = translations['en'] ? translations['en'][key] : undefined;
+                 const fallbackTranslation = translations['en'][key];
                  if(fallbackTranslation !== undefined) {
                      console.warn(`Translation missing for key "${key}" in language "${lang}". Using English fallback.`);
-                     if (key === 'footer_text' || element.tagName === 'A') {
-                         element.innerHTML = fallbackTranslation;
+                     // Apply same logic for fallback
+                     if (key === 'footer_text' || element.tagName === 'A' || (element.tagName === 'H3' && element.closest('.quickstart-box'))) {
+                         if (element.tagName === 'H3' && element.closest('.quickstart-box')) {
+                             element.textContent = fallbackTranslation;
+                         } else {
+                             element.innerHTML = fallbackTranslation;
+                         }
                      } else {
                         element.textContent = fallbackTranslation;
                      }
@@ -203,10 +222,8 @@ document.addEventListener('DOMContentLoaded', () => {
          }
 
          // Ensure the dropdown shows the currently selected language
-         if (languageSelector.value !== lang) {
-             languageSelector.value = lang;
-         }
-         // console.log(`Language changed to: ${lang}`); // Optional: Keep minimal log
+         languageSelector.value = lang;
+         console.log(`Language changed to: ${lang}`); // Log successful change
     }
 
     // --- Event Listener for Language Change ---
@@ -221,25 +238,30 @@ document.addEventListener('DOMContentLoaded', () => {
             // 1. Check Local Storage
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang && translations[savedLang]) {
-                // console.log(`Using saved language: ${savedLang}`);
+                console.log(`Using saved language: ${savedLang}`);
                 return savedLang;
             }
+
             // 2. Check Browser Language
             const browserLang = navigator.language.split('-')[0]; // Get 'en' from 'en-US'
             if (translations[browserLang]) {
-                // console.log(`Using browser language: ${browserLang}`);
+                 console.log(`Using browser language: ${browserLang}`);
                 return browserLang;
             }
         } catch (e) {
             console.warn("Could not access localStorage or navigator.language:", e);
         }
-        // console.log(`Using default language: ${preferredLang}`);
+
+         console.log(`Using default language: ${preferredLang}`);
         return preferredLang; // Default to English if others fail
     }
 
     // Set initial language on page load
     const initialLang = getInitialLanguage();
-    updateLanguage(initialLang);
+    // Update the list of translatable elements *before* calling updateLanguage
+    const updatedTranslatableElements = document.querySelectorAll('[data-key]');
+    // Pass the potentially updated list to the function if needed, though querySelectorAll inside the function is usually fine
+    updateLanguage(initialLang); // This will now find the new elements
 
 });
-// --- END OF FILE script.js (FINAL VERSION) ---
+--- END OF FILE script.js ---

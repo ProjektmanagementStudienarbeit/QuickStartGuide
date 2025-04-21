@@ -1,92 +1,372 @@
 /* --- START OF FILE style.css --- */
 
-/* ... (keep existing styles above) ... */
+/* --- Global Styles & Variables --- */
+:root {
+    --primary-color: #ff8c00; /* Dark Orange */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark Grey */
+    --light-grey: #f8f8f8;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    /* Added Arial as a very common fallback */
+    --font-stack: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Arial;
+    --animation-duration: 0.8s;
+}
+
+/* --- Basic Reset & Box Sizing (Crucial) --- */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 100%; /* Use percentage for better accessibility scaling */
+    /* Added for potential smooth scroll/font issues in Safari */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font-stack);
+    line-height: 1.7;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; /* Ensure footer stays down */
+    transition: background-color 0.3s ease;
+    -webkit-transition: background-color 0.3s ease;
+    /* Prevent horizontal scrollbars if content overflows slightly */
+    overflow-x: hidden;
+}
+
+/* --- Utility --- */
+.sr-only { /* Screen Reader Only */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* --- Language Switcher --- */
+.language-switcher-container {
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    z-index: 10; /* Ensure it's above other content */
+}
+
+#languageSelector {
+    padding: 10px 15px;
+    border: 1px solid var(--primary-color);
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--font-stack);
+    font-weight: 600;
+    font-size: 0.9rem;
+    cursor: pointer;
+    appearance: none;
+    -webkit-appearance: none; /* Needed for Safari/iOS */
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff8c00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 40px; /* Space for the arrow */
+    box-shadow: 0 2px 5px var(--shadow-color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+}
+
+#languageSelector:hover,
+#languageSelector:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+     background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Change arrow color on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* --- Main Content --- */
+.content-wrapper {
+    flex-grow: 1; /* Allows footer to be pushed down */
+    width: 100%; /* Take full width */
+    max-width: 960px; /* Limit content width */
+    margin: 80px auto 40px auto; /* Center container */
+    padding: 0 20px; /* Add horizontal padding directly here instead of sections */
+    /* text-align: center; -- Remove this, let sections control alignment */
+}
+
+/* --- Sections --- */
+.hero, .info-section, .quickstart-grid-container {
+    padding: 50px 0; /* Vertical padding only, horizontal is on wrapper */
+    margin-bottom: 40px;
+    text-align: center; /* Center text within these sections */
+}
+
+/* Remove bottom margin from the last section */
+.content-wrapper > section:last-of-type {
+    margin-bottom: 0;
+}
+
+.info-section {
+    background-color: var(--light-grey);
+    border-radius: 12px;
+    box-shadow: 0 5px 15px var(--shadow-color);
+    padding: 50px 30px; /* Override padding for specific background sections */
+}
+
+
+/* --- Text Elements --- */
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.2rem; /* Fallback for older Safari */
+    font-size: clamp(2rem, 5vw + 1rem, 2.8rem); /* More robust clamp */
+}
+
+h2 {
+     font-size: 1.9rem; /* Fallback */
+     font-size: clamp(1.8rem, 4vw + 1rem, 2.2rem); /* More robust clamp */
+}
+
+p {
+    margin-bottom: 25px;
+    font-weight: 300;
+    max-width: 650px; /* Limit paragraph width */
+    margin-left: auto; /* Center paragraphs */
+    margin-right: auto;
+    font-size: 1.05rem;
+    line-height: 1.7; /* Explicitly set */
+}
+
+/* --- Call to Action Button --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease, box-shadow 0.3s ease;
+    margin-top: 15px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+}
+
+.cta-button:hover,
+.cta-button:focus { /* Add focus state */
+    background-color: #e07b00; /* Slightly darker orange */
+    transform: translateY(-4px);
+    -webkit-transform: translateY(-4px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default focus outline if custom style is clear */
+}
+
+/* --- Footer --- */
+.footer {
+    background-color: var(--text-color);
+    color: var(--light-grey);
+    text-align: center;
+    padding: 25px 20px; /* Increased padding slightly */
+    font-size: 0.9rem;
+    /* margin-top: auto; -- Already handled by flex-grow on main */
+    width: 100%; /* Ensure footer spans full width */
+}
 
 /* --- Quick Start Grid --- */
 .quickstart-grid-container {
-    margin-top: 50px; /* Space above the grid section */
-    margin-bottom: 40px;
-    padding: 0 15px; /* Add some horizontal padding */
+    /* Styles already defined in .hero, .info-section area */
+    /* text-align: center; -- Inherited */
 }
 
 .quickstart-grid-container h2 {
-    text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 35px; /* More space below title */
 }
 
 .quickstart-grid {
     display: grid;
-    /* Creates responsive columns: fit as many as possible with min width 200px */
+    /* Ensure grid itself doesn't collapse if items are invisible */
+    width: 100%;
+    /* Use a slightly safer minmax for older browsers if needed, but 200px is usually fine */
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 25px; /* Space between boxes */
+    gap: 25px; /* Standard gap property */
 }
 
 .quickstart-box {
-    display: flex; /* Use flexbox for centering content */
+    /* Make it a block element first for default flow */
+    display: block;
+    /* Then apply flex for internal alignment */
+    display: flex;
     flex-direction: column;
-    justify-content: center; /* Vertical centering */
-    align-items: center; /* Horizontal centering */
-    min-height: 160px; /* Give boxes a minimum height */
+    justify-content: center;
+    align-items: center;
+    min-height: 160px; /* Minimum height is important */
+    /* Consider adding a minimum width as well, though grid handles it */
+    /* min-width: 180px; */
     padding: 20px;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     background-color: var(--secondary-color);
     color: var(--primary-color);
     text-decoration: none;
-    text-align: center;
+    text-align: center; /* Center text inside */
     font-weight: 600;
     box-shadow: 0 3px 8px var(--shadow-color);
     transition: all 0.3s ease;
     -webkit-transition: all 0.3s ease;
+    /* Helps prevent text overflow issues */
+    overflow: hidden;
+    word-wrap: break-word; /* Ensure long words break */
 }
 
-.quickstart-box:hover {
+.quickstart-box:hover,
+.quickstart-box:focus { /* Add focus state */
     background-color: var(--primary-color);
     color: var(--secondary-color);
     transform: translateY(-5px) scale(1.02);
     -webkit-transform: translateY(-5px) scale(1.02);
     box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    outline: none; /* Remove default focus outline */
 }
 
 .quickstart-box h3 {
-    margin: 0; /* Remove default margin */
-    font-size: 1.15rem;
-     /* Allow text wrapping */
-    word-wrap: break-word;
-    overflow-wrap: break-word;
+    margin: 0; /* Remove default heading margin */
+    font-size: 1.1rem; /* Slightly smaller base size */
+    line-height: 1.4; /* Adjust line height for heading */
+    font-weight: 600; /* Ensure weight is applied */
+    color: inherit; /* Inherit color from parent <a> */
+    /* Text wrapping is handled by the parent .quickstart-box */
 }
+
 
 /* --- Animation --- */
-/* ... (keep existing animation styles) ... */
-/* Stagger animation delays - add new section */
+.animate-on-load {
+    opacity: 0;
+    transform: translateY(20px);
+    -webkit-transform: translateY(20px);
+    /* Ensure animation properties are fully specified */
+    animation-name: fadeInUp;
+    animation-duration: var(--animation-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards; /* Keep final state */
+    /* Add Webkit prefixed version */
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: var(--animation-duration);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Stagger animation delays */
 .hero.animate-on-load { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
 .info-section.animate-on-load { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; }
-/* Add delay for the new grid */
 .quickstart-grid-container.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
-.footer.animate-on-load { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; } /* Adjust footer delay */
+.footer.animate-on-load { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; } /* Adjusted footer delay */
 
 
-/* ... (keep existing fadeInUp keyframes) ... */
+/* --- Standard Keyframes --- */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
+/* --- Webkit Keyframes --- */
+@-webkit-keyframes fadeInUp {
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
 
 /* --- RTL Styling --- */
-/* ... (keep existing RTL styles) ... */
+html[dir="rtl"] {
+    /* text-align: right; -- Handled by individual sections/elements */
+}
 
-/* Ensure box text aligns right in RTL */
-html[dir="rtl"] .quickstart-box {
+html[dir="rtl"] .language-switcher-container {
+    right: auto; /* Reset right */
+    left: 25px;  /* Set left */
+}
+
+html[dir="rtl"] #languageSelector {
+    background-position: left 12px center;
+    padding-left: 40px;  /* Space for arrow on left */
+    padding-right: 15px; /* Reset right padding */
+}
+
+html[dir="rtl"] .content-wrapper {
+     /* text-align: right; -- Let child elements handle */
+}
+
+html[dir="rtl"] p,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2 {
+    /* Ensure text alignment is right for main text blocks */
     text-align: right;
 }
+/* Ensure grid container title is right-aligned */
 html[dir="rtl"] .quickstart-grid-container h2 {
+     text-align: right;
+}
+/* Ensure grid box text is right-aligned */
+html[dir="rtl"] .quickstart-box {
     text-align: right;
 }
 
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
-    /* ... (keep existing 768px styles) ... */
+    .content-wrapper {
+        margin-top: 100px; /* Space for potentially fixed header if added later */
+        padding: 0 15px; /* Adjust padding */
+    }
+
+    .hero, .info-section, .quickstart-grid-container {
+        padding: 40px 0; /* Adjust vertical padding */
+    }
+     .info-section {
+        padding: 40px 20px; /* Adjust background section padding */
+     }
+
+
+    .language-switcher-container {
+        top: 15px;
+        right: 15px;
+    }
+    html[dir="rtl"] .language-switcher-container {
+       right: auto;
+       left: 15px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+    h1 { font-size: 2rem; } /* Adjusted fallback */
+    h2 { font-size: 1.7rem; } /* Adjusted fallback */
+    /* Clamp adjustments for smaller screens if needed */
+    h1 { font-size: clamp(1.8rem, 4vw + 1rem, 2.2rem); }
+    h2 { font-size: clamp(1.6rem, 3vw + 1rem, 1.9rem); }
 
     .quickstart-grid {
-        /* Maybe 2 columns on tablet */
+        /* Adjust columns for tablet */
         grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
         gap: 20px;
     }
@@ -95,26 +375,41 @@ html[dir="rtl"] .quickstart-grid-container h2 {
         padding: 15px;
     }
      .quickstart-box h3 {
-        font-size: 1.05rem;
+        font-size: 1rem;
     }
 }
 
 @media (max-width: 480px) {
-     /* ... (keep existing 480px styles) ... */
+     h1 { font-size: 1.8rem; } /* Adjusted fallback */
+     h2 { font-size: 1.5rem; } /* Adjusted fallback */
+     h1 { font-size: clamp(1.6rem, 5vw + 0.5rem, 1.9rem); }
+     h2 { font-size: clamp(1.4rem, 4vw + 0.5rem, 1.6rem); }
 
-    .quickstart-grid {
-         /* Stack to 1 column on small mobile */
+    .cta-button {
+        padding: 12px 25px;
+        font-size: 0.9rem;
+    }
+    #languageSelector {
+        padding: 8px 10px;
+        padding-right: 35px; /* Space for arrow */
+        font-size: 0.8rem;
+    }
+    html[dir="rtl"] #languageSelector {
+        padding-left: 35px;
+        padding-right: 10px;
+    }
+
+     .quickstart-grid {
+         /* Stack to 1 column */
          grid-template-columns: 1fr;
          gap: 15px;
      }
      .quickstart-box {
         min-height: 100px; /* Can be shorter when full width */
+        padding: 12px;
      }
      .quickstart-box h3 {
-        font-size: 1rem;
-    }
-     .quickstart-grid-container {
-        padding: 0 10px;
-    }
+        font-size: 0.95rem;
+     }
 }
 /* --- END OF FILE style.css --- */

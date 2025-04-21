@@ -1,0 +1,356 @@
+/* === GRUNDEINSTELLUNGEN & VARIABLEN === */
+:root {
+    --oth-blue: #003366; /* OTH Hauptfarbe (Beispiel) */
+    --oth-grey: #cccccc; /* OTH Sekundärfarbe (Beispiel) */
+    --accent-color: #ff6600; /* "Auf die Kacke hauen" Akzentfarbe (Beispiel Orange) */
+    --text-color: #333333;
+    --light-text-color: #ffffff;
+    --background-color: #ffffff;
+    --alternate-bg-color: #f4f7f9; /* Leicht grauer Hintergrund für Abwechslung */
+    --container-width: 1140px;
+    --header-height: 80px;
+
+    /* Hier elegante Schriftarten definieren, z.B. */
+    --font-primary: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-headings: 'Georgia', serif; /* Oder eine markantere Schrift */
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth; /* Sanftes Scrollen zu Ankern */
+    font-size: 16px; /* Basis-Schriftgröße */
+}
+
+body {
+    font-family: var(--font-primary);
+    color: var(--text-color);
+    background-color: var(--background-color);
+    line-height: 1.6;
+    padding-top: var(--header-height); /* Platz für den fixierten Header */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-headings);
+    color: var(--oth-blue);
+    margin-bottom: 1rem;
+    line-height: 1.3;
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; margin-top: 2rem; }
+h3 { font-size: 1.5rem; margin-top: 1.5rem; color: var(--accent-color); } /* Akzent für Unterüberschriften */
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--oth-blue);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.container {
+    max-width: var(--container-width);
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+/* === SPRACHUMSCHALTUNG (Basis) === */
+/* Verstecke alle Sprach-Spans standardmäßig */
+.lang { display: none; }
+
+/* Zeige nur die Spans für die aktive Sprache (wird per JS gesteuert) */
+body[data-lang="de"] .de,
+body[data-lang="en"] .en,
+body[data-lang="hi"] .hi,
+body[data-lang="ar"] .ar,
+body[data-lang="es"] .es,
+body[data-lang="zh"] .zh {
+    display: inline; /* Oder block, je nach Element */
+}
+body[data-lang="de"] h1.de, body[data-lang="de"] h2.de, body[data-lang="de"] h3.de, body[data-lang="de"] p.de,
+body[data-lang="en"] h1.en, body[data-lang="en"] h2.en, body[data-lang="en"] h3.en, body[data-lang="en"] p.en,
+body[data-lang="hi"] h1.hi, body[data-lang="hi"] h2.hi, body[data-lang="hi"] h3.hi, body[data-lang="hi"] p.hi,
+body[data-lang="ar"] h1.ar, body[data-lang="ar"] h2.ar, body[data-lang="ar"] h3.ar, body[data-lang="ar"] p.ar,
+body[data-lang="es"] h1.es, body[data-lang="es"] h2.es, body[data-lang="es"] h3.es, body[data-lang="es"] p.es,
+body[data-lang="zh"] h1.zh, body[data-lang="zh"] h2.zh, body[data-lang="zh"] h3.zh, body[data-lang="zh"] p.zh
+{
+    display: block; /* Block-Elemente müssen block angezeigt werden */
+}
+
+
+/* Spezifisch für Arabisch: Rechts-nach-Links */
+body[data-lang="ar"] { direction: rtl; }
+body[data-lang="ar"] .site-header .header-container { flex-direction: row-reverse; } /* Beispiel für Layout-Anpassung */
+body[data-lang="ar"] .main-navigation ul { margin-right: auto; margin-left: 0; } /* Menü nach links */
+/* Weitere Anpassungen für RTL können nötig sein */
+
+
+/* === HEADER === */
+.site-header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    height: var(--header-height);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img {
+    display: block; /* Verhindert extra Leerraum unter dem Bild */
+}
+
+.header-controls {
+    display: flex;
+    align-items: center;
+}
+
+.language-switcher {
+    margin-right: 20px;
+}
+
+.language-switcher select {
+    padding: 5px 8px;
+    border: 1px solid var(--oth-grey);
+    border-radius: 4px;
+    font-family: inherit;
+    background-color: #fff;
+}
+
+.main-navigation ul {
+    list-style: none;
+    display: flex;
+}
+
+.main-navigation li {
+    margin-left: 20px;
+}
+
+.main-navigation a {
+    text-decoration: none;
+    color: var(--oth-blue);
+    font-weight: bold;
+    padding: 5px 0;
+    position: relative; /* Für Unterstrich-Effekt */
+    white-space: nowrap; /* Verhindert Umbruch im Menü */
+}
+
+.main-navigation a::after { /* Unterstrich-Effekt beim Hover */
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--accent-color);
+    transition: width 0.3s ease;
+}
+
+.main-navigation a:hover::after,
+.main-navigation a.active::after { /* Aktiven Link hervorheben */
+     width: 100%;
+}
+.main-navigation a:hover {
+    color: var(--accent-color);
+    text-decoration: none; /* Standard-Unterstrich entfernen */
+}
+
+/* Hamburger Menü (mobil) */
+#menu-toggle {
+    display: none; /* Standardmäßig versteckt */
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    margin-left: 15px;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: var(--oth-blue);
+    margin: 5px 0;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* === HERO SECTION === */
+.hero-section {
+    /* Hier kommt das "Auf die Kacke hauen" Design */
+    background-color: var(--oth-blue); /* Platzhalter - Ersetze mit Bild/Video/Gradient */
+    background-image: linear-gradient(rgba(0, 51, 102, 0.7), rgba(0, 51, 102, 0.7)), url('placeholder-amberg-campus.jpg'); /* Beispiel mit Overlay */
+    background-size: cover;
+    background-position: center;
+    color: var(--light-text-color);
+    padding: 100px 0; /* Mehr Innenabstand */
+    text-align: center;
+    min-height: 60vh; /* Mindesthöhe */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    color: var(--light-text-color);
+    font-size: 3rem; /* Größere Schrift */
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Textschatten für Lesbarkeit */
+}
+
+.hero-content .highlight {
+    color: var(--accent-color); /* Akzentfarbe für den Slogan */
+    font-weight: bold;
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* === CONTENT SECTIONS === */
+.content-section {
+    padding: 60px 0;
+}
+
+.content-section.alternate-bg {
+    background-color: var(--alternate-bg-color);
+}
+
+.content-section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Eleganter Unterstrich für Hauptüberschriften */
+.content-section h2::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: var(--accent-color);
+}
+
+/* === FOOTER === */
+.site-footer {
+    background-color: var(--oth-blue);
+    color: var(--light-text-color);
+    padding: 30px 0;
+    text-align: center;
+    margin-top: 40px;
+}
+
+.site-footer p {
+    margin-bottom: 0.5rem;
+}
+
+.site-footer a {
+    color: var(--light-text-color);
+    text-decoration: underline;
+}
+
+.site-footer a:hover {
+    color: var(--oth-grey);
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 992px) {
+    :root {
+        --header-height: 70px;
+    }
+    body { padding-top: var(--header-height); }
+
+    .main-navigation ul {
+        display: none; /* Hauptmenü auf Mobil verstecken */
+        position: absolute;
+        top: var(--header-height);
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        padding: 10px 0;
+    }
+
+    .main-navigation ul.active { /* Wird per JS angezeigt */
+        display: flex;
+    }
+
+    .main-navigation li {
+        margin: 0;
+        text-align: center;
+    }
+
+    .main-navigation a {
+        display: block;
+        padding: 15px;
+        border-bottom: 1px solid var(--alternate-bg-color);
+    }
+     .main-navigation a::after { display: none; } /* Keinen Unterstrich-Effekt im mobilen Menü */
+
+    #menu-toggle {
+        display: block; /* Hamburger anzeigen */
+    }
+    /* Animation für Hamburger Icon */
+    #menu-toggle.active span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+    #menu-toggle.active span:nth-child(2) { opacity: 0; }
+    #menu-toggle.active span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+    .hero-content h1 { font-size: 2.5rem; }
+    .hero-content p { font-size: 1.1rem; }
+}
+
+@media (max-width: 768px) {
+    html { font-size: 15px; }
+    .hero-content h1 { font-size: 2rem; }
+    .hero-content p { font-size: 1rem; }
+    .content-section { padding: 40px 0; }
+    .content-section h2 { font-size: 1.8rem; }
+    .content-section h3 { font-size: 1.3rem; }
+}
+
+/* Hilfsklasse zum Verstecken für Screenreader */
+.sr-only {
+	border: 0 !important;
+	clip: rect(1px, 1px, 1px, 1px) !important; /* 1 */
+	-webkit-clip-path: inset(50%) !important;
+		clip-path: inset(50%) !important;  /* 2 */
+	height: 1px !important;
+	margin: -1px !important;
+	overflow: hidden !important;
+	padding: 0 !important;
+	position: absolute !important;
+	width: 1px !important;
+	white-space: nowrap !important; /* 3 */
+}

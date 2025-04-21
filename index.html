@@ -1,123 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title data-i18n="website_title">Impressive Website</title>
-
-    <!-- AOS CSS (Scroll Animation Library) -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- Custom CSS -->
+    <title data-key="page_title">Simple Elegant Website</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Optional: Add a nice Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <!-- Header -->
-    <header id="header">
-        <nav class="container">
-            <div class="logo" data-i18n="logo_text">MyBrand</div>
-            <ul>
-                <li><a href="#home" data-i18n="nav_home">Home</a></li>
-                <li><a href="#about" data-i18n="nav_about">About</a></li>
-                <li><a href="#services" data-i18n="nav_services">Services</a></li>
-                <li><a href="#contact" data-i18n="nav_contact">Contact</a></li>
-            </ul>
-            <div class="language-selector">
-                <label for="lang-select" class="sr-only">Select Language</label> <!-- Screen reader only label -->
-                <select id="lang-select">
-                    <option value="en">English</option>
-                    <option value="es">Español</option>
-                    <option value="fr">Français</option>
-                    <option value="de">Deutsch</option>
-                    <option value="ja">日本語</option>
-                    <option value="zh">中文</option>
-                </select>
-            </div>
-        </nav>
+    <header class="language-switcher-container">
+        <label for="languageSelector" data-key="language_label" class="sr-only">Select Language:</label>
+        <select id="languageSelector" aria-labelledby="languageSelectorLabel">
+            <option value="en">English</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+            <option value="ar">العربية</option>
+            <option value="es">Español</option>
+            <option value="zh">中文</option>
+        </select>
     </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="home" class="hero full-height">
-            <div class="container" data-aos="fade-up">
-                <h1 data-i18n="hero_headline">Welcome to Our Creative Space</h1>
-                <p data-i18n="hero_subheadline">We build amazing digital experiences with passion and precision.</p>
-                <a href="#contact" class="btn btn-primary" data-i18n="hero_cta">Get Started</a>
-            </div>
+    <main class="content-wrapper">
+        <section class="hero">
+            <h1 data-key="welcome_title">Welcome to Our Elegant Site</h1>
+            <p data-key="welcome_text">This is a simple demonstration of a website featuring clean design, animations, and multi-language support.</p>
+            <a href="#more" class="cta-button" data-key="learn_more_button">Learn More</a>
         </section>
 
-        <!-- About Section -->
-        <section id="about" class="section">
-            <div class="container">
-                <h2 data-aos="fade-right" data-i18n="about_title">About Us</h2>
-                <p data-aos="fade-left" data-aos-delay="100" data-i18n="about_text">We are a team of innovators dedicated to crafting unique solutions. Our mission is to blend creativity with technology to deliver outstanding results for our clients worldwide.</p>
-                </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" class="section bg-light">
-            <div class="container">
-                <h2 data-aos="fade-up" data-i18n="services_title">Our Services</h2>
-                <div class="service-cards">
-                    <div class="card" data-aos="fade-up" data-aos-delay="100">
-                        <h3 data-i18n="service_1_title">Web Design</h3>
-                        <p data-i18n="service_1_desc">Creating stunning and user-friendly website designs.</p>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="200">
-                        <h3 data-i18n="service_2_title">Development</h3>
-                        <p data-i18n="service_2_desc">Building robust and scalable web applications.</p>
-                    </div>
-                    <div class="card" data-aos="fade-up" data-aos-delay="300">
-                        <h3 data-i18n="service_3_title">Digital Strategy</h3>
-                        <p data-i18n="service_3_desc">Planning for online success and growth.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="section">
-            <div class="container">
-                <h2 data-aos="fade-in" data-i18n="contact_title">Get In Touch</h2>
-                <form action="#" method="POST" class="contact-form">
-                    <div class="form-group" data-aos="fade-up" data-aos-delay="100">
-                        <label for="name" data-i18n="contact_label_name">Name</label>
-                        <input type="text" id="name" name="name" required data-i18n-placeholder="contact_placeholder_name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group" data-aos="fade-up" data-aos-delay="200">
-                        <label for="email" data-i18n="contact_label_email">Email</label>
-                        <input type="email" id="email" name="email" required data-i18n-placeholder="contact_placeholder_email" placeholder="Your Email">
-                    </div>
-                    <div class="form-group" data-aos="fade-up" data-aos-delay="300">
-                        <label for="message" data-i18n="contact_label_message">Message</label>
-                        <textarea id="message" name="message" rows="5" required data-i18n-placeholder="contact_placeholder_message" placeholder="Your Message"></textarea>
-                    </div>
-                    <button type="submit" class="btn btn-primary" data-aos="fade-up" data-aos-delay="400" data-i18n="contact_submit">Send Message</button>
-                </form>
-            </div>
+        <section id="more" class="info-section">
+             <h2 data-key="features_title">Features</h2>
+             <p data-key="features_text">Discover the subtle animations and the ease of switching languages using the selector above.</p>
         </section>
     </main>
 
-    <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p data-i18n="footer_copyright">© 2023 MyBrand. All Rights Reserved.</p>
-            <!-- Add social links here if needed -->
-        </div>
+        <p data-key="footer_text">© 2023 Your Company Name. All rights reserved.</p>
     </footer>
 
-    <!-- i18next Core -->
-    <script src="https://unpkg.com/i18next/i18next.min.js"></script>
-    <!-- i18next Backend to load translations -->
-    <script src="https://unpkg.com/i18next-http-backend/i18nextHttpBackend.min.js"></script>
-    <!-- i18next Language Detector -->
-    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.min.js"></script>
-
-    <!-- AOS JS (Scroll Animation Library) -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-
-    <!-- Custom JS -->
     <script src="script.js"></script>
 </body>
 </html>

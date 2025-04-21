@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-key="page_title">Simple Elegant Website</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Optional: Add a nice Google Font -->
+
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+    <!-- Our Stylesheet -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Our JavaScript (defer ensures it runs after HTML is parsed) -->
+    <script src="script.js" defer></script>
 </head>
 <body>
 
@@ -25,22 +31,21 @@
     </header>
 
     <main class="content-wrapper">
-        <section class="hero">
+        <section class="hero animate-on-load">
             <h1 data-key="welcome_title">Welcome to Our Elegant Site</h1>
             <p data-key="welcome_text">This is a simple demonstration of a website featuring clean design, animations, and multi-language support.</p>
             <a href="#more" class="cta-button" data-key="learn_more_button">Learn More</a>
         </section>
 
-        <section id="more" class="info-section">
+        <section id="more" class="info-section animate-on-load">
              <h2 data-key="features_title">Features</h2>
              <p data-key="features_text">Discover the subtle animations and the ease of switching languages using the selector above.</p>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer animate-on-load">
         <p data-key="footer_text">© 2023 Your Company Name. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
 </body>
 </html>

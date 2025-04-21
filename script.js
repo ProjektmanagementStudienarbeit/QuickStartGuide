@@ -1,8 +1,7 @@
---- START OF FILE script.js (DEBUG VERSION) ---
+--- START OF FILE script.js ---
 
 // Wait for the DOM to be fully loaded and parsed
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed.'); // Checkpoint 1
 
     // Select essential elements
     const languageSelector = document.getElementById('languageSelector');
@@ -11,24 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Basic Check ---
     if (!languageSelector) {
-        console.error("CRITICAL Error: Language selector element with ID 'languageSelector' not found.");
+        console.error("Error: Language selector element with ID 'languageSelector' not found.");
         return; // Stop execution if selector is missing
-    } else {
-        console.log('Language selector found:', languageSelector); // Checkpoint 2
     }
-
-    if (!htmlElement) {
-        console.error("CRITICAL Error: HTML element not found.");
-        return;
-    } else {
-         console.log('HTML element found:', htmlElement); // Checkpoint 3
-    }
-
-
     if (translatableElements.length === 0) {
         console.warn("Warning: No elements with 'data-key' attribute found for translation.");
-    } else {
-        console.log(`Found ${translatableElements.length} elements with [data-key].`); // Checkpoint 4
     }
 
 
@@ -42,6 +28,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Learn More",
             features_title: "Features",
             features_text: "Discover the subtle animations and the ease of switching languages using the selector above.",
+            // --- NEW Box Translations (EN) ---
             quickstart_title: "Quick Start Guide",
             box_welcome_title: "Welcome to the University",
             box_studies_title: "Studies & Organization",
@@ -52,6 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Arrival",
             box_language_title: "Language",
             box_finance_title: "Finances",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Your Company Name. All rights reserved."
         },
         de: {
@@ -62,6 +50,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Mehr erfahren",
             features_title: "Funktionen",
             features_text: "Entdecken Sie die subtilen Animationen und die Leichtigkeit des Sprachwechsels mit der obigen Auswahl.",
+            // --- NEW Box Translations (DE - from prompt) ---
             quickstart_title: "Quick Start Guide",
             box_welcome_title: "Willkommen an der Hochschule",
             box_studies_title: "Studium & Organisation",
@@ -72,6 +61,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Anreise",
             box_language_title: "Sprache",
             box_finance_title: "Finanzielles",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Ihr Firmenname. Alle Rechte vorbehalten."
         },
         hi: {
@@ -82,6 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "और अधिक जानें",
             features_title: "विशेषताएँ",
             features_text: "ऊपर दिए गए चयनकर्ता का उपयोग करके सूक्ष्म एनिमेशन और भाषाओं को बदलने में आसानी का पता लगाएं।",
+            // --- NEW Box Translations (HI) ---
             quickstart_title: "त्वरित आरंभ गाइड",
             box_welcome_title: "विश्वविद्यालय में आपका स्वागत है",
             box_studies_title: "अध्ययन और संगठन",
@@ -92,6 +83,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "आगमन",
             box_language_title: "भाषा",
             box_finance_title: "वित्त",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 आपकी कंपनी का नाम। सर्वाधिकार सुरक्षित।"
         },
         ar: {
@@ -102,6 +94,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "اعرف المزيد",
             features_title: "الميزات",
             features_text: "اكتشف الرسوم المتحركة الدقيقة وسهولة تبديل اللغات باستخدام المحدد أعلاه.",
+            // --- NEW Box Translations (AR) ---
             quickstart_title: "دليل البدء السريع",
             box_welcome_title: "مرحبا بكم في الجامعة",
             box_studies_title: "الدراسة والتنظيم",
@@ -112,6 +105,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "الوصول",
             box_language_title: "اللغة",
             box_finance_title: "الأمور المالية",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 اسم شركتك. كل الحقوق محفوظة."
         },
         es: {
@@ -122,6 +116,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "Aprende más",
             features_title: "Características",
             features_text: "Descubre las sutiles animaciones y la facilidad de cambiar de idioma usando el selector de arriba.",
+            // --- NEW Box Translations (ES) ---
             quickstart_title: "Guía de Inicio Rápido",
             box_welcome_title: "Bienvenido a la Universidad",
             box_studies_title: "Estudios y Organización",
@@ -132,6 +127,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Llegada",
             box_language_title: "Idioma",
             box_finance_title: "Finanzas",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 Nombre de tu Compañía. Todos los derechos reservados."
         },
         zh: {
@@ -142,6 +138,7 @@ document.addEventListener('DOMContentLoaded', () => {
             learn_more_button: "了解更多",
             features_title: "特点",
             features_text: "发现微妙的动画以及使用上面的选择器轻松切换语言。",
+            // --- NEW Box Translations (ZH) ---
             quickstart_title: "快速入门指南",
             box_welcome_title: "欢迎来到大学",
             box_studies_title: "学习与组织",
@@ -152,14 +149,13 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "抵达",
             box_language_title: "语言",
             box_finance_title: "财务",
+            // --- End of NEW Box Translations ---
             footer_text: "© 2023 您的公司名称。版权所有。"
         }
     };
 
     // --- Function to Update Text Content ---
     function updateLanguage(lang) {
-        console.log(`--- Attempting to update language to: ${lang} ---`); // Checkpoint 5
-
         let selectedTranslations = translations[lang]; // Use let to allow reassignment
 
         if (!selectedTranslations) {
@@ -167,90 +163,82 @@ document.addEventListener('DOMContentLoaded', () => {
             lang = 'en'; // Fallback language
              selectedTranslations = translations[lang];
              if (!selectedTranslations) { // Check if English is missing too
-                console.error("CRITICAL Error: English translations are missing. Cannot update language.");
-                return; // Stop if even English is missing
+                console.error("Critical Error: English translations are missing.");
+                return;
              }
         }
 
         // Set language attribute and direction on <html> element
-        try {
-            htmlElement.setAttribute('lang', lang);
-            htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-             console.log(`Set HTML lang to "${lang}" and dir to "${htmlElement.getAttribute('dir')}".`); // Checkpoint 6
-        } catch (e) {
-            console.error("Error setting lang/dir attributes:", e);
-        }
-
+        htmlElement.setAttribute('lang', lang);
+        htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
         // Update all elements with data-key attribute
-        console.log(`Updating ${translatableElements.length} elements...`); // Checkpoint 7
-        let updateCount = 0;
-        let missingKeyCount = 0;
-        translatableElements.forEach((element, index) => {
+        translatableElements.forEach(element => {
             const key = element.getAttribute('data-key');
+            // Need to check if the key exists in the potentially reassigned selectedTranslations
             const translation = selectedTranslations ? selectedTranslations[key] : undefined;
 
-            if (translation !== undefined) {
-                // Simplified update logic for debugging - prefer textContent unless essential
-                if (key === 'footer_text') { // Example where innerHTML might be needed for copyright symbol
-                    element.innerHTML = translation;
+
+            if (translation !== undefined) { // Check if the key exists for the selected language
+                // Use innerHTML for keys that might contain HTML entities like © or links
+                 // Adjusted condition: Use innerHTML for footer or if element is an anchor or if key specifically needs it
+                 if (key === 'footer_text' || element.tagName === 'A' || element.closest('.quickstart-box h3')) { // Target H3 inside the box links as well for safety if needed, but textContent usually fine for H3
+                     // Check if the element is the H3 inside the box OR the anchor itself
+                     if (element.tagName === 'H3' && element.closest('.quickstart-box')) {
+                         element.textContent = translation; // Prefer textContent for headings unless HTML is needed
+                     } else {
+                          element.innerHTML = translation; // Use innerHTML for footer, main CTA button, etc.
+                     }
                 } else {
                     element.textContent = translation;
                 }
-                 // console.log(`  [${index}] Updated element with key "${key}"`); // Optional: very verbose log
-                updateCount++;
             } else {
+                 // Fallback to English if a specific translation is missing
                  const fallbackTranslation = translations['en'][key];
                  if(fallbackTranslation !== undefined) {
-                     console.warn(`  [${index}] Translation missing for key "${key}" in "${lang}". Using English fallback.`);
-                     if (key === 'footer_text') {
-                         element.innerHTML = fallbackTranslation;
+                     console.warn(`Translation missing for key "${key}" in language "${lang}". Using English fallback.`);
+                     // Apply same logic for fallback
+                     if (key === 'footer_text' || element.tagName === 'A' || (element.tagName === 'H3' && element.closest('.quickstart-box'))) {
+                         if (element.tagName === 'H3' && element.closest('.quickstart-box')) {
+                             element.textContent = fallbackTranslation;
+                         } else {
+                             element.innerHTML = fallbackTranslation;
+                         }
                      } else {
                         element.textContent = fallbackTranslation;
                      }
-                    updateCount++; // Still counts as an update (using fallback)
                  } else {
-                      console.error(`  [${index}] CRITICAL Error: Translation missing for key "${key}" in both "${lang}" and English fallback.`);
-                      element.textContent = `[MISSING: ${key}]`; // Show placeholder clearly
-                      missingKeyCount++;
+                      console.error(`Error: Translation missing for key "${key}" in both "${lang}" and English fallback.`);
+                      element.textContent = `[${key}]`; // Show key name as placeholder if missing everywhere
                  }
             }
         });
-        console.log(`Finished updating elements. Successful updates (incl. fallbacks): ${updateCount}. Missing keys: ${missingKeyCount}.`); // Checkpoint 8
 
          // Persist selected language
          try {
             localStorage.setItem('preferredLanguage', lang);
-            console.log(`Saved preferred language "${lang}" to localStorage.`); // Checkpoint 9
          } catch (e) {
             console.warn("Could not save preferred language to localStorage:", e);
          }
 
          // Ensure the dropdown shows the currently selected language
-         if (languageSelector.value !== lang) {
-            console.log(`Updating selector value from "${languageSelector.value}" to "${lang}".`);
-            languageSelector.value = lang;
-         }
-         console.log(`--- Language update process finished for: ${lang} ---`); // Checkpoint 10
+         languageSelector.value = lang;
+         console.log(`Language changed to: ${lang}`); // Log successful change
     }
 
     // --- Event Listener for Language Change ---
-    console.log('Adding event listener for language change...'); // Checkpoint 11
     languageSelector.addEventListener('change', (event) => {
-        console.log(`>>> Language selector CHANGED to: ${event.target.value}`); // Checkpoint 12
         updateLanguage(event.target.value);
     });
-    console.log('Event listener added.'); // Checkpoint 13
 
     // --- Initial Language Setup ---
     function getInitialLanguage() {
-        console.log('Determining initial language...'); // Checkpoint 14
         let preferredLang = 'en'; // Default fallback
         try {
             // 1. Check Local Storage
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang && translations[savedLang]) {
-                console.log(`Found saved language in localStorage: ${savedLang}`);
+                console.log(`Using saved language: ${savedLang}`);
                 return savedLang;
             }
 
@@ -264,16 +252,16 @@ document.addEventListener('DOMContentLoaded', () => {
             console.warn("Could not access localStorage or navigator.language:", e);
         }
 
-         console.log(`No saved or browser language found/valid. Using default: ${preferredLang}`);
+         console.log(`Using default language: ${preferredLang}`);
         return preferredLang; // Default to English if others fail
     }
 
     // Set initial language on page load
     const initialLang = getInitialLanguage();
-    console.log(`Initial language determined as: ${initialLang}`); // Checkpoint 15
-    updateLanguage(initialLang); // Call initial update
+    // Update the list of translatable elements *before* calling updateLanguage
+    const updatedTranslatableElements = document.querySelectorAll('[data-key]');
+    // Pass the potentially updated list to the function if needed, though querySelectorAll inside the function is usually fine
+    updateLanguage(initialLang); // This will now find the new elements
 
 });
-console.log('script.js loaded and executing.'); // Checkpoint 0 (Very beginning)
-
---- END OF FILE script.js (DEBUG VERSION) ---
+--- END OF FILE script.js ---

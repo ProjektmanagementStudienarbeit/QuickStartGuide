@@ -3,21 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTH Amberg-Weiden - International Quick Start Guide</title>
+    <title>OTH AW - International Quick Start</title>
+    <!-- Google Fonts (Beispiel: Montserrat für Text, Playfair Display für Headlines) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome (für Icons) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-    <!-- Hier könntest du spezielle Schriftarten laden, z.B. von Google Fonts -->
 </head>
-<body data-lang="de"> <!-- Startsprache setzen -->
+<body data-lang="de">
 
     <header class="site-header">
+        <!-- Header bleibt größtenteils gleich -->
         <div class="container header-container">
             <div class="logo">
-                <!-- Ersetze dies durch das OTH Logo -->
                 <img src="placeholder-logo.png" alt="OTH Amberg-Weiden Logo" height="50">
             </div>
-
             <div class="header-controls">
-                <div class="language-switcher">
+                 <div class="language-switcher">
                     <label for="lang-select" class="sr-only">Sprache wählen</label>
                     <select id="lang-select">
                         <option value="de">Deutsch</option>
@@ -28,19 +32,17 @@
                         <option value="zh">中文</option>
                     </select>
                 </div>
-
-                <nav class="main-navigation">
-                    <button id="menu-toggle" aria-label="Menü öffnen/schließen" aria-expanded="false">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </button>
+                 <nav class="main-navigation">
+                     <button id="menu-toggle" aria-label="Menü öffnen/schließen" aria-expanded="false">
+                         <span></span><span></span><span></span>
+                     </button>
                     <ul id="main-menu">
-                        <li><a href="#willkommen"><span class="lang de">Willkommen</span><span class="lang en">Welcome</span><span class="lang hi">स्वागत</span><span class="lang ar">أهلاً وسهلاً</span><span class="lang es">Bienvenido</span><span class="lang zh">欢迎</span></a></li>
-                        <li><a href="#studium"><span class="lang de">Studium & Organisation</span><span class="lang en">Studies & Organization</span><span class="lang hi">अध्ययन और संगठन</span><span class="lang ar">الدراسة والتنظيم</span><span class="lang es">Estudios y Organización</span><span class="lang zh">学习与组织</span></a></li>
-                        <li><a href="#leben"><span class="lang de">Leben in Amberg</span><span class="lang en">Living in Amberg</span><span class="lang hi">अम्बर्ग में जीवन</span><span class="lang ar">الحياة في آمبرغ</span><span class="lang es">Vivir en Amberg</span><span class="lang zh">在安贝格生活</span></a></li>
-                        <li><a href="#freizeit"><span class="lang de">Freizeit & Kontakte</span><span class="lang en">Leisure & Networking</span><span class="lang hi">अवकाश और संपर्क</span><span class="lang ar">الترفيه والتواصل</span><span class="lang es">Ocio y Contactos</span><span class="lang zh">休闲与社交</span></a></li>
-                        <li><a href="#hilfe"><span class="lang de">Hilfe & Links</span><span class="lang en">Help & Links</span><span class="lang hi">सहायता और लिंक</span><span class="lang ar">المساعدة والروابط</span><span class="lang es">Ayuda y Enlaces</span><span class="lang zh">帮助与链接</span></a></li>
+                        <!-- Menüpunkte wie gehabt, aber ggf. Icons hinzufügen -->
+                         <li><a href="#willkommen"><i class="fas fa-home"></i> <span class="lang de">Willkommen</span><span class="lang en">Welcome</span>...</a></li>
+                         <li><a href="#studium"><i class="fas fa-graduation-cap"></i> <span class="lang de">Studium</span><span class="lang en">Studies</span>...</a></li>
+                         <li><a href="#leben"><i class="fas fa-city"></i> <span class="lang de">Leben</span><span class="lang en">Living</span>...</a></li>
+                         <li><a href="#freizeit"><i class="fas fa-users"></i> <span class="lang de">Freizeit</span><span class="lang en">Leisure</span>...</a></li>
+                         <li><a href="#hilfe"><i class="fas fa-info-circle"></i> <span class="lang de">Hilfe</span><span class="lang en">Help</span>...</a></li>
                     </ul>
                 </nav>
             </div>
@@ -48,162 +50,191 @@
     </header>
 
     <main>
-        <!-- ===== HERO SECTION ("Auf die Kacke hauen") ===== -->
+        <!-- ===== HERO SECTION (Aufgepeppt) ===== -->
         <section id="hero" class="hero-section">
-            <div class="container hero-content">
-                 <!-- Beispiel: Einfacher Text -->
-                 <h1 class="lang de">Dein Abenteuer Amberg <span class="highlight">beginnt HIER!</span></h1>
-                 <h1 class="lang en">Your Amberg Adventure <span class="highlight">Starts HERE!</span></h1>
-                 <h1 class="lang hi">आपका एम्बर्ग साहसिक कार्य <span class="highlight">यहाँ शुरू होता है!</span></h1>
-                 <h1 class="lang ar">مغامرتك في آمبرغ <span class="highlight">تبدأ هنا!</span></h1>
-                 <h1 class="lang es">¡Tu aventura en Amberg <span class="highlight">comienza AQUÍ!</span></h1>
-                 <h1 class="lang zh">您的安贝格冒险之旅<span class="highlight">从这里开始！</span></h1>
+             <!-- Optional: Pseudo-Element für Parallax oder komplexere Hintergründe -->
+            <div class="hero-overlay"></div>
+            <div class="container hero-content animate-on-scroll fade-in"> <!-- Animation für Inhalt -->
+                 <h1 class="lang de">Dein <span class="highlight">Abenteuer</span> Amberg <br>beginnt HIER!</h1>
+                 <h1 class="lang en">Your Amberg <span class="highlight">Adventure</span> <br>Starts HERE!</h1>
+                 <!-- ... andere Sprachen ... -->
 
-                 <p class="lang de">Der Quick Start Guide für deinen perfekten Start an der OTH Amberg-Weiden.</p>
-                 <p class="lang en">The Quick Start Guide for your perfect start at OTH Amberg-Weiden.</p>
-                 <p class="lang hi">OTH एम्बर्ग-वेडेन में आपकी आदर्श शुरुआत के लिए त्वरित प्रारंभ मार्गदर्शिका।</p>
-                 <p class="lang ar">دليل البدء السريع لبدايتك المثالية في OTH آمبرغ-فايدن.</p>
-                 <p class="lang es">La guía de inicio rápido para tu comienzo perfecto en OTH Amberg-Weiden.</p>
-                 <p class="lang zh">助您在安贝格-魏登应用技术大学完美起步的快速入门指南。</p>
-                 <!-- Hier könntest du ein Hintergrundvideo oder eine dynamische Grafik einfügen -->
+                 <p class="subtitle lang de">Der Quick Start Guide für deinen perfekten Start an der OTH Amberg-Weiden.</p>
+                 <p class="subtitle lang en">The Quick Start Guide for your perfect start at OTH Amberg-Weiden.</p>
+                 <!-- ... andere Sprachen ... -->
+
+                 <a href="#willkommen" class="cta-button lang de">Los geht's!</a>
+                 <a href="#willkommen" class="cta-button lang en">Let's Go!</a>
+                 <!-- ... andere Sprachen ... -->
             </div>
         </section>
 
         <!-- ===== WILLKOMMEN SECTION ===== -->
         <section id="willkommen" class="content-section">
+             <div class="section-divider top-divider"></div> <!-- Optionaler Divider -->
             <div class="container">
-                <h2 class="lang de">Willkommen an der Hochschule</h2>
-                <h2 class="lang en">Welcome to the University</h2>
-                <h2 class="lang hi">विश्वविद्यालय में आपका स्वागत है</h2>
-                <h2 class="lang ar">مرحبا بكم في الجامعة</h2>
-                <h2 class="lang es">Bienvenido a la Universidad</h2>
-                <h2 class="lang zh">欢迎来到大学</h2>
-
-                <p class="lang de">[Inhalt Deutsch: Vorstellung OTH & Amberg, Grußwort...]</p>
-                <p class="lang en">[Content English: Introduction OTH & Amberg, Welcome message...]</p>
-                <p class="lang hi">[सामग्री हिन्दी: ...] </p>
-                <p class="lang ar">[المحتوى العربي: ...] </p>
-                <p class="lang es">[Contenido Español: ...] </p>
-                <p class="lang zh">[内容 中文: ...] </p>
+                 <!-- Klasse für Scroll-Animation zur Section hinzufügen -->
+                <div class="section-content animate-on-scroll slide-up">
+                    <h2 class="lang de">Willkommen an der Hochschule</h2>
+                    <h2 class="lang en">Welcome to the University</h2>
+                    <!-- ... andere Sprachen ... -->
+                    <p class="lang de">[Inhalt Deutsch...]</p>
+                    <p class="lang en">[Content English...]</p>
+                    <!-- ... andere Sprachen ... -->
+                     <!-- Beispiel: Bild einfügen -->
+                     <img src="placeholder-campus.jpg" alt="OTH Amberg Campus" class="section-image animate-on-scroll fade-in">
+                </div>
             </div>
+             <div class="section-divider bottom-divider"></div> <!-- Optionaler Divider -->
         </section>
 
         <!-- ===== STUDIUM SECTION ===== -->
         <section id="studium" class="content-section alternate-bg">
-             <div class="container">
-                <h2 class="lang de">Studium & Organisation</h2>
-                <h2 class="lang en">Studies & Organization</h2>
-                <h2 class="lang hi">अध्ययन और संगठन</h2>
-                <h2 class="lang ar">الدراسة والتنظيم</h2>
-                <h2 class="lang es">Estudios y Organización</h2>
-                <h2 class="lang zh">学习与组织</h2>
+            <div class="container">
+                <div class="section-content animate-on-scroll slide-up">
+                    <h2 class="lang de">Studium & Organisation</h2>
+                    <h2 class="lang en">Studies & Organization</h2>
+                    <!-- ... andere Sprachen ... -->
 
-                <h3 class="lang de">Vor der Ankunft</h3>
-                <h3 class="lang en">Before Arrival</h3>
-                <h3 class="lang hi">आगमन से पहले</h3>
-                <h3 class="lang ar">قبل الوصول</h3>
-                <h3 class="lang es">Antes de la llegada</h3>
-                <h3 class="lang zh">抵达前</h3>
-                <p class="lang de">[Inhalt Deutsch: Visum, Finanzierung, Versicherung, Wohnung, Sprache...]</p>
-                <p class="lang en">[Content English: Visa, Finances, Insurance, Accommodation, Language...]</p>
-                <p class="lang hi">[सामग्री हिन्दी: वीजा, वित्त, बीमा, आवास, भाषा...]</p>
-                <p class="lang ar">[المحتوى العربي: التأشيرة، التمويل، التأمين، السكن، اللغة...]</p>
-                <p class="lang es">[Contenido Español: Visa, Finanzas, Seguro, Alojamiento, Idioma...]</p>
-                <p class="lang zh">[内容 中文: 签证、资金、保险、住宿、语言...]</p>
+                    <div class="subsection animate-on-scroll fade-in"> <!-- Animation pro Untersektion -->
+                        <h3 class="lang de"><i class="fas fa-plane-departure"></i> Vor der Ankunft</h3>
+                        <h3 class="lang en"><i class="fas fa-plane-departure"></i> Before Arrival</h3>
+                        <!-- ... andere Sprachen ... -->
+                        <p class="lang de">[Inhalt...]</p>
+                        <p class="lang en">[Content...]</p>
+                    </div>
 
-                <h3 class="lang de">Ankunft & Erste Schritte</h3>
-                <h3 class="lang en">Arrival & First Steps</h3>
-                <h3 class="lang hi">आगमन और पहले कदम</h3>
-                <h3 class="lang ar">الوصول والخطوات الأولى</h3>
-                <h3 class="lang es">Llegada y Primeros Pasos</h3>
-                <h3 class="lang zh">抵达与初步安排</h3>
-                <p class="lang de">[Inhalt Deutsch: Anreise, Einschreibung, Anmeldung Stadt, Bank...]</p>
-                <p class="lang en">[Content English: Getting here, Enrollment, City Registration, Bank...]</p>
-                 <p class="lang hi">[सामग्री हिन्दी: यहाँ पहुँचना, नामांकन, शहर पंजीकरण, बैंक...]</p>
-                <p class="lang ar">[المحتوى العربي: الوصول إلى هنا، التسجيل، تسجيل المدينة، البنك...]</p>
-                <p class="lang es">[Contenido Español: Cómo llegar, Matrícula, Registro municipal, Banco...]</p>
-                <p class="lang zh">[内容 中文: 到达方式、注册、市政登记、银行...]</p>
+                    <div class="subsection animate-on-scroll fade-in">
+                         <h3 class="lang de"><i class="fas fa-map-marker-alt"></i> Ankunft & Erste Schritte</h3>
+                         <h3 class="lang en"><i class="fas fa-map-marker-alt"></i> Arrival & First Steps</h3>
+                         <!-- ... andere Sprachen ... -->
+                         <p class="lang de">[Inhalt...]</p>
+                         <p class="lang en">[Content...]</p>
+                    </div>
 
-                 <h3 class="lang de">Dein Studium</h3>
-                 <h3 class="lang en">Your Studies</h3>
-                 <h3 class="lang hi">आपकी पढ़ाई</h3>
-                 <h3 class="lang ar">دراستك</h3>
-                 <h3 class="lang es">Tus Estudios</h3>
-                 <h3 class="lang zh">您的学业</h3>
-                 <p class="lang de">[Inhalt Deutsch: Stundenplan, Prüfungen, Bibliothek, Ansprechpartner...]</p>
-                 <p class="lang en">[Content English: Schedule, Exams, Library, Contacts...]</p>
-                 <p class="lang hi">[सामग्री हिन्दी: अनुसूची, परीक्षा, पुस्तकालय, संपर्क...]</p>
-                 <p class="lang ar">[المحتوى العربي: الجدول الزمني، الامتحانات، المكتبة، جهات الاتصال...]</p>
-                 <p class="lang es">[Contenido Español: Horario, Exámenes, Biblioteca, Contactos...]</p>
-                 <p class="lang zh">[内容 中文: 时间表、考试、图书馆、联系人...]</p>
-             </div>
+                     <div class="subsection animate-on-scroll fade-in">
+                         <h3 class="lang de"><i class="fas fa-book-open"></i> Dein Studium</h3>
+                         <h3 class="lang en"><i class="fas fa-book-open"></i> Your Studies</h3>
+                         <!-- ... andere Sprachen ... -->
+                         <p class="lang de">[Inhalt...]</p>
+                         <p class="lang en">[Content...]</p>
+                     </div>
+                </div>
+            </div>
         </section>
 
         <!-- ===== LEBEN SECTION ===== -->
         <section id="leben" class="content-section">
+             <div class="section-divider top-divider"></div>
             <div class="container">
-                <h2 class="lang de">Leben in Amberg</h2>
-                <h2 class="lang en">Living in Amberg</h2>
-                <h2 class="lang hi">अम्बर्ग में जीवन</h2>
-                <h2 class="lang ar">الحياة في آمبرغ</h2>
-                <h2 class="lang es">Vivir en Amberg</h2>
-                <h2 class="lang zh">在安贝格生活</h2>
-
-                <p class="lang de">[Inhalt Deutsch: Wohnen, Verkehr, Einkaufen, Kultur, Gesundheit...]</p>
-                <p class="lang en">[Content English: Housing, Transport, Shopping, Culture, Health...]</p>
-                <p class="lang hi">[सामग्री हिन्दी: आवास, परिवहन, खरीदारी, संस्कृति, स्वास्थ्य...]</p>
-                <p class="lang ar">[المحتوى العربي: السكن، النقل، التسوق، الثقافة، الصحة...]</p>
-                <p class="lang es">[Contenido Español: Vivienda, Transporte, Compras, Cultura, Salud...]</p>
-                <p class="lang zh">[内容 中文: 住房、交通、购物、文化、健康...]</p>
+                <div class="section-content animate-on-scroll slide-up">
+                    <h2 class="lang de">Leben in Amberg</h2>
+                    <h2 class="lang en">Living in Amberg</h2>
+                    <!-- ... andere Sprachen ... -->
+                    <p class="lang de">[Inhalt...] <i class="fas fa-home"></i> <i class="fas fa-bus"></i> <i class="fas fa-shopping-cart"></i></p>
+                    <p class="lang en">[Content...] <i class="fas fa-home"></i> <i class="fas fa-bus"></i> <i class="fas fa-shopping-cart"></i></p>
+                    <!-- Bild oder kleine Galerie einbauen -->
+                    <img src="placeholder-amberg-stadt.jpg" alt="Amberg Stadtansicht" class="section-image animate-on-scroll fade-in">
+                </div>
             </div>
+             <div class="section-divider bottom-divider"></div>
         </section>
 
         <!-- ===== FREIZEIT SECTION ===== -->
          <section id="freizeit" class="content-section alternate-bg">
             <div class="container">
-                <h2 class="lang de">Freizeit & Kontakte</h2>
-                <h2 class="lang en">Leisure & Networking</h2>
-                <h2 class="lang hi">अवकाश और संपर्क</h2>
-                <h2 class="lang ar">الترفيه والتواصل</h2>
-                <h2 class="lang es">Ocio y Contactos</h2>
-                <h2 class="lang zh">休闲与社交</h2>
-
-                <p class="lang de">[Inhalt Deutsch: Sport, Clubs, Events, Ausflüge, Treffpunkte...]</p>
-                <p class="lang en">[Content English: Sports, Clubs, Events, Trips, Meeting points...]</p>
-                <p class="lang hi">[सामग्री हिन्दी: खेल, क्लब, कार्यक्रम, यात्राएं, बैठक स्थल...]</p>
-                <p class="lang ar">[المحتوى العربي: الرياضة، النوادي، الفعاليات، الرحلات، نقاط الالتقاء...]</p>
-                <p class="lang es">[Contenido Español: Deportes, Clubes, Eventos, Excursiones, Puntos de encuentro...]</p>
-                <p class="lang zh">[内容 中文: 体育、俱乐部、活动、旅行、聚会点...]</p>
+                <div class="section-content animate-on-scroll slide-up">
+                    <h2 class="lang de">Freizeit & Kontakte</h2>
+                    <h2 class="lang en">Leisure & Networking</h2>
+                    <!-- ... andere Sprachen ... -->
+                    <p class="lang de">[Inhalt...] <i class="fas fa-futbol"></i> <i class="fas fa-glass-cheers"></i> <i class="fas fa-hiking"></i></p>
+                    <p class="lang en">[Content...] <i class="fas fa-futbol"></i> <i class="fas fa-glass-cheers"></i> <i class="fas fa-hiking"></i></p>
+                </div>
             </div>
         </section>
 
-        <!-- ===== HILFE SECTION ===== -->
+        <!-- ===== HILFE SECTION (mit Karten & FAQ Accordion) ===== -->
         <section id="hilfe" class="content-section">
+            <div class="section-divider top-divider"></div>
             <div class="container">
-                <h2 class="lang de">Hilfe & Links</h2>
-                <h2 class="lang en">Help & Links</h2>
-                <h2 class="lang hi">सहायता और लिंक</h2>
-                <h2 class="lang ar">المساعدة والروابط</h2>
-                <h2 class="lang es">Ayuda y Enlaces</h2>
-                <h2 class="lang zh">帮助与链接</h2>
+                <div class="section-content animate-on-scroll slide-up">
+                    <h2 class="lang de">Hilfe & Links</h2>
+                    <h2 class="lang en">Help & Links</h2>
+                    <!-- ... andere Sprachen ... -->
 
-                <p class="lang de">[Inhalt Deutsch: Kontakte, Links, FAQs, Downloads...]</p>
-                <p class="lang en">[Content English: Contacts, Links, FAQs, Downloads...]</p>
-                <p class="lang hi">[सामग्री हिन्दी: संपर्क, लिंक, अक्सर पूछे जाने वाले प्रश्न, डाउनलोड...]</p>
-                <p class="lang ar">[المحتوى العربي: جهات الاتصال، الروابط، الأسئلة الشائعة، التنزيلات...]</p>
-                <p class="lang es">[Contenido Español: Contactos, Enlaces, Preguntas frecuentes, Descargas...]</p>
-                <p class="lang zh">[内容 中文: 联系方式、链接、常见问题解答、下载...]</p>
+                    <h3 class="lang de">Nützliche Links</h3>
+                    <h3 class="lang en">Useful Links</h3>
+                    <!-- ... andere Sprachen ... -->
+                    <div class="cards-container">
+                        <!-- Karte 1 -->
+                        <div class="card animate-on-scroll fade-in">
+                             <i class="fas fa-university card-icon"></i>
+                            <h4 class="lang de">OTH Webseite</h4>
+                            <h4 class="lang en">OTH Website</h4>
+                             <!-- ... andere Sprachen ... -->
+                            <p class="lang de">Offizielle Seite der Hochschule.</p>
+                            <p class="lang en">Official university website.</p>
+                             <!-- ... andere Sprachen ... -->
+                            <a href="#" class="card-link lang de">Besuchen</a>
+                            <a href="#" class="card-link lang en">Visit</a>
+                             <!-- ... andere Sprachen ... -->
+                        </div>
+                        <!-- Karte 2 -->
+                        <div class="card animate-on-scroll fade-in" style="animation-delay: 0.1s;"> <!-- Leichte Verzögerung -->
+                             <i class="fas fa-map-signs card-icon"></i>
+                            <h4 class="lang de">Stadt Amberg</h4>
+                            <h4 class="lang en">City of Amberg</h4>
+                            <!-- ... andere Sprachen ... -->
+                             <p class="lang de">Infos der Stadtverwaltung.</p>
+                            <p class="lang en">Info from the city council.</p>
+                             <!-- ... andere Sprachen ... -->
+                            <a href="#" class="card-link lang de">Besuchen</a>
+                            <a href="#" class="card-link lang en">Visit</a>
+                            <!-- ... andere Sprachen ... -->
+                        </div>
+                         <!-- Weitere Karten hier (International Office, Mensa, Bahn...) -->
+                    </div>
+
+                     <h3 class="lang de">Häufig gestellte Fragen (FAQ)</h3>
+                     <h3 class="lang en">Frequently Asked Questions (FAQ)</h3>
+                     <!-- ... andere Sprachen ... -->
+                     <div class="faq-container animate-on-scroll fade-in">
+                         <details class="faq-item">
+                             <summary>
+                                 <span class="lang de">Wie finde ich eine Wohnung?</span>
+                                 <span class="lang en">How do I find accommodation?</span>
+                                 <!-- ... andere Sprachen ... -->
+                             </summary>
+                             <p class="lang de">[Antwort Deutsch...]</p>
+                             <p class="lang en">[Answer English...]</p>
+                             <!-- ... andere Sprachen ... -->
+                         </details>
+                         <details class="faq-item">
+                             <summary>
+                                <span class="lang de">Brauche ich eine deutsche Krankenversicherung?</span>
+                                <span class="lang en">Do I need German health insurance?</span>
+                                <!-- ... andere Sprachen ... -->
+                             </summary>
+                            <p class="lang de">[Antwort Deutsch...]</p>
+                            <p class="lang en">[Answer English...]</p>
+                             <!-- ... andere Sprachen ... -->
+                         </details>
+                         <!-- Weitere FAQs -->
+                     </div>
+                </div>
             </div>
+            <!-- Kein unterer Divider hier, da es die letzte Sektion vor dem Footer ist -->
         </section>
 
     </main>
 
     <footer class="site-footer">
+       <!-- Footer wie gehabt -->
         <div class="container">
             <p>© <span id="current-year"></span> OTH Amberg-Weiden - International Office</p>
             <p>
-                <a href="#"><span class="lang de">Impressum</span><span class="lang en">Imprint</span><span class="lang hi">छाप</span><span class="lang ar">بيان قانوني</span><span class="lang es">Aviso legal</span><span class="lang zh">版本说明</span></a> |
-                <a href="#"><span class="lang de">Datenschutz</span><span class="lang en">Privacy Policy</span><span class="lang hi">गोपनीयता नीति</span><span class="lang ar">سياسة الخصوصية</span><span class="lang es">Política de privacidad</span><span class="lang zh">隐私政策</span></a>
+                <a href="#"><span class="lang de">Impressum</span><span class="lang en">Imprint</span>...</a> |
+                <a href="#"><span class="lang de">Datenschutz</span><span class="lang en">Privacy Policy</span>...</a>
             </p>
         </div>
     </footer>

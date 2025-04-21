@@ -1,322 +1,219 @@
-/* --- Variables --- */
+/* --- Global Styles & Variables --- */
 :root {
-    --primary-color: #FFFFFF; /* White */
-    --accent-color: #F56600; /* Strong Orange */
-    --text-color: #333333; /* Dark Gray */
-    --light-gray: #F8F9FA; /* Subtle Gray */
-    --border-color: #dee2e6;
-    --header-height: 70px;
-    --font-primary: 'Arial', sans-serif; /* Choose a nice font */
+    --primary-color: #ff8c00; /* Dark Orange */
+    --secondary-color: #ffffff; /* White */
+    --text-color: #333333; /* Dark Grey */
+    --light-grey: #f4f4f4;
+    --font-stack: 'Poppins', sans-serif;
+    --animation-duration: 0.8s;
 }
 
-/* --- Reset & Base --- */
-* {
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth; /* Smooth scrolling for anchor links */
-    font-size: 16px; /* Base font size */
+    scroll-behavior: smooth;
 }
 
 body {
-    font-family: var(--font-primary);
-    color: var(--text-color);
-    background-color: var(--primary-color);
+    font-family: var(--font-stack);
     line-height: 1.6;
-    overflow-x: hidden; /* Prevent horizontal scroll caused by animations */
-}
-
-h1, h2, h3, h4, h5, h6 {
     color: var(--text-color);
-    margin-bottom: 1rem;
-    line-height: 1.2;
+    background-color: var(--secondary-color);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    transition: background-color 0.3s ease; /* Smooth background transition */
 }
 
-h1 { font-size: 3rem; }
-h2 { font-size: 2.2rem; }
-h3 { font-size: 1.5rem; }
+/* --- Utility --- */
+.sr-only { /* Screen reader only class */
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+/* --- Language Switcher --- */
+.language-switcher-container {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+}
+
+#languageSelector {
+    padding: 8px 12px;
+    border: 1px solid var(--primary-color);
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    font-family: var(--font-stack);
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none; /* Remove default dropdown arrow */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff8c00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Simple dropdown arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    padding-right: 35px; /* Make space for arrow */
+}
+
+#languageSelector:hover,
+#languageSelector:focus {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    outline: none;
+     background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>'); /* Arrow white on hover */
+}
+
+/* --- Main Content --- */
+.content-wrapper {
+    flex-grow: 1; /* Ensures footer is pushed down */
+    max-width: 900px;
+    margin: 60px auto 40px auto; /* Top margin accounts for language switcher */
+    padding: 30px;
+    text-align: center;
+}
+
+/* --- Sections --- */
+.hero, .info-section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    opacity: 0; /* Start hidden for animation */
+    transform: translateY(30px); /* Start slightly lower for animation */
+    animation: fadeInUp var(--animation-duration) ease-out forwards;
+}
+
+/* Stagger animation delays */
+.hero {
+    animation-delay: 0.2s;
+}
+
+.info-section {
+    background-color: var(--light-grey);
+    border-radius: 8px;
+    animation-delay: 0.5s;
+}
+
+/* --- Text Elements --- */
+h1, h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
 
 p {
-    margin-bottom: 1rem;
-}
-
-a {
-    color: var(--accent-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-a:hover {
-    color: darken(var(--accent-color), 10%);
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-}
-
-/* --- Layout --- */
-.container {
-    max-width: 1140px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section {
-    padding: 80px 0;
-}
-
-.full-height {
-    min-height: calc(100vh - var(--header-height)); /* Adjust if header isn't fixed or has different height */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.bg-light {
-    background-color: var(--light-gray);
-}
-
-/* --- Header --- */
-#header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: var(--header-height);
-    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent initially */
-    z-index: 1000;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
-    border-bottom: 1px solid transparent; /* Start transparent */
-}
-
-#header.scrolled {
-    background-color: var(--primary-color);
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    border-bottom: 1px solid var(--border-color);
-}
-
-#header nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-}
-
-.logo {
-    font-size: 1.8rem;
-    font-weight: bold;
-    color: var(--accent-color); /* Orange Logo Text */
-}
-
-#header nav ul {
-    list-style: none;
-    display: flex;
-}
-
-#header nav ul li {
-    margin-left: 25px;
-}
-
-#header nav ul li a {
-    color: var(--text-color);
-    font-weight: 500;
-    padding: 5px 0;
-    position: relative;
-}
-
-#header nav ul li a:hover,
-#header nav ul li a.active { /* Add .active class via JS if needed */
-    color: var(--accent-color);
-}
-
-#header nav ul li a::after { /* Underline effect */
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: var(--accent-color);
-    transition: width 0.3s ease;
-}
-
-#header nav ul li a:hover::after {
-    width: 100%;
-}
-
-.language-selector select {
-    padding: 5px 8px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    background-color: var(--primary-color);
-    color: var(--text-color);
-    cursor: pointer;
-}
-
-.language-selector select:focus {
-    outline: none;
-    border-color: var(--accent-color);
-}
-
-/* Screen reader only utility */
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border-width: 0;
-}
-
-/* --- Hero Section --- */
-.hero {
-    background-color: var(--primary-color); /* White background */
-    text-align: center;
-    padding-top: var(--header-height); /* Ensure content below fixed header */
-}
-
-.hero h1 {
-    color: var(--text-color);
-    margin-bottom: 0.5rem;
-}
-
-.hero p {
-    font-size: 1.2rem;
-    margin-bottom: 2rem;
-    color: #555; /* Slightly lighter text */
-}
-
-/* --- Buttons --- */
-.btn {
-    display: inline-block;
-    padding: 12px 25px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    font-weight: 500;
-    text-align: center;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.2s ease;
-}
-
-.btn-primary {
-    background-color: var(--accent-color);
-    color: var(--primary-color); /* White text on orange */
-    border: 1px solid var(--accent-color);
-}
-
-.btn-primary:hover {
-    background-color: darken(var(--accent-color), 10%);
-    border-color: darken(var(--accent-color), 10%);
-    color: var(--primary-color);
-    transform: translateY(-2px); /* Slight lift */
-}
-
-/* --- Services Section --- */
-.service-cards {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-    margin-top: 40px;
-}
-
-.card {
-    background-color: var(--primary-color);
-    padding: 30px;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
-    text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
-}
-
-.card h3 {
-    color: var(--accent-color); /* Orange service titles */
-    margin-bottom: 15px;
-}
-
-/* --- Contact Section --- */
-.contact-form {
-    max-width: 600px;
-    margin: 40px auto 0;
-    background: var(--primary-color); /* Form on white */
-}
-
-.form-group {
     margin-bottom: 20px;
+    font-weight: 300;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-.form-group label {
-    display: block;
-    margin-bottom: 8px;
-    font-weight: 500;
+/* --- Call to Action Button --- */
+.cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 12px 25px;
+    text-decoration: none;
+    border-radius: 25px; /* Pill shape */
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 10px;
 }
 
-.form-group input,
-.form-group textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid var(--border-color);
-    border-radius: 4px;
-    font-size: 1rem;
-    font-family: inherit;
-}
-
-.form-group input:focus,
-.form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-color);
-    box-shadow: 0 0 0 2px rgba(245, 102, 0, 0.2); /* Subtle orange focus glow */
-}
-
-.form-group textarea {
-    resize: vertical; /* Allow vertical resize */
+.cta-button:hover {
+    background-color: #e07b00; /* Darker orange on hover */
+    transform: translateY(-3px); /* Slight lift effect */
 }
 
 /* --- Footer --- */
 .footer {
-    background-color: var(--text-color); /* Dark footer */
-    color: #ccc; /* Light text */
-    padding: 30px 0;
+    background-color: var(--text-color);
+    color: var(--light-grey);
     text-align: center;
-    margin-top: 60px; /* Space above footer */
+    padding: 15px 0;
+    font-size: 0.9em;
+    opacity: 0;
+    animation: fadeInUp 0.8s 1s ease-out forwards; /* Delay footer animation */
 }
 
-.footer p {
-    margin: 0;
-    font-size: 0.9rem;
+/* --- Animation --- */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 
-.footer a {
-    color: #fff; /* White links in footer */
-}
-.footer a:hover {
-    color: var(--accent-color); /* Orange hover */
+/* --- RTL (Right-to-Left) Styling for Arabic --- */
+html[dir="rtl"] {
+    /* Adjust text alignment globally if needed, but often handled by browser */
+    text-align: right;
 }
 
-/* --- Responsiveness --- */
+html[dir="rtl"] .language-switcher-container {
+    right: auto;
+    left: 20px; /* Position switcher to the left */
+}
+
+html[dir="rtl"] #languageSelector {
+    background-position: left 10px center; /* Move arrow to left */
+    padding-left: 35px;
+    padding-right: 12px;
+}
+
+html[dir="rtl"] .content-wrapper,
+html[dir="rtl"] .footer {
+    text-align: right; /* Ensure content sections align right */
+}
+
+html[dir="rtl"] p {
+    margin-left: auto; /* Ensure paragraph margins are correct */
+    margin-right: auto; /* Keeps paragraph centered if max-width is hit */
+}
+
+
+/* --- Responsive Design (Optional simple example) --- */
 @media (max-width: 768px) {
-    html { font-size: 15px; } /* Slightly smaller base font */
-
-    #header nav ul { display: none; } /* Hide nav links for simplicity - needs JS for burger menu */
-    #header nav { justify-content: space-between; } /* Space logo and selector */
-
-    .hero h1 { font-size: 2.5rem; }
-    .hero p { font-size: 1.1rem; }
-
-    .section { padding: 60px 0; }
-    .full-height { min-height: auto; padding: 100px 0 60px 0; } /* Adjust hero height */
-
-    .service-cards { grid-template-columns: 1fr; } /* Stack cards */
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.7rem;
+    }
+    .content-wrapper {
+        margin-top: 80px; /* More space for switcher */
+        padding: 20px;
+    }
+     .language-switcher-container {
+        top: 15px;
+        right: 15px;
+    }
+    html[dir="rtl"] .language-switcher-container {
+       right: auto;
+       left: 15px;
+    }
 }

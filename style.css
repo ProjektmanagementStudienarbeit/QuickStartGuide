@@ -1,263 +1,120 @@
-/* --- Global Styles & Variables --- */
-:root {
-    --primary-color: #ff8c00; /* Dark Orange */
-    --secondary-color: #ffffff; /* White */
-    --text-color: #333333; /* Dark Grey */
-    --light-grey: #f8f8f8;
-    --shadow-color: rgba(0, 0, 0, 0.1);
-    /* Added Arial as a very common fallback */
-    --font-stack: 'Poppins', sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", Arial;
-    --animation-duration: 0.8s;
-}
+/* --- START OF FILE style.css --- */
 
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
+/* ... (keep existing styles above) ... */
 
-html {
-    scroll-behavior: smooth;
-    font-size: 100%;
-    /* Added for potential smooth scroll issues in Safari */
-    -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-body {
-    font-family: var(--font-stack);
-    line-height: 1.7;
-    color: var(--text-color);
-    background-color: var(--secondary-color);
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    transition: background-color 0.3s ease;
-    /* Added explicit transition property */
-    -webkit-transition: background-color 0.3s ease;
-}
-
-/* --- Utility --- */
-.sr-only {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border-width: 0;
-}
-
-/* --- Language Switcher --- */
-.language-switcher-container {
-    position: absolute;
-    top: 25px;
-    right: 25px;
-    z-index: 10;
-}
-
-#languageSelector {
-    padding: 10px 15px;
-    border: 1px solid var(--primary-color);
-    border-radius: 8px;
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-    font-family: var(--font-stack);
-    font-weight: 600;
-    font-size: 0.9rem;
-    cursor: pointer;
-    appearance: none;
-    -webkit-appearance: none; /* Crucial for Safari/iOS */
-    -moz-appearance: none;
-    background-image: url('data:image/svg+xml;utf8,<svg fill="%23ff8c00" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-    background-repeat: no-repeat;
-    background-position: right 12px center;
-    padding-right: 40px;
-    box-shadow: 0 2px 5px var(--shadow-color);
-    transition: all 0.3s ease;
-    -webkit-transition: all 0.3s ease; /* Added prefix */
-}
-
-#languageSelector:hover,
-#languageSelector:focus {
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    outline: 2px solid var(--primary-color);
-    outline-offset: 2px;
-     background-image: url('data:image/svg+xml;utf8,<svg fill="%23ffffff" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg"><path d="M7 10l5 5 5-5z"/><path d="M0 0h24v24H0z" fill="none"/></svg>');
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
-}
-
-/* --- Main Content --- */
-.content-wrapper {
-    flex-grow: 1;
-    max-width: 960px;
-    margin: 80px auto 40px auto;
-    padding: 40px;
-    text-align: center;
-}
-
-/* --- Sections --- */
-.hero, .info-section {
-    padding: 50px 30px;
+/* --- Quick Start Grid --- */
+.quickstart-grid-container {
+    margin-top: 50px; /* Space above the grid section */
     margin-bottom: 40px;
+    padding: 0 15px; /* Add some horizontal padding */
 }
 
-.info-section {
-    background-color: var(--light-grey);
-    border-radius: 12px;
-    box-shadow: 0 5px 15px var(--shadow-color);
+.quickstart-grid-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
 }
 
-/* --- Text Elements --- */
-h1, h2 {
+.quickstart-grid {
+    display: grid;
+    /* Creates responsive columns: fit as many as possible with min width 200px */
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px; /* Space between boxes */
+}
+
+.quickstart-box {
+    display: flex; /* Use flexbox for centering content */
+    flex-direction: column;
+    justify-content: center; /* Vertical centering */
+    align-items: center; /* Horizontal centering */
+    min-height: 160px; /* Give boxes a minimum height */
+    padding: 20px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+    background-color: var(--secondary-color);
     color: var(--primary-color);
-    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
     font-weight: 600;
+    box-shadow: 0 3px 8px var(--shadow-color);
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
 }
 
-h1 {
-    /* Fallback for older Safari that doesn't support clamp() */
-    font-size: 2.2rem;
-    /* Modern browsers */
-    font-size: clamp(2rem, 5vw, 2.8rem);
-}
-
-h2 {
-     /* Fallback for older Safari */
-     font-size: 1.9rem;
-     /* Modern browsers */
-     font-size: clamp(1.8rem, 4vw, 2.2rem);
-}
-
-p {
-    margin-bottom: 25px;
-    font-weight: 300;
-    max-width: 650px;
-    margin-left: auto;
-    margin-right: auto;
-    font-size: 1.05rem;
-}
-
-/* --- Call to Action Button --- */
-.cta-button {
-    display: inline-block;
+.quickstart-box:hover {
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 14px 30px;
-    text-decoration: none;
-    border-radius: 30px;
-    font-weight: 600;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease, box-shadow 0.3s ease; /* Added prefix for transform */
-    margin-top: 15px;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-    transform: translateY(0); /* Base state for transform */
-    -webkit-transform: translateY(0); /* Base state for transform */
+    transform: translateY(-5px) scale(1.02);
+    -webkit-transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
-.cta-button:hover {
-    background-color: #e07b00;
-    transform: translateY(-4px);
-    -webkit-transform: translateY(-4px); /* Added prefix */
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-/* --- Footer --- */
-.footer {
-    background-color: var(--text-color);
-    color: var(--light-grey);
-    text-align: center;
-    padding: 20px 0;
-    font-size: 0.9rem;
-    margin-top: auto;
+.quickstart-box h3 {
+    margin: 0; /* Remove default margin */
+    font-size: 1.15rem;
+     /* Allow text wrapping */
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
 /* --- Animation --- */
-.animate-on-load {
-    opacity: 0;
-    transform: translateY(20px);
-    -webkit-transform: translateY(20px); /* Added prefix */
-    animation: fadeInUp var(--animation-duration) ease-out forwards;
-    -webkit-animation: fadeInUp var(--animation-duration) ease-out forwards; /* Added prefix */
-}
-
-/* Stagger animation delays */
+/* ... (keep existing animation styles) ... */
+/* Stagger animation delays - add new section */
 .hero.animate-on-load { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
 .info-section.animate-on-load { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; }
-.footer.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+/* Add delay for the new grid */
+.quickstart-grid-container.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+.footer.animate-on-load { animation-delay: 0.8s; -webkit-animation-delay: 0.8s; } /* Adjust footer delay */
 
 
-/* Standard Keyframes */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
+/* ... (keep existing fadeInUp keyframes) ... */
 
-/* Webkit Keyframes (often needed) */
-@-webkit-keyframes fadeInUp {
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
 
 /* --- RTL Styling --- */
-html[dir="rtl"] {
+/* ... (keep existing RTL styles) ... */
+
+/* Ensure box text aligns right in RTL */
+html[dir="rtl"] .quickstart-box {
+    text-align: right;
+}
+html[dir="rtl"] .quickstart-grid-container h2 {
     text-align: right;
 }
 
-html[dir="rtl"] .language-switcher-container {
-    right: auto;
-    left: 25px;
-}
-
-html[dir="rtl"] #languageSelector {
-    background-position: left 12px center;
-    padding-left: 40px;
-    padding-right: 15px;
-}
-
-html[dir="rtl"] .content-wrapper {
-     text-align: right;
-}
-
-html[dir="rtl"] p {
-    margin-left: auto;
-    margin-right: auto;
-}
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {
-    .content-wrapper {
-        margin-top: 100px;
-        padding: 30px 20px;
+    /* ... (keep existing 768px styles) ... */
+
+    .quickstart-grid {
+        /* Maybe 2 columns on tablet */
+        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        gap: 20px;
     }
-    .language-switcher-container {
-        top: 15px;
-        right: 15px;
+    .quickstart-box {
+        min-height: 140px;
+        padding: 15px;
     }
-    html[dir="rtl"] .language-switcher-container {
-       right: auto;
-       left: 15px;
+     .quickstart-box h3 {
+        font-size: 1.05rem;
     }
-    p {
-        font-size: 1rem;
-    }
-     h1 { font-size: 2rem; } /* Adjust fallback */
-     h2 { font-size: 1.7rem; } /* Adjust fallback */
 }
 
 @media (max-width: 480px) {
-     h1 { font-size: 1.8rem; } /* Adjust fallback */
-     h2 { font-size: 1.5rem; } /* Adjust fallback */
-    .cta-button { padding: 12px 25px; }
-    #languageSelector { padding: 8px 10px; padding-right: 35px; font-size: 0.8rem;}
-    html[dir="rtl"] #languageSelector { padding-left: 35px; padding-right: 10px;}
+     /* ... (keep existing 480px styles) ... */
+
+    .quickstart-grid {
+         /* Stack to 1 column on small mobile */
+         grid-template-columns: 1fr;
+         gap: 15px;
+     }
+     .quickstart-box {
+        min-height: 100px; /* Can be shorter when full width */
+     }
+     .quickstart-box h3 {
+        font-size: 1rem;
+    }
+     .quickstart-grid-container {
+        padding: 0 10px;
+    }
 }
+/* --- END OF FILE style.css --- */

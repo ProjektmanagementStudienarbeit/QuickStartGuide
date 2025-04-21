@@ -1,121 +1,123 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const languageModal = document.getElementById('language-modal');
-    const langButtons = document.querySelectorAll('.lang-button');
-    const pageContent = document.getElementById('page-content');
-    const changeLangBtn = document.getElementById('change-lang-btn');
-    const yearSpan = document.getElementById('current-year');
+document.addEventListener('DOMContentLoaded', function() {
 
-    // Übersetzungen definieren
-    const translations = {
-        de: {
-            page_title: "OTH Amberg-Weiden",
-            lang_select_title: "Sprache auswählen",
-            nav_studies: "Studium",
-            nav_research: "Forschung",
-            nav_university: "Hochschule",
-            nav_international: "International",
-            nav_contact: "Kontakt",
-            hero_title: "Willkommen an der OTH Amberg-Weiden",
-            hero_subtitle: "Innovativ. Interdisziplinär. International.",
-            hero_cta: "Jetzt informieren!",
-            about_title: "Über uns",
-            about_text: "Die Ostbayerische Technische Hochschule Amberg-Weiden bietet zukunftsorientierte Studiengänge in Technik, Wirtschaft und Informatik. Praxisnähe und moderne Ausstattung zeichnen uns aus.",
-            news_title: "Aktuelles",
-            news1_title: "Neuer Masterstudiengang KI",
-            news1_text: "Ab dem Wintersemester startet unser neuer Master im Bereich Künstliche Intelligenz...",
-            news2_title: "Tag der offenen Tür",
-            news2_text: "Besuchen Sie uns am Campus und lernen Sie die Hochschule kennen...",
-            news3_title: "Forschungsprojekt erfolgreich",
-            news3_text: "Ein weiteres innovatives Projekt im Bereich Erneuerbare Energien abgeschlossen...",
-            footer_imprint: "Impressum",
-            footer_privacy: "Datenschutz"
-        },
-        en: {
-            page_title: "OTH Amberg-Weiden University",
-            lang_select_title: "Select Language",
-            nav_studies: "Studies",
-            nav_research: "Research",
-            nav_university: "University",
-            nav_international: "International",
-            nav_contact: "Contact",
-            hero_title: "Welcome to OTH Amberg-Weiden",
-            hero_subtitle: "Innovative. Interdisciplinary. International.",
-            hero_cta: "Learn more now!",
-            about_title: "About Us",
-            about_text: "The East Bavarian Technical University Amberg-Weiden offers future-oriented study programs in technology, business, and computer science. Practical relevance and modern facilities distinguish us.",
-            news_title: "Latest News",
-            news1_title: "New Master's Program AI",
-            news1_text: "Starting next winter semester, our new Master's program in Artificial Intelligence...",
-            news2_title: "Open House Day",
-            news2_text: "Visit us on campus and get to know the university...",
-            news3_title: "Research Project Successful",
-            news3_text: "Another innovative project in the field of renewable energies has been completed...",
-            footer_imprint: "Imprint",
-            footer_privacy: "Privacy Policy"
-        }
-    };
+    // --- AOS Initialization ---
+    AOS.init({
+        duration: 800, // Animation duration
+        easing: 'ease-in-out', // Animation timing function
+        once: true, // Whether animation should happen only once - while scrolling down
+        offset: 100 // Offset (in px) from the original trigger point
+    });
 
-    // Funktion zum Setzen der Sprache
-    const setLanguage = (lang) => {
-        if (!translations[lang]) {
-            console.error(`Language ${lang} not found in translations.`);
-            return;
-        }
-
-        document.documentElement.lang = lang; // Setzt das lang-Attribut im <html>-Tag
-
-        const elementsToTranslate = document.querySelectorAll('[data-translate]');
-        elementsToTranslate.forEach(element => {
-            const key = element.getAttribute('data-translate');
-            if (translations[lang][key]) {
-                // Unterscheiden, ob es sich um ein <title>-Tag oder andere handelt
-                if (element.tagName === 'TITLE') {
-                     document.title = translations[lang][key];
-                } else {
-                    element.textContent = translations[lang][key];
-                }
+    // --- Sticky Header ---
+    const header = document.getElementById('header');
+    if (header) {
+        const sticky = header.offsetTop; // Not really needed if fixed, but good practice
+        const scrollCallBack = window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 50) { // Add scrolled class after scrolling 50px
+                header.classList.add('scrolled');
             } else {
-                console.warn(`Translation key "${key}" not found for language "${lang}".`);
+                header.classList.remove('scrolled');
+            }
+        });
+    }
+
+    // --- i18next Initialization ---
+    const i18nextInstance = i18next
+        .use(i18nextHttpBackend)
+        .use(i18nextBrowserLanguageDetector);
+
+    i18nextInstance.init({
+        fallbackLng: 'en', // Default language
+        debug: true, // Set to false for production
+        ns: ['translation'], // Namespace for translation files
+        defaultNS: 'translation',
+        backend: {
+            loadPath: '/locales/{{lng}}/{{ns}}.json', // Path to translation files
+        },
+        detection: {
+            order: ['querystring', 'cookie', 'localStorage', 'navigator', 'htmlTag'],
+            caches: ['localStorage', 'cookie'], // Cache detected language
+        }
+    }, (err, t) => {
+        if (err) return console.error('i18next initialization failed', err);
+        console.log('i18next initialized');
+        updateContent(); // Initial content update
+        setupLanguageSwitcher(); // Setup switcher after init
+    });
+
+    // --- Language Switcher Logic ---
+    function setupLanguageSwitcher() {
+        const langSelect = document.getElementById('lang-select');
+        if (langSelect) {
+            // Set initial value of dropdown based on detected language
+            langSelect.value = i18nextInstance.language.split('-')[0]; // Use base language (e.g., 'en' from 'en-US')
+
+            langSelect.addEventListener('change', (event) => {
+                const selectedLang = event.target.value;
+                i18nextInstance.changeLanguage(selectedLang, (err, t) => {
+                    if (err) return console.error('Error changing language:', err);
+                    updateContent(); // Update content after language change
+                });
+            });
+        }
+    }
+
+    // --- Function to Update Content ---
+    function updateContent() {
+        const elements = document.querySelectorAll('[data-i18n]');
+        elements.forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (key) {
+                // Check if it's a placeholder attribute
+                if (el.hasAttribute('data-i18n-placeholder')) {
+                    el.setAttribute('placeholder', i18nextInstance.t(key));
+                } else {
+                    el.innerHTML = i18nextInstance.t(key); // Use innerHTML to allow basic tags if needed
+                }
             }
         });
 
-        // Modal ausblenden nach Auswahl
-        languageModal.classList.remove('show');
+        // Update elements that only have placeholder translation keys
+        const placeholderElements = document.querySelectorAll('[data-i18n-placeholder]:not([data-i18n])');
+         placeholderElements.forEach(el => {
+             const key = el.getAttribute('data-i18n-placeholder');
+              if (key) {
+                   el.setAttribute('placeholder', i18nextInstance.t(key));
+              }
+         });
 
-         // Optional: Sprache im Local Storage speichern für zukünftige Besuche
-        localStorage.setItem('preferredLanguage', lang);
-    };
 
-    // Event Listener für Sprachauswahl-Buttons im Modal
-    langButtons.forEach(button => {
-        button.addEventListener('click', () => {
-            const selectedLang = button.getAttribute('data-lang');
-            setLanguage(selectedLang);
+        // Update page title
+        const titleKey = document.title.getAttribute('data-i18n');
+         if(titleKey) {
+             document.title = i18nextInstance.t(titleKey);
+         }
+
+
+        // Update html lang attribute
+        document.documentElement.lang = i18nextInstance.language;
+    }
+
+    // --- Smooth Scroll for Nav Links (Optional but nice) ---
+    const navLinks = document.querySelectorAll('nav ul li a[href^="#"]');
+    navLinks.forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault();
+            let targetId = this.getAttribute('href');
+            let targetElement = document.querySelector(targetId);
+
+            if (targetElement) {
+                // Calculate position considering fixed header height
+                const headerOffset = document.getElementById('header').offsetHeight;
+                const elementPosition = targetElement.getBoundingClientRect().top;
+                const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+                window.scrollTo({
+                    top: offsetPosition,
+                    behavior: "smooth"
+                });
+            }
         });
     });
 
-     // Event Listener für den "Sprache ändern"-Button im Header
-    changeLangBtn.addEventListener('click', () => {
-        languageModal.classList.add('show'); // Modal wieder anzeigen
-    });
-
-
-    // Prüfen, ob eine Sprache im Local Storage gespeichert ist
-    const preferredLanguage = localStorage.getItem('preferredLanguage');
-
-    if (preferredLanguage && translations[preferredLanguage]) {
-        // Gespeicherte Sprache direkt anwenden
-        setLanguage(preferredLanguage);
-    } else {
-        // Ansonsten Modal anzeigen, um Sprache auszuwählen
-        // Kurze Verzögerung für den Übergangseffekt
-        setTimeout(() => {
-             languageModal.classList.add('show');
-        }, 100); // 100ms Verzögerung
-    }
-
-    // Aktuelles Jahr im Footer setzen
-    if (yearSpan) {
-        yearSpan.textContent = new Date().getFullYear();
-    }
-});
+}); // End DOMContentLoaded

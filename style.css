@@ -151,26 +151,49 @@ p {
     display: inline-block;
     background-color: var(--primary-color);
     color: var(--secondary-color);
-    padding: 12px 28px; /* Slightly adjusted */
+    padding: 12px 28px;
     text-decoration: none;
     border-radius: 30px;
     font-weight: 600;
     font-size: 1rem;
-    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
-    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease, box-shadow 0.3s ease;
-    margin-top: 10px; /* Reduced margin */
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease; /* Transitions erweitert */
+    -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    margin-top: 10px;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
     transform: translateY(0);
     -webkit-transform: translateY(0);
+    border: 1px solid transparent; /* Basis für Border */
+    margin-left: 5px; /* Kleiner Abstand zwischen Buttons */
+    margin-right: 5px;
 }
 
 .cta-button:hover,
 .cta-button:focus {
-    background-color: #e07b00; /* Darker orange */
-    transform: translateY(-3px); /* Slightly less lift */
+    background-color: #e07b00;
+    color: var(--secondary-color); /* Farbe sicherstellen */
+    transform: translateY(-3px);
     -webkit-transform: translateY(-3px);
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
     outline: none;
+    border-color: transparent; /* Sicherstellen, dass kein Rand erscheint */
+}
+
+/* --- Style für den sekundären Button --- */
+.secondary-cta {
+    background-color: transparent; /* Kein Hintergrund */
+    color: var(--primary-color);    /* Primärfarbe als Textfarbe */
+    border: 1px solid var(--primary-color); /* Rand in Primärfarbe */
+}
+
+.secondary-cta:hover,
+.secondary-cta:focus {
+    background-color: var(--light-grey); /* Leichter Hintergrund bei Hover */
+    color: var(--primary-color); /* Textfarbe bleibt */
+    border-color: #e07b00; /* Rand wird dunkler */
+    /* Andere Hover-Effekte bleiben erhalten */
+    transform: translateY(-3px);
+    -webkit-transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15); /* Etwas weniger Schatten */
 }
 
 /* --- Footer --- */
@@ -185,6 +208,10 @@ p {
 }
 
 /* --- Quick Start Grid --- */
+.quickstart-grid-container {
+    /* Styles already defined in .hero, .quickstart-grid-container area */
+}
+
 .quickstart-grid {
     display: grid;
     width: 100%;
@@ -231,73 +258,6 @@ p {
     font-weight: 600;
     color: inherit; /* Inherit color from parent <a> */
 }
-
-
-/* --- Animation --- */
-.animate-on-load {
-    opacity: 0;
-    transform: translateY(15px); /* Less distance */
-    -webkit-transform: translateY(15px);
-    animation-name: fadeInUp;
-    animation-duration: var(--animation-duration);
-    animation-timing-function: ease-out;
-    animation-fill-mode: forwards;
-    -webkit-animation-name: fadeInUp;
-    -webkit-animation-duration: var(--animation-duration);
-    -webkit-animation-timing-function: ease-out;
-    -webkit-animation-fill-mode: forwards;
-}
-
-/* Stagger animation delays */
-.hero.animate-on-load { animation-delay: 0.1s; -webkit-animation-delay: 0.1s; }
-.quickstart-grid-container.animate-on-load { animation-delay: 0.3s; -webkit-animation-delay: 0.3s; }
-.footer.animate-on-load { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
-
-
-/* --- Keyframes --- */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    to {
-        opacity: 1;
-        -webkit-transform: translateY(0);
-    }
-}
-
-/* --- RTL Styling --- */
-html[dir="rtl"] { } /* Base direction set on html */
-
-html[dir="rtl"] .language-switcher-container {
-    right: auto;
-    left: 20px;
-}
-
-html[dir="rtl"] #languageSelector {
-    background-position: left 10px center;
-    padding-left: 35px;
-    padding-right: 12px;
-}
-
-html[dir="rtl"] p,
-html[dir="rtl"] h1,
-html[dir="rtl"] h2,
-html[dir="rtl"] .hero,
-html[dir="rtl"] .quickstart-grid-container {
-    text-align: right;
-}
-
-html[dir="rtl"] .quickstart-box {
-    text-align: right;
-}
-
-/* --- START OF FILE style.css --- */
-
-/* ... (alle bisherigen Stile bleiben bestehen) ... */
 
 /* --- Styles for Sub-Pages --- */
 .page-main-title {
@@ -355,26 +315,83 @@ html[dir="rtl"] .quickstart-box {
     outline: none;
 }
 
-/* Adjust animation delays for sub-pages */
+/* --- Animation --- */
+.animate-on-load {
+    opacity: 0;
+    transform: translateY(15px); /* Less distance */
+    -webkit-transform: translateY(15px);
+    animation-name: fadeInUp;
+    animation-duration: var(--animation-duration);
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    -webkit-animation-name: fadeInUp;
+    -webkit-animation-duration: var(--animation-duration);
+    -webkit-animation-timing-function: ease-out;
+    -webkit-animation-fill-mode: forwards;
+}
+
+/* Stagger animation delays - Base Page */
+.hero.animate-on-load { animation-delay: 0.1s; -webkit-animation-delay: 0.1s; }
+.quickstart-grid-container.animate-on-load { animation-delay: 0.3s; -webkit-animation-delay: 0.3s; }
+
+/* Stagger animation delays - Sub Pages */
 .page-main-title.animate-on-load { animation-delay: 0.1s; -webkit-animation-delay: 0.1s; }
-.content-section.animate-on-load:nth-of-type(1) { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
-.content-section.animate-on-load:nth-of-type(2) { animation-delay: 0.3s; -webkit-animation-delay: 0.3s; }
-.content-section.animate-on-load:nth-of-type(3) { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; }
+.content-section.animate-on-load:nth-of-type(1) { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; } /* Applies to first section */
+.content-section.animate-on-load:nth-of-type(2) { animation-delay: 0.3s; -webkit-animation-delay: 0.3s; } /* Applies to second section */
+.content-section.animate-on-load:nth-of-type(3) { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; } /* Applies to third section */
 .back-link-container.animate-on-load { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
-/* Footer delay might need adjustment if content is short */
-.footer.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+
+/* Footer delay - might need adjustment based on content length */
+.footer.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; } /* Common delay for footer */
 
 
-/* RTL adjustments for sub-pages */
+/* --- Keyframes --- */
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    to {
+        opacity: 1;
+        -webkit-transform: translateY(0);
+    }
+}
+
+/* --- RTL Styling --- */
+html[dir="rtl"] { } /* Base direction set on html */
+
+html[dir="rtl"] .language-switcher-container {
+    right: auto;
+    left: 20px;
+}
+
+html[dir="rtl"] #languageSelector {
+    background-position: left 10px center;
+    padding-left: 35px;
+    padding-right: 12px;
+}
+
+/* Align specific text elements for RTL */
+html[dir="rtl"] p,
+html[dir="rtl"] h1,
+html[dir="rtl"] h2,
+html[dir="rtl"] .hero,
+html[dir="rtl"] .quickstart-grid-container,
+html[dir="rtl"] .page-main-title {
+    text-align: right;
+}
+/* Align content sections and their children for RTL */
 html[dir="rtl"] .content-section,
 html[dir="rtl"] .content-section h2,
 html[dir="rtl"] .content-section p {
     text-align: right;
 }
-
-/* ... (Media Queries und der Rest der CSS bleiben bestehen) ... */
-
-/* --- END OF FILE style.css additions --- */
+html[dir="rtl"] .quickstart-box {
+    text-align: right;
+}
 
 
 /* --- Responsive Design --- */
@@ -386,6 +403,7 @@ html[dir="rtl"] .content-section p {
 
     h1 { font-size: clamp(1.8rem, 4vw + 1rem, 2.5rem); }
     h2 { font-size: clamp(1.6rem, 3vw + 1rem, 2.1rem); }
+    .content-section h2 { font-size: clamp(1.3rem, 3vw + 0.5rem, 1.6rem); } /* Subpage H2 */
 
     .quickstart-grid {
         grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); /* Smaller min */
@@ -406,6 +424,7 @@ html[dir="rtl"] .content-section p {
     }
     h1 { font-size: clamp(1.6rem, 5vw + 0.5rem, 2.1rem); }
     h2 { font-size: clamp(1.4rem, 4vw + 0.5rem, 1.8rem); }
+    .content-section h2 { font-size: clamp(1.2rem, 4vw + 0.5rem, 1.5rem); } /* Subpage H2 */
 
     .cta-button {
         padding: 10px 22px;
@@ -435,7 +454,33 @@ html[dir="rtl"] .content-section p {
      .quickstart-box h3 {
         font-size: 0.9rem;
     }
+
+     /* Buttons im Hero-Bereich untereinander anordnen */
+    .hero .cta-button { /* Zielt auf beide Buttons im Hero */
+        display: block; /* Block-Element für eigene Zeile */
+        margin-left: auto;  /* Zentriert den Button */
+        margin-right: auto;
+        margin-top: 15px; /* Abstand nach oben */
+        width: fit-content; /* Breite an Inhalt anpassen */
+        min-width: 180px; /* Mindestbreite für Optik */
+    }
+    .hero .cta-button:first-of-type {
+         margin-top: 10px; /* Erster Button etwas weniger Abstand */
+    }
+    /* Sicherstellen, dass secondary-cta auch zentriert ist */
+    .hero .secondary-cta {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .footer {
         font-size: 0.8rem;
+    }
+    .back-link {
+        font-size: 0.9rem;
+        padding: 6px 12px;
+    }
+    .content-section {
+        padding: 20px 15px;
     }
 }

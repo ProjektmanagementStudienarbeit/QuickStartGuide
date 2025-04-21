@@ -1,342 +1,89 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de"> <!-- Standardmäßig auf Deutsch -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OTH AW - International Quick Start</title>
-    <!-- Google Fonts (z.B. Montserrat) -->
+    <title data-translate="page_title">OTH Amberg-Weiden</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome (immer noch nützlich für Icons) -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
-<body data-lang="de">
+<body>
 
-    <header class="site-header">
-        <div class="container header-container">
-            <div class="logo">
-                <!-- Platzhalter OTH Logo -->
-                <a href="#"><img src="placeholder-logo-oth.png" alt="OTH Amberg-Weiden Logo"></a>
-            </div>
-
-            <nav class="main-navigation">
-                 <button id="menu-toggle" aria-label="Menü öffnen/schließen" aria-expanded="false">
-                     <span></span><span></span><span></span>
-                 </button>
-                <ul id="main-menu">
-                     <!-- Menüpunkte eventuell ohne Icons für cleaneren Look -->
-                     <li><a href="#willkommen"><span class="lang de">Willkommen</span><span class="lang en">Welcome</span>...</a></li>
-                     <li><a href="#studium"><span class="lang de">Studium</span><span class="lang en">Studies</span>...</a></li>
-                     <li><a href="#leben"><span class="lang de">Leben</span><span class="lang en">Living</span>...</a></li>
-                     <li><a href="#freizeit"><span class="lang de">Freizeit</span><span class="lang en">Leisure</span>...</a></li>
-                     <li><a href="#hilfe"><span class="lang de">Hilfe</span><span class="lang en">Help</span>...</a></li>
-                </ul>
-            </nav>
-
-            <div class="header-actions">
-                <div class="language-switcher">
-                    <label for="lang-select" class="sr-only">Sprache wählen</label>
-                    <i class="fas fa-globe"></i> <!-- Icon für Sprache -->
-                    <select id="lang-select">
-                        <option value="de">DE</option>
-                        <option value="en">EN</option>
-                        <option value="hi">HI</option>
-                        <option value="ar">AR</option>
-                        <option value="es">ES</option>
-                        <option value="zh">ZH</option>
-                    </select>
-                </div>
-                 <!-- Optional: Login oder anderer Button -->
-                 <!-- <a href="#" class="btn btn-secondary btn-small lang de">Login</a> -->
-                 <!-- <a href="#" class="btn btn-secondary btn-small lang en">Login</a> -->
+    <!-- Sprachauswahl Modal -->
+    <div id="language-modal" class="modal">
+        <div class="modal-content">
+            <h2 data-translate="lang_select_title">Sprache auswählen / Select Language</h2>
+            <div class="lang-buttons">
+                <button class="lang-button" data-lang="de">Deutsch</button>
+                <button class="lang-button" data-lang="en">English</button>
             </div>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <!-- ===== HERO SECTION ===== -->
-        <section id="hero" class="hero-section">
-            <div class="container hero-container">
-                <div class="hero-content animate-on-scroll fade-in">
-                    <h1 class="lang de">Dein Start an der <span class="highlight">OTH Amberg</span></h1>
-                    <h1 class="lang en">Your Start at <span class="highlight">OTH Amberg</span></h1>
-                    <!-- ... andere Sprachen ... -->
-                    <p class="subtitle lang de">Alle wichtigen Infos für internationale Studierende auf einen Blick. Einfach, schnell und unkompliziert.</p>
-                    <p class="subtitle lang en">All important info for international students at a glance. Simple, fast, and straightforward.</p>
-                    <!-- ... andere Sprachen ... -->
-                    <a href="#willkommen" class="btn btn-primary btn-large lang de">Entdecke den Guide</a>
-                    <a href="#willkommen" class="btn btn-primary btn-large lang en">Explore the Guide</a>
-                    <!-- ... andere Sprachen ... -->
-                </div>
-                <div class="hero-visual animate-on-scroll fade-in" style="animation-delay: 0.2s;">
-                    <!-- HIER eine freundliche Illustration/Grafik einfügen (z.B. Studierende kommen an, Campus-Skizze) -->
-                    <img src="placeholder-hero-illustration.svg" alt="Illustration: International students arriving at OTH Amberg">
-                </div>
-            </div>
-             <!-- Optional: Wellen-Divider am Boden -->
-             <div class="wave-divider">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,192L80,176C160,160,320,128,480,138.7C640,149,800,203,960,208C1120,213,1280,171,1360,149.3L1440,128L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path></svg>
-             </div>
-        </section>
-
-        <!-- ===== FEATURE SECTION (z.B. Vorteile Amberg/OTH) ===== -->
-        <section id="features" class="content-section features-section">
+    <!-- Hauptinhalt der Seite (anfänglich versteckt oder überlagert) -->
+    <div id="page-content">
+        <header>
             <div class="container">
-                <h2 class="section-title lang de">Warum Amberg & die OTH?</h2>
-                <h2 class="section-title lang en">Why Amberg & OTH?</h2>
-                <!-- ... andere Sprachen ... -->
-                <div class="features-grid">
-                    <!-- Feature 1 -->
-                    <div class="feature-item animate-on-scroll fade-in">
-                        <i class="fas fa-rocket feature-icon"></i> <!-- Icon oder Mini-Illustration -->
-                        <h3 class="lang de">Top Studium</h3>
-                        <h3 class="lang en">Top Studies</h3>
-                        <!-- ... andere Sprachen ... -->
-                        <p class="lang de">Praxisnah, modern, zukunftsorientiert.</p>
-                        <p class="lang en">Practical, modern, future-oriented.</p>
-                         <!-- ... andere Sprachen ... -->
-                    </div>
-                    <!-- Feature 2 -->
-                    <div class="feature-item animate-on-scroll fade-in" style="animation-delay: 0.1s;">
-                         <i class="fas fa-heart feature-icon"></i>
-                        <h3 class="lang de">Hohe Lebensqualität</h3>
-                        <h3 class="lang en">High Quality of Life</h3>
-                        <!-- ... andere Sprachen ... -->
-                        <p class="lang de">Sicher, grün und bezahlbar.</p>
-                        <p class="lang en">Safe, green, and affordable.</p>
-                        <!-- ... andere Sprachen ... -->
-                    </div>
-                    <!-- Feature 3 -->
-                    <div class="feature-item animate-on-scroll fade-in" style="animation-delay: 0.2s;">
-                        <i class="fas fa-users feature-icon"></i>
-                        <h3 class="lang de">Tolle Community</h3>
-                        <h3 class="lang en">Great Community</h3>
-                        <!-- ... andere Sprachen ... -->
-                        <p class="lang de">International und herzlich.</p>
-                        <p class="lang en">International and welcoming.</p>
-                        <!-- ... andere Sprachen ... -->
-                    </div>
-                </div>
+                <img src="https://www.oth-aw.de/fileadmin/user_upload/logos/oth-aw-logo.svg" alt="OTH Amberg-Weiden Logo" class="logo">
+                <nav>
+                    <ul>
+                        <li><a href="#" data-translate="nav_studies">Studium</a></li>
+                        <li><a href="#" data-translate="nav_research">Forschung</a></li>
+                        <li><a href="#" data-translate="nav_university">Hochschule</a></li>
+                        <li><a href="#" data-translate="nav_international">International</a></li>
+                        <li><a href="#" data-translate="nav_contact">Kontakt</a></li>
+                    </ul>
+                </nav>
+                 <button id="change-lang-btn" class="change-lang-btn" title="Sprache ändern / Change Language">🌐</button>
             </div>
-        </section>
+        </header>
 
+        <main>
+            <section id="hero">
+                <div class="hero-content container">
+                    <h1 data-translate="hero_title">Willkommen an der OTH Amberg-Weiden</h1>
+                    <p data-translate="hero_subtitle">Innovativ. Interdisziplinär. International.</p>
+                    <a href="#" class="cta-button" data-translate="hero_cta">Jetzt informieren!</a>
+                </div>
+            </section>
 
-        <!-- ===== WILLKOMMEN SECTION (2-spaltig) ===== -->
-        <section id="willkommen" class="content-section">
-            <div class="container split-section">
-                <div class="split-visual animate-on-scroll slide-up">
-                     <!-- Bild vom Campus oder freundliche Begrüßungs-Illustration -->
-                     <img src="placeholder-campus-photo.jpg" alt="OTH Amberg Campus Building" class="rounded-image">
-                </div>
-                <div class="split-content animate-on-scroll slide-up" style="animation-delay: 0.1s;">
-                     <span class="section-tag lang de">Dein Start</span>
-                     <span class="section-tag lang en">Your Start</span>
-                     <!-- ... andere Sprachen ... -->
-                    <h2 class="lang de">Willkommen an der OTH Amberg-Weiden!</h2>
-                    <h2 class="lang en">Welcome to OTH Amberg-Weiden!</h2>
-                    <!-- ... andere Sprachen ... -->
-                    <p class="lang de">[Text Deutsch: Herzliche Begrüßung, kurze Vorstellung der Hochschule und der Vorteile, die dieser Guide bietet...]</p>
-                    <p class="lang en">[Text English: Warm welcome, brief introduction to the university and the benefits of this guide...]</p>
-                     <!-- ... andere Sprachen ... -->
-                    <a href="#studium" class="btn btn-secondary lang de">Mehr zur Organisation</a>
-                    <a href="#studium" class="btn btn-secondary lang en">More on Organization</a>
-                    <!-- ... andere Sprachen ... -->
-                </div>
-            </div>
-        </section>
+            <section id="about" class="container content-section">
+                <h2 data-translate="about_title">Über uns</h2>
+                <p data-translate="about_text">Die Ostbayerische Technische Hochschule Amberg-Weiden bietet zukunftsorientierte Studiengänge in Technik, Wirtschaft und Informatik. Praxisnähe und moderne Ausstattung zeichnen uns aus.</p>
+            </section>
 
-        <!-- ===== STUDIUM SECTION (2-spaltig, umgekehrt) ===== -->
-        <section id="studium" class="content-section alternate-bg">
-            <div class="container split-section reverse"> <!-- 'reverse' Klasse für umgekehrte Reihenfolge -->
-                <div class="split-visual animate-on-scroll slide-up">
-                     <!-- Illustration oder Foto zum Thema Studium/Organisation -->
-                     <img src="placeholder-study-illustration.svg" alt="Illustration: Student organizing schedule" class="rounded-image">
+            <section id="news" class="container content-section">
+                <h2 data-translate="news_title">Aktuelles</h2>
+                <div class="news-grid">
+                    <article>
+                        <h3 data-translate="news1_title">Neuer Masterstudiengang KI</h3>
+                        <p data-translate="news1_text">Ab dem Wintersemester startet unser neuer Master im Bereich Künstliche Intelligenz...</p>
+                    </article>
+                    <article>
+                        <h3 data-translate="news2_title">Tag der offenen Tür</h3>
+                        <p data-translate="news2_text">Besuchen Sie uns am Campus und lernen Sie die Hochschule kennen...</p>
+                    </article>
+                     <article>
+                        <h3 data-translate="news3_title">Forschungsprojekt erfolgreich</h3>
+                        <p data-translate="news3_text">Ein weiteres innovatives Projekt im Bereich Erneuerbare Energien abgeschlossen...</p>
+                    </article>
                 </div>
-                 <div class="split-content animate-on-scroll slide-up" style="animation-delay: 0.1s;">
-                    <span class="section-tag lang de">Planung</span>
-                    <span class="section-tag lang en">Planning</span>
-                    <!-- ... andere Sprachen ... -->
-                    <h2 class="lang de">Studium & Organisation</h2>
-                    <h2 class="lang en">Studies & Organization</h2>
-                     <!-- ... andere Sprachen ... -->
-                     <!-- Hier vielleicht mit Accordion für die Unterpunkte -->
-                     <div class="accordion">
-                         <details class="accordion-item">
-                             <summary><i class="fas fa-plane-departure icon-left"></i> <span class="lang de">Vor der Ankunft</span><span class="lang en">Before Arrival</span>...</summary>
-                             <p class="lang de">[Text Deutsch: Visum, Finanzierung, Wohnung...]</p>
-                             <p class="lang en">[Text English: Visa, Finances, Housing...]</p>...
-                         </details>
-                          <details class="accordion-item">
-                             <summary><i class="fas fa-map-marker-alt icon-left"></i> <span class="lang de">Ankunft & Erste Schritte</span><span class="lang en">Arrival & First Steps</span>...</summary>
-                             <p class="lang de">[Text Deutsch: Anmeldung, Bank, Campus...]</p>
-                             <p class="lang en">[Text English: Registration, Bank, Campus...]</p>...
-                         </details>
-                          <details class="accordion-item">
-                             <summary><i class="fas fa-book-open icon-left"></i> <span class="lang de">Dein Studium</span><span class="lang en">Your Studies</span>...</summary>
-                             <p class="lang de">[Text Deutsch: Kurse, Prüfungen, Portale...]</p>
-                             <p class="lang en">[Text English: Courses, Exams, Portals...]</p>...
-                         </details>
-                     </div>
-                </div>
-            </div>
-        </section>
+            </section>
 
-        <!-- ===== LEBEN SECTION (2-spaltig) ===== -->
-        <section id="leben" class="content-section">
-             <div class="container split-section">
-                <div class="split-visual animate-on-scroll slide-up">
-                     <!-- Bild von Amberg oder Illustration zum Stadtleben -->
-                     <img src="placeholder-amberg-city.jpg" alt="View of Amberg City (e.g., Stadtbrille)" class="rounded-image">
-                </div>
-                 <div class="split-content animate-on-scroll slide-up" style="animation-delay: 0.1s;">
-                    <span class="section-tag lang de">Alltag</span>
-                    <span class="section-tag lang en">Daily Life</span>
-                     <!-- ... andere Sprachen ... -->
-                    <h2 class="lang de">Leben in Amberg</h2>
-                    <h2 class="lang en">Living in Amberg</h2>
-                     <!-- ... andere Sprachen ... -->
-                    <p class="lang de">[Text Deutsch: Beschreibung des Lebens in Amberg - Verkehr, Einkaufen, Kultur, Sicherheit, Tipps...]</p>
-                    <p class="lang en">[Text English: Description of life in Amberg - Transport, Shopping, Culture, Safety, Tips...]</p>
-                    <!-- ... andere Sprachen ... -->
-                     <ul class="checklist"> <!-- Beispiel für Stichpunkte -->
-                         <li><i class="fas fa-check"></i> <span class="lang de">Gute Busverbindungen</span><span class="lang en">Good bus connections</span>...</li>
-                         <li><i class="fas fa-check"></i> <span class="lang de">Viele Einkaufsmöglichkeiten</span><span class="lang en">Many shopping options</span>...</li>
-                         <li><i class="fas fa-check"></i> <span class="lang de">Sichere Umgebung</span><span class="lang en">Safe environment</span>...</li>
-                     </ul>
-                 </div>
-            </div>
-        </section>
+        </main>
 
-         <!-- ===== FREIZEIT SECTION (Kann auch anders, z.B. als Grid) ===== -->
-        <section id="freizeit" class="content-section alternate-bg">
+        <footer>
             <div class="container">
-                 <span class="section-tag text-center lang de">Kontakte knüpfen</span>
-                 <span class="section-tag text-center lang en">Networking</span>
-                 <!-- ... andere Sprachen ... -->
-                 <h2 class="section-title lang de">Freizeit & Kontakte</h2>
-                 <h2 class="section-title lang en">Leisure & Networking</h2>
-                 <!-- ... andere Sprachen ... -->
-                <div class="cards-container">
-                    <!-- Karte Sport -->
-                    <a href="#" class="card link-card animate-on-scroll fade-in"> <!-- Ganze Karte als Link -->
-                        <i class="fas fa-futbol card-icon"></i>
-                        <h4 class="lang de">Sport & Fitness</h4>
-                        <h4 class="lang en">Sports & Fitness</h4>...
-                        <p class="lang de">Hochschulsport, Vereine & mehr.</p>
-                        <p class="lang en">University sports, clubs & more.</p>...
-                         <span class="card-arrow">→</span>
-                    </a>
-                     <!-- Karte Events -->
-                     <a href="#" class="card link-card animate-on-scroll fade-in" style="animation-delay: 0.1s;">
-                         <i class="fas fa-calendar-alt card-icon"></i>
-                         <h4 class="lang de">Events & Kultur</h4>
-                         <h4 class="lang en">Events & Culture</h4>...
-                         <p class="lang de">Feste, Konzerte, Theater.</p>
-                         <p class="lang en">Festivals, concerts, theater.</p>...
-                         <span class="card-arrow">→</span>
-                    </a>
-                     <!-- Karte Ausflüge -->
-                    <a href="#" class="card link-card animate-on-scroll fade-in" style="animation-delay: 0.2s;">
-                        <i class="fas fa-hiking card-icon"></i>
-                        <h4 class="lang de">Ausflüge & Reisen</h4>
-                        <h4 class="lang en">Trips & Travel</h4>...
-                        <p class="lang de">Entdecke die Oberpfalz und Bayern.</p>
-                        <p class="lang en">Discover the Upper Palatinate and Bavaria.</p>...
-                        <span class="card-arrow">→</span>
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- ===== HILFE / FAQ SECTION ===== -->
-        <section id="hilfe" class="content-section">
-            <div class="container">
-                 <span class="section-tag text-center lang de">Unterstützung</span>
-                 <span class="section-tag text-center lang en">Support</span>
-                <h2 class="section-title lang de">Hilfe gebraucht?</h2>
-                <h2 class="section-title lang en">Need Help?</h2>
-                <!-- ... andere Sprachen ... -->
-
-                 <!-- FAQ Accordion -->
-                 <div class="faq-container animate-on-scroll fade-in">
-                      <h3 class="faq-title lang de">Häufige Fragen</h3>
-                      <h3 class="faq-title lang en">Common Questions</h3>
-                      <!-- ... andere Sprachen ... -->
-                     <div class="accordion">
-                         <details class="accordion-item">
-                             <summary><span class="lang de">Frage 1 Deutsch?</span><span class="lang en">Question 1 English?</span>...</summary>
-                             <p class="lang de">[Antwort Deutsch]</p><p class="lang en">[Answer English]</p>...
-                         </details>
-                         <details class="accordion-item">
-                              <summary><span class="lang de">Frage 2 Deutsch?</span><span class="lang en">Question 2 English?</span>...</summary>
-                             <p class="lang de">[Antwort Deutsch]</p><p class="lang en">[Answer English]</p>...
-                         </details>
-                         <!-- ... Weitere Fragen ... -->
-                     </div>
-                 </div>
-
-                 <!-- Wichtige Links / Kontakte als Karten -->
-                 <div class="contact-cards-container animate-on-scroll fade-in" style="margin-top: 40px;">
-                    <div class="card">
-                        <i class="fas fa-envelope card-icon"></i>
-                        <h4 class="lang de">International Office</h4><h4 class="lang en">International Office</h4>...
-                        <p class="lang de">Deine erste Anlaufstelle.</p><p class="lang en">Your first point of contact.</p>...
-                        <a href="#" class="btn btn-secondary btn-small lang de">Kontakt</a>
-                        <a href="#" class="btn btn-secondary btn-small lang en">Contact</a>...
-                    </div>
-                     <div class="card">
-                         <i class="fas fa-phone card-icon"></i>
-                        <h4 class="lang de">Notfallnummern</h4><h4 class="lang en">Emergency Numbers</h4>...
-                        <p class="lang de">Wichtige Nummern für den Notfall.</p><p class="lang en">Important numbers for emergencies.</p>...
-                         <a href="#" class="btn btn-secondary btn-small lang de">Anzeigen</a>
-                         <a href="#" class="btn btn-secondary btn-small lang en">Show</a>...
-                    </div>
-                 </div>
-            </div>
-        </section>
-
-    </main>
-
-    <footer class="site-footer">
-        <div class="container footer-container">
-            <div class="footer-logo">
-                 <img src="placeholder-logo-oth-white.png" alt="OTH Amberg-Weiden Logo Weiß">
-                 <p class="lang de">Dein Start. Deine Zukunft.</p>
-                 <p class="lang en">Your Start. Your Future.</p>...
-            </div>
-            <div class="footer-links">
-                <h5 class="lang de">Navigation</h5><h5 class="lang en">Navigation</h5>...
-                <ul>
-                     <li><a href="#willkommen"><span class="lang de">Willkommen</span><span class="lang en">Welcome</span>...</a></li>
-                     <li><a href="#studium"><span class="lang de">Studium</span><span class="lang en">Studies</span>...</a></li>
-                     <li><a href="#leben"><span class="lang de">Leben</span><span class="lang en">Living</span>...</a></li>
-                    <!-- ... -->
+                <p>© <span id="current-year"></span> OTH Amberg-Weiden</p>
+                <ul class="footer-links">
+                    <li><a href="#" data-translate="footer_imprint">Impressum</a></li>
+                    <li><a href="#" data-translate="footer_privacy">Datenschutz</a></li>
                 </ul>
             </div>
-             <div class="footer-links">
-                <h5 class="lang de">Rechtliches</h5><h5 class="lang en">Legal</h5>...
-                <ul>
-                    <li><a href="#"><span class="lang de">Impressum</span><span class="lang en">Imprint</span>...</a></li>
-                    <li><a href="#"><span class="lang de">Datenschutz</span><span class="lang en">Privacy</span>...</a></li>
-                </ul>
-            </div>
-            <div class="footer-contact">
-                 <h5 class="lang de">Kontakt</h5><h5 class="lang en">Contact</h5>...
-                 <p>International Office<br>OTH Amberg-Weiden<br>[Adresse]<br>[E-Mail]</p>
-                 <!-- Social Media Icons -->
-                 <div class="social-icons">
-                     <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
-                     <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                     <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-                 </div>
-            </div>
-        </div>
-        <div class="container footer-bottom">
-             <p>© <span id="current-year"></span> OTH Amberg-Weiden. <span class="lang de">Alle Rechte vorbehalten.</span><span class="lang en">All rights reserved.</span>...</p>
-        </div>
-    </footer>
+        </footer>
+    </div> <!-- Ende #page-content -->
 
     <script src="script.js"></script>
 </body>

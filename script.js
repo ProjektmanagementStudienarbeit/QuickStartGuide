@@ -1,11 +1,24 @@
+// Wait for the DOM to be fully loaded and parsed
 document.addEventListener('DOMContentLoaded', () => {
+
+    // Select essential elements
     const languageSelector = document.getElementById('languageSelector');
     const htmlElement = document.documentElement;
+    const translatableElements = document.querySelectorAll('[data-key]');
 
-    // --- Translations Object ---
-    // Keys match 'data-key' attributes in HTML
+    // --- Basic Check ---
+    if (!languageSelector) {
+        console.error("Error: Language selector element with ID 'languageSelector' not found.");
+        return; // Stop execution if selector is missing
+    }
+    if (translatableElements.length === 0) {
+        console.warn("Warning: No elements with 'data-key' attribute found for translation.");
+    }
+
+
+    // --- Translations Object (Keep this updated) ---
     const translations = {
-        en: {
+         en: {
             page_title: "Simple Elegant Website",
             language_label: "Select Language:",
             welcome_title: "Welcome to Our Elegant Site",
@@ -65,14 +78,20 @@ document.addEventListener('DOMContentLoaded', () => {
             features_text: "发现微妙的动画以及使用上面的选择器轻松切换语言。",
             footer_text: "© 2023 您的公司名称。版权所有。"
         }
-        // Add other languages here following the same pattern
     };
 
     // --- Function to Update Text Content ---
     function updateLanguage(lang) {
-        if (!translations[lang]) {
+        const selectedTranslations = translations[lang];
+
+        if (!selectedTranslations) {
             console.warn(`Translations for language "${lang}" not found. Defaulting to English.`);
-            lang = 'en'; // Fallback to English
+            lang = 'en'; // Fallback language
+             selectedTranslations = translations[lang];
+             if (!selectedTranslations) { // Check if English is missing too
+                console.error("Critical Error: English translations are missing.");
+                return;
+             }
         }
 
         // Set language attribute and direction on <html> element
@@ -80,21 +99,44 @@ document.addEventListener('DOMContentLoaded', () => {
         htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
         // Update all elements with data-key attribute
-        document.querySelectorAll('[data-key]').forEach(element => {
+        translatableElements.forEach(element => {
             const key = element.getAttribute('data-key');
-            // Use innerHTML for keys that might contain HTML entities like ©
-            if (key === 'footer_text') {
-                 element.innerHTML = translations[lang][key] || translations['en'][key];
-            } else {
-                 element.textContent = translations[lang][key] || translations['en'][key]; // Fallback to English key if specific translation missing
-            }
+            const translation = selectedTranslations[key];
 
+            if (translation !== undefined) { // Check if the key exists for the selected language
+                // Use innerHTML for keys that might contain HTML entities like © or links
+                if (key === 'footer_text' || element.tagName === 'A') { // Added check for anchor tags if they needed HTML content
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
+            } else {
+                 // Fallback to English if a specific translation is missing
+                 const fallbackTranslation = translations['en'][key];
+                 if(fallbackTranslation !== undefined) {
+                     console.warn(`Translation missing for key "${key}" in language "${lang}". Using English fallback.`);
+                     if (key === 'footer_text' || element.tagName === 'A') {
+                         element.innerHTML = fallbackTranslation;
+                     } else {
+                        element.textContent = fallbackTranslation;
+                     }
+                 } else {
+                      console.error(`Error: Translation missing for key "${key}" in both "${lang}" and English fallback.`);
+                      element.textContent = `[${key}]`; // Show key name as placeholder if missing everywhere
+                 }
+            }
         });
 
          // Persist selected language
-         localStorage.setItem('preferredLanguage', lang);
-         // Ensure the dropdown shows the currently selected language (useful on initial load)
+         try {
+            localStorage.setItem('preferredLanguage', lang);
+         } catch (e) {
+            console.warn("Could not save preferred language to localStorage:", e);
+         }
+
+         // Ensure the dropdown shows the currently selected language
          languageSelector.value = lang;
+         console.log(`Language changed to: ${lang}`); // Log successful change
     }
 
     // --- Event Listener for Language Change ---
@@ -103,20 +145,32 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     // --- Initial Language Setup ---
-    // Check local storage first, then browser default, then fallback to 'en'
-    const savedLang = localStorage.getItem('preferredLanguage');
-    const browserLang = navigator.language.split('-')[0]; // Get primary language code (e.g., 'en' from 'en-US')
+    function getInitialLanguage() {
+        let preferredLang = 'en'; // Default fallback
+        try {
+            // 1. Check Local Storage
+            const savedLang = localStorage.getItem('preferredLanguage');
+            if (savedLang && translations[savedLang]) {
+                console.log(`Using saved language: ${savedLang}`);
+                return savedLang;
+            }
 
-    let initialLang = 'en'; // Default
+            // 2. Check Browser Language
+            const browserLang = navigator.language.split('-')[0]; // Get 'en' from 'en-US'
+            if (translations[browserLang]) {
+                 console.log(`Using browser language: ${browserLang}`);
+                return browserLang;
+            }
+        } catch (e) {
+            console.warn("Could not access localStorage or navigator.language:", e);
+        }
 
-    if (savedLang && translations[savedLang]) {
-        initialLang = savedLang;
-    } else if (translations[browserLang]) {
-        // Use browser's preferred language if translations exist
-        initialLang = browserLang;
+         console.log(`Using default language: ${preferredLang}`);
+        return preferredLang; // Default to English if others fail
     }
 
     // Set initial language on page load
+    const initialLang = getInitialLanguage();
     updateLanguage(initialLang);
 
 });

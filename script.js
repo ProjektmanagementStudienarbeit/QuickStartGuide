@@ -1,32 +1,20 @@
-// Wait for the DOM to be fully loaded and parsed
+// --- START OF FILE script.js (FINAL VERSION) ---
+
 document.addEventListener('DOMContentLoaded', () => {
-    console.log('DOM fully loaded and parsed.'); // Checkpoint 1
 
     // Select essential elements
     const languageSelector = document.getElementById('languageSelector');
     const htmlElement = document.documentElement;
-    const translatableElements = document.querySelectorAll('[data-key]');
+    // Get elements here, but requery inside updateLanguage if needed
+    let translatableElements = document.querySelectorAll('[data-key]');
 
     // --- Basic Check ---
     if (!languageSelector) {
-        console.error("CRITICAL Error: Language selector element with ID 'languageSelector' not found.");
+        console.error("Error: Language selector element with ID 'languageSelector' not found.");
         return; // Stop execution if selector is missing
-    } else {
-        console.log('Language selector found:', languageSelector); // Checkpoint 2
     }
-
-    if (!htmlElement) {
-        console.error("CRITICAL Error: HTML element not found.");
-        return;
-    } else {
-         console.log('HTML element found:', htmlElement); // Checkpoint 3
-    }
-
-
     if (translatableElements.length === 0) {
-        console.warn("Warning: No elements with 'data-key' attribute found for translation.");
-    } else {
-        console.log(`Found ${translatableElements.length} elements with [data-key].`); // Checkpoint 4
+        console.warn("Warning: No elements with 'data-key' attribute initially found for translation.");
     }
 
 
@@ -156,8 +144,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // --- Function to Update Text Content ---
     function updateLanguage(lang) {
-        console.log(`--- Attempting to update language to: ${lang} ---`); // Checkpoint 5
-
         let selectedTranslations = translations[lang]; // Use let to allow reassignment
 
         if (!selectedTranslations) {
@@ -165,118 +151,95 @@ document.addEventListener('DOMContentLoaded', () => {
             lang = 'en'; // Fallback language
              selectedTranslations = translations[lang];
              if (!selectedTranslations) { // Check if English is missing too
-                console.error("CRITICAL Error: English translations are missing. Cannot update language.");
-                return; // Stop if even English is missing
+                console.error("Critical Error: English translations are missing.");
+                return;
              }
         }
 
         // Set language attribute and direction on <html> element
-        try {
-            htmlElement.setAttribute('lang', lang);
-            htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
-             console.log(`Set HTML lang to "${lang}" and dir to "${htmlElement.getAttribute('dir')}".`); // Checkpoint 6
-        } catch (e) {
-            console.error("Error setting lang/dir attributes:", e);
-        }
+        htmlElement.setAttribute('lang', lang);
+        htmlElement.setAttribute('dir', lang === 'ar' ? 'rtl' : 'ltr');
 
+        // Re-query elements *inside* the function in case DOM changes
+        const currentTranslatableElements = document.querySelectorAll('[data-key]');
+        if (currentTranslatableElements.length === 0) {
+            console.warn("Warning: No elements with 'data-key' attribute found during update attempt!");
+        }
 
         // Update all elements with data-key attribute
-        // **Re-query the elements INSIDE the function to ensure they exist**
-        const currentTranslatableElements = document.querySelectorAll('[data-key]');
-        console.log(`Updating ${currentTranslatableElements.length} elements...`); // Checkpoint 7 (using current query)
-        let updateCount = 0;
-        let missingKeyCount = 0;
-
-        if (currentTranslatableElements.length === 0) {
-             console.warn("No elements with data-key found during update attempt!");
-        }
-
-        currentTranslatableElements.forEach((element, index) => {
+        currentTranslatableElements.forEach(element => {
             const key = element.getAttribute('data-key');
             const translation = selectedTranslations ? selectedTranslations[key] : undefined;
 
             if (translation !== undefined) {
-                // Use innerHTML for footer, anchor tags, or specifically needed keys
-                 if (key === 'footer_text' || element.tagName === 'A') {
-                     element.innerHTML = translation;
-                 } else {
-                     element.textContent = translation;
-                 }
-                 // console.log(`  [${index}] Updated element with key "${key}"`); // Optional: very verbose log
-                updateCount++;
+                // Use innerHTML only when necessary (e.g., footer copyright, links)
+                if (key === 'footer_text' || element.tagName === 'A') {
+                    element.innerHTML = translation;
+                } else {
+                    element.textContent = translation;
+                }
             } else {
-                 const fallbackTranslation = translations['en'][key];
+                 // Fallback to English if a specific translation is missing
+                 const fallbackTranslation = translations['en'] ? translations['en'][key] : undefined;
                  if(fallbackTranslation !== undefined) {
-                     console.warn(`  [${index}] Translation missing for key "${key}" in "${lang}". Using English fallback.`);
+                     console.warn(`Translation missing for key "${key}" in language "${lang}". Using English fallback.`);
                      if (key === 'footer_text' || element.tagName === 'A') {
                          element.innerHTML = fallbackTranslation;
                      } else {
                         element.textContent = fallbackTranslation;
                      }
-                    updateCount++; // Still counts as an update (using fallback)
                  } else {
-                      console.error(`  [${index}] CRITICAL Error: Translation missing for key "${key}" in both "${lang}" and English fallback.`);
-                      element.textContent = `[MISSING: ${key}]`; // Show placeholder clearly
-                      missingKeyCount++;
+                      console.error(`Error: Translation missing for key "${key}" in both "${lang}" and English fallback.`);
+                      element.textContent = `[${key}]`; // Show key name as placeholder if missing everywhere
                  }
             }
         });
-        console.log(`Finished updating elements. Successful updates (incl. fallbacks): ${updateCount}. Missing keys: ${missingKeyCount}.`); // Checkpoint 8
 
          // Persist selected language
          try {
             localStorage.setItem('preferredLanguage', lang);
-            console.log(`Saved preferred language "${lang}" to localStorage.`); // Checkpoint 9
          } catch (e) {
             console.warn("Could not save preferred language to localStorage:", e);
          }
 
          // Ensure the dropdown shows the currently selected language
          if (languageSelector.value !== lang) {
-            console.log(`Updating selector value from "${languageSelector.value}" to "${lang}".`);
-            languageSelector.value = lang;
+             languageSelector.value = lang;
          }
-         console.log(`--- Language update process finished for: ${lang} ---`); // Checkpoint 10
+         // console.log(`Language changed to: ${lang}`); // Optional: Keep minimal log
     }
 
     // --- Event Listener for Language Change ---
-    console.log('Adding event listener for language change...'); // Checkpoint 11
     languageSelector.addEventListener('change', (event) => {
-        console.log(`>>> Language selector CHANGED to: ${event.target.value}`); // Checkpoint 12
         updateLanguage(event.target.value);
     });
-    console.log('Event listener added.'); // Checkpoint 13
 
     // --- Initial Language Setup ---
     function getInitialLanguage() {
-        console.log('Determining initial language...'); // Checkpoint 14
         let preferredLang = 'en'; // Default fallback
         try {
             // 1. Check Local Storage
             const savedLang = localStorage.getItem('preferredLanguage');
             if (savedLang && translations[savedLang]) {
-                console.log(`Found saved language in localStorage: ${savedLang}`);
+                // console.log(`Using saved language: ${savedLang}`);
                 return savedLang;
             }
-
             // 2. Check Browser Language
             const browserLang = navigator.language.split('-')[0]; // Get 'en' from 'en-US'
             if (translations[browserLang]) {
-                 console.log(`Using browser language: ${browserLang}`);
+                // console.log(`Using browser language: ${browserLang}`);
                 return browserLang;
             }
         } catch (e) {
             console.warn("Could not access localStorage or navigator.language:", e);
         }
-
-         console.log(`No saved or browser language found/valid. Using default: ${preferredLang}`);
+        // console.log(`Using default language: ${preferredLang}`);
         return preferredLang; // Default to English if others fail
     }
 
     // Set initial language on page load
     const initialLang = getInitialLanguage();
-    console.log(`Initial language determined as: ${initialLang}`); // Checkpoint 15
-    updateLanguage(initialLang); // Call initial update
+    updateLanguage(initialLang);
 
 });
-console.log('script.js loaded and executing.'); // Checkpoint 0 (Very beginning)
+// --- END OF FILE script.js (FINAL VERSION) ---

@@ -295,6 +295,87 @@ html[dir="rtl"] .quickstart-box {
     text-align: right;
 }
 
+/* --- START OF FILE style.css --- */
+
+/* ... (alle bisherigen Stile bleiben bestehen) ... */
+
+/* --- Styles for Sub-Pages --- */
+.page-main-title {
+    margin-top: 20px; /* Add some space above main title */
+    margin-bottom: 40px; /* More space below main title */
+    text-align: center;
+}
+
+.content-section {
+    background-color: var(--light-grey);
+    padding: 30px 25px;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.05);
+    text-align: left; /* Align text left within sections */
+}
+
+.content-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 15px;
+    text-align: left; /* Align subheading left */
+    font-size: 1.5rem; /* Adjust size */
+    font-size: clamp(1.4rem, 3vw + 0.5rem, 1.7rem);
+}
+
+.content-section p {
+    max-width: none; /* Allow paragraph full width of section */
+    margin-left: 0;
+    margin-right: 0;
+    text-align: left; /* Align paragraph left */
+    margin-bottom: 0; /* Remove bottom margin if it's the only element */
+}
+
+.back-link-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.back-link {
+    display: inline-block;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    padding: 8px 15px;
+    border: 1px solid var(--light-grey); /* Subtle border */
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover,
+.back-link:focus {
+    background-color: var(--light-grey);
+    border-color: var(--primary-color);
+    color: var(--primary-color); /* Keep color */
+    outline: none;
+}
+
+/* Adjust animation delays for sub-pages */
+.page-main-title.animate-on-load { animation-delay: 0.1s; -webkit-animation-delay: 0.1s; }
+.content-section.animate-on-load:nth-of-type(1) { animation-delay: 0.2s; -webkit-animation-delay: 0.2s; }
+.content-section.animate-on-load:nth-of-type(2) { animation-delay: 0.3s; -webkit-animation-delay: 0.3s; }
+.content-section.animate-on-load:nth-of-type(3) { animation-delay: 0.4s; -webkit-animation-delay: 0.4s; }
+.back-link-container.animate-on-load { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+/* Footer delay might need adjustment if content is short */
+.footer.animate-on-load { animation-delay: 0.6s; -webkit-animation-delay: 0.6s; }
+
+
+/* RTL adjustments for sub-pages */
+html[dir="rtl"] .content-section,
+html[dir="rtl"] .content-section h2,
+html[dir="rtl"] .content-section p {
+    text-align: right;
+}
+
+/* ... (Media Queries und der Rest der CSS bleiben bestehen) ... */
+
+/* --- END OF FILE style.css additions --- */
+
 
 /* --- Responsive Design --- */
 @media (max-width: 768px) {

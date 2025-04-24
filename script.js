@@ -34,7 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Arrival",
             box_language_title: "Language",
             box_finance_title: "Finances",
-            footer_text: "© 2024 OTH Amberg-Weiden. All rights reserved.",
+            footer_text: "© 2025 OTH Amberg-Weiden. All rights reserved.",
 
             // --- General Subpage ---
             back_to_main_link: "« Back to Overview",
@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Anreise",
             box_language_title: "Sprache",
             box_finance_title: "Finanzielles",
-            footer_text: "© 2024 OTH Amberg-Weiden. Alle Rechte vorbehalten.",
+            footer_text: "© 2025 OTH Amberg-Weiden. Alle Rechte vorbehalten.",
 
             // --- General Subpage ---
             back_to_main_link: "« Zurück zur Übersicht",
@@ -260,7 +260,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "आगमन",
             box_language_title: "भाषा",
             box_finance_title: "वित्त",
-            footer_text: "© 2024 OTH Amberg-Weiden। सर्वाधिकार सुरक्षित।",
+            footer_text: "© 2025 OTH Amberg-Weiden। सर्वाधिकार सुरक्षित।",
             // --- General Subpage ---
             back_to_main_link: "« अवलोकन पर वापस",
             // Welcome Page
@@ -363,7 +363,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "الوصول",
             box_language_title: "اللغة",
             box_finance_title: "الأمور المالية",
-            footer_text: "© 2024 OTH Amberg-Weiden. كل الحقوق محفوظة.",
+            footer_text: "© 2025 OTH Amberg-Weiden. كل الحقوق محفوظة.",
             // --- General Subpage ---
             back_to_main_link: "« العودة إلى النظرة العامة",
             // Welcome Page
@@ -466,7 +466,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "Llegada",
             box_language_title: "Idioma",
             box_finance_title: "Finanzas",
-            footer_text: "© 2024 OTH Amberg-Weiden. Todos los derechos reservados.",
+            footer_text: "© 2025 OTH Amberg-Weiden. Todos los derechos reservados.",
             // --- General Subpage ---
             back_to_main_link: "« Volver al Resumen",
             // Welcome Page
@@ -569,7 +569,7 @@ document.addEventListener('DOMContentLoaded', () => {
             box_arrival_title: "抵达",
             box_language_title: "语言",
             box_finance_title: "财务",
-            footer_text: "© 2024 OTH Amberg-Weiden。版权所有。",
+            footer_text: "© 2025 OTH Amberg-Weiden。版权所有。",
             // --- General Subpage ---
             back_to_main_link: "« 返回概览",
             // Welcome Page

@@ -5,7 +5,7 @@ Der QuickStart Guide der OTH Amberg-Weiden unterstützt neue Studierende beim er
 # To-Do
 - Campusübersicht aus Flyer integrieren
 - Icons in Blockübersicht einfügen
-- Checklist zu Download einfügen
+- Checklist zu Download (Button Startseite) einfügen
 - Suchleiste einfügen
 - Karte mit allen Infos (Ärzte, Supermärkte, Clubs, sonstige wichtige Locations.)
 

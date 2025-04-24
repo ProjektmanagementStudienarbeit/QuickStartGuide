@@ -7,6 +7,7 @@ Der QuickStart Guide der OTH Amberg-Weiden unterstützt neue Studierende beim er
 - Icons in Blockübersicht einfügen
 - Checklist zu Download einfügen
 - Suchleiste einfügen
+- Karte mit allen Infos (Ärzte, Supermärkte, Clubs, sonstige wichtige Locations.)
 
 
 Aufteilung der Startseite: 

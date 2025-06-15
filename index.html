@@ -23,8 +23,8 @@
         <select id="languageSelector" aria-labelledby="language_label">
             <option value="en">English</option>
             <option value="de">Deutsch</option>
-            <option value="hi">हिन्दी</option>
             <option value="ar">العربية</option>
+            <option value="hi">हिन्दी</option>
             <option value="es">Español</option>
             <option value="zh">中文</option>
         </select>
@@ -36,41 +36,74 @@
             <p data-key="welcome_text">Your companion for a successful start at OTH Amberg-Weiden.</p>
             <a href="#quickstart" class="cta-button" data-key="learn_more_button">Get Started</a>
             <a href="https://www.oth-aw.de/" target="_blank" rel="noopener noreferrer" class="cta-button secondary-cta" data-key="oth_website_button">To OTH Website</a>
+            <!-- Link to a PDF file you should add to your repository -->
+            <a href="checklist.pdf" target="_blank" class="cta-button" data-key="download_checklist_button">Download Arrival Checklist</a>
         </section>
 
         <section id="quickstart" class="quickstart-grid-container animate-on-load">
-            <h2 data-key="quickstart_title">Quick Start Guide Topics</h2>
+            
+            <h2 data-key="quickstart_title_university">University Life</h2>
             <div class="quickstart-grid">
                 <a href="welcome.html" class="quickstart-box">
-                    <h3 data-key="box_welcome_title">Welcome to the University</h3>
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 3L1 9L12 15L23 9L12 3ZM5 10.18V14.5L12 18L19 14.5V10.18L12 13.5L5 10.18Z"/></svg>
+                    </div>
+                    <h3 data-key="box_welcome_title">Welcome & First Steps</h3>
                 </a>
                 <a href="studies.html" class="quickstart-box">
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7v10h-20v-10h1v-2h2v2h14v-2h2v2h1zM4 9v2h2v-2h-2zM4 12v2h2v-2h-2zM4 15v2h2v-2h-2zM8 9h12v8h-12v-8z"/></svg>
+                    </div>
                     <h3 data-key="box_studies_title">Studies & Organization</h3>
                 </a>
-                <a href="city.html" class="quickstart-box">
-                    <h3 data-key="box_city_life_title">Life in the City</h3>
-                </a>
-                <a href="links.html" class="quickstart-box">
-                    <h3 data-key="box_links_title">Useful Links</h3>
-                </a>
-                <a href="contacts.html" class="quickstart-box">
-                    <h3 data-key="box_contacts_title">Contacts</h3>
-                </a>
-                 <a href="leisure.html" class="quickstart-box">
-                    <h3 data-key="box_leisure_title">Leisure and Sports</h3>
-                </a>
-                <a href="arrival.html" class="quickstart-box">
-                    <h3 data-key="box_arrival_title">Arrival</h3>
+                 <a href="contacts.html" class="quickstart-box">
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+                    </div>
+                    <h3 data-key="box_contacts_title">Important Contacts</h3>
                 </a>
                 <a href="language.html" class="quickstart-box">
-                    <h3 data-key="box_language_title">Language</h3>
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12.87 15.07l-2.54-2.51.03-.03c1.74-1.94 2.98-4.17 3.71-6.53H17V4h-7V2H8v2H1v1.99h11.17C11.5 7.92 10.44 9.75 9 11.35 8.07 10.32 7.3 9.19 6.69 8h-2c.73 1.63 1.73 3.17 2.98 4.56l-5.09 5.02L4 19l5-5 3.11 3.11.76-2.04zM18.5 10h-2L12 22h2l1.12-3h4.75L21 22h2l-4.5-12zm-2.62 7l1.62-4.33L19.12 17h-3.24z"/></svg>
+                    </div>
+                    <h3 data-key="box_language_title">Language Support</h3>
+                </a>
+                 <a href="links.html" class="quickstart-box">
+                    <div class="quickstart-box-icon">
+                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M3.9 12c0-1.71 1.39-3.1 3.1-3.1h4V7H7c-2.76 0-5 2.24-5 5s2.24 5 5 5h4v-1.9H7c-1.71 0-3.1-1.39-3.1-3.1zM8 13h8v-2H8v2zm9-6h-4v1.9h4c1.71 0 3.1 1.39 3.1 3.1s-1.39 3.1-3.1 3.1h-4V17h4c2.76 0 5-2.24 5-5s-2.24-5-5-5z"/></svg>
+                    </div>
+                    <h3 data-key="box_links_title">Useful Links</h3>
+                </a>
+            </div>
+
+            <h2 data-key="quickstart_title_city">Life in the City</h2>
+            <div class="quickstart-grid">
+                <a href="arrival.html" class="quickstart-box">
+                     <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21 16.5c0 .83-.67 1.5-1.5 1.5s-1.5-.67-1.5-1.5.67-1.5 1.5-1.5 1.5.67 1.5 1.5zM12 2c-4 0-8 3.22-8 8.22 0 3.32 2.67 7.27 8 11.78 5.33-4.51 8-8.46 8-11.78C20 5.22 16 2 12 2zm0 12c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4z"/></svg>
+                    </div>
+                    <h3 data-key="box_arrival_title">Arrival & Formalities</h3>
+                </a>
+                <a href="city.html" class="quickstart-box">
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8h5z"/></svg>
+                    </div>
+                    <h3 data-key="box_city_life_title">City Life & Housing</h3>
                 </a>
                 <a href="finance.html" class="quickstart-box">
-                    <h3 data-key="box_finance_title">Finances</h3>
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 10.2L12 5.3 2.2 10.2l9.8 4.9 9.8-4.9zM12 16.9l-9-4.5v3.4l9 4.5 9-4.5v-3.4l-9 4.5zM12 3l10 5-10 5L2 8l10-5z"/></svg>
+                    </div>
+                    <h3 data-key="box_finance_title">Financial Matters</h3>
+                </a>
+                 <a href="leisure.html" class="quickstart-box">
+                    <div class="quickstart-box-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M13 6v15h-2V6H5V4h14v2h-6zM5 22h14v-2H5v2z"/></svg>
+                    </div>
+                    <h3 data-key="box_leisure_title">Leisure & Sports</h3>
                 </a>
             </div>
         </section>
-
     </main>
 
     <footer class="footer animate-on-load">

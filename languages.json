@@ -1,0 +1,729 @@
+{
+    "language_label": {
+        "en": "Select Language:",
+        "de": "Sprache auswählen:",
+        "ar": "اختر اللغة:",
+        "hi": "भाषा चुनें:",
+        "es": "Seleccionar idioma:",
+        "zh": "选择语言："
+    },
+    "back_to_main_link": {
+        "en": "« Back to Overview",
+        "de": "« Zurück zur Übersicht",
+        "ar": "« العودة إلى النظرة العامة",
+        "hi": "« अवलोकन पर वापस",
+        "es": "« Volver a la vista general",
+        "zh": "« 返回主页"
+    },
+    "footer_text": {
+        "en": "© 2025 OTH Amberg-Weiden. All rights reserved.",
+        "de": "© 2025 OTH Amberg-Weiden. Alle Rechte vorbehalten.",
+        "ar": "© 2025 OTH Amberg-Weiden. جميع الحقوق محفوظة.",
+        "hi": "© 2025 OTH Amberg-Weiden. सर्वाधिकार सुरक्षित।",
+        "es": "© 2025 OTH Amberg-Weiden. Todos los derechos reservados.",
+        "zh": "© 2025 OTH Amberg-Weiden. 版权所有。"
+    },
+    "page_title": {
+        "en": "OTH-AW QuickStart Guide",
+        "de": "OTH-AW QuickStart Guide",
+        "ar": "دليل البداية السريعة لـ OTH-AW",
+        "hi": "OTH-AW क्विकस्टार्ट गाइड",
+        "es": "Guía de Inicio Rápido de OTH-AW",
+        "zh": "OTH-AW 快速入门指南"
+    },
+    "welcome_title": {
+        "en": "Welcome to the QuickStart Guide",
+        "de": "Willkommen zum QuickStart Guide",
+        "ar": "أهلاً بكم في دليل البداية السريعة",
+        "hi": "क्विकस्टार्ट गाइड में आपका स्वागत है",
+        "es": "Bienvenido a la Guía de Inicio Rápido",
+        "zh": "欢迎来到快速入门指南"
+    },
+    "welcome_text": {
+        "en": "Your companion for a successful start at OTH Amberg-Weiden.",
+        "de": "Dein Begleiter für einen erfolgreichen Start an der OTH Amberg-Weiden.",
+        "ar": "رفيقك لبداية ناجحة في جامعة OTH Amberg-Weiden.",
+        "hi": "OTH Amberg-Weiden में एक सफल शुरुआत के लिए आपका साथी।",
+        "es": "Tu compañero para un comienzo exitoso en la OTH Amberg-Weiden.",
+        "zh": "您在安贝格-魏登应用技术大学成功起步的伴侣。"
+    },
+    "learn_more_button": {
+        "en": "Get Started",
+        "de": "Jetzt starten",
+        "ar": "ابدأ الآن",
+        "hi": "शुरू हो जाओ",
+        "es": "Comenzar",
+        "zh": "现在开始"
+    },
+    "oth_website_button": {
+        "en": "To OTH Website",
+        "de": "Zur OTH-Webseite",
+        "ar": "إلى موقع OTH",
+        "hi": "OTH वेबसाइट पर",
+        "es": "Al sitio web de OTH",
+        "zh": "访问OTH官网"
+    },
+    "quickstart_title": {
+        "en": "Quick Start Guide Topics",
+        "de": "Themen des Quick Start Guides",
+        "ar": "مواضيع دليل البداية السريعة",
+        "hi": "क्विक स्टार्ट गाइड के विषय",
+        "es": "Temas de la Guía de Inicio Rápido",
+        "zh": "快速入门指南主题"
+    },
+    "box_welcome_title": {
+        "en": "Welcome to the University",
+        "de": "Willkommen an der Hochschule",
+        "ar": "مرحباً بكم في الجامعة",
+        "hi": "विश्वविद्यालय में आपका स्वागत है",
+        "es": "Bienvenido a la Universidad",
+        "zh": "欢迎来到大学"
+    },
+    "box_studies_title": {
+        "en": "Studies & Organization",
+        "de": "Studium & Organisation",
+        "ar": "الدراسة والتنظيم",
+        "hi": "अध्ययन और संगठन",
+        "es": "Estudios y Organización",
+        "zh": "学习与组织"
+    },
+    "box_city_life_title": {
+        "en": "Life in the City",
+        "de": "Leben in der Stadt",
+        "ar": "الحياة في المدينة",
+        "hi": "शहर में जीवन",
+        "es": "La vida en la ciudad",
+        "zh": "城市生活"
+    },
+    "box_links_title": {
+        "en": "Useful Links",
+        "de": "Nützliche Links",
+        "ar": "روابط مفيدة",
+        "hi": "उपयोगी लिंक",
+        "es": "Enlaces útiles",
+        "zh": "实用链接"
+    },
+    "box_contacts_title": {
+        "en": "Contacts",
+        "de": "Kontakte",
+        "ar": "جهات الاتصال",
+        "hi": "संपर्क",
+        "es": "Contactos",
+        "zh": "联系方式"
+    },
+    "box_leisure_title": {
+        "en": "Leisure and Sports",
+        "de": "Freizeit und Sport",
+        "ar": "الترفيه والرياضة",
+        "hi": "अवकाश और खेल",
+        "es": "Ocio y Deportes",
+        "zh": "休闲与运动"
+    },
+    "box_arrival_title": {
+        "en": "Arrival & First Steps",
+        "de": "Ankunft & Erste Schritte",
+        "ar": "الوصول والخطوات الأولى",
+        "hi": "आगमन और पहले कदम",
+        "es": "Llegada y Primeros Pasos",
+        "zh": "抵达与起步"
+    },
+    "box_language_title": {
+        "en": "Language",
+        "de": "Sprache",
+        "ar": "اللغة",
+        "hi": "भाषा",
+        "es": "Idioma",
+        "zh": "语言"
+    },
+    "box_finance_title": {
+        "en": "Finances",
+        "de": "Finanzen",
+        "ar": "الأمور المالية",
+        "hi": "वित्त",
+        "es": "Finanzas",
+        "zh": "财务"
+    },
+    "page_title_welcome": {
+        "en": "Welcome - QuickStart Guide",
+        "de": "Willkommen - QuickStart Guide",
+        "ar": "مرحباً - دليل البداية السريعة",
+        "hi": "स्वागत - क्विकस्टार्ट गाइड",
+        "es": "Bienvenida - Guía de Inicio Rápido",
+        "zh": "欢迎 - 快速入门指南"
+    },
+    "welcome_page_main_title": {
+        "en": "Welcome to OTH Amberg-Weiden",
+        "de": "Willkommen an der OTH Amberg-Weiden",
+        "ar": "مرحباً بكم في OTH Amberg-Weiden",
+        "hi": "OTH Amberg-Weiden में आपका स्वागत है",
+        "es": "Bienvenido a la OTH Amberg-Weiden",
+        "zh": "欢迎来到安贝格-魏登应用技术大学"
+    },
+    "welcome_page_sub1_title": {
+        "en": "Your Checklist for the First Week",
+        "de": "Deine Checkliste für die erste Woche",
+        "ar": "قائمة المهام الخاصة بك للأسبوع الأول",
+        "hi": "पहले सप्ताह के लिए आपकी चेकलिस्ट",
+        "es": "Tu lista de verificación para la primera semana",
+        "zh": "第一周清单"
+    },
+    "welcome_page_sub1_text": {
+        "en": "Congratulations on starting your studies! The first few days can be overwhelming, but this checklist will help you navigate them: <br><b>1. Collect Student ID:</b> Go to the Student Office (Studienbüro) to pick up your student ID card. This card is essential for many services. <br><b>2. Get Your IT Credentials:</b> You will receive your initial login details for all university IT services (Moodle, Webmail, PRIMUSS). Change your password immediately. <br><b>3. Attend Orientation Events:</b> The International Office and your faculty offer orientation sessions. Attending is highly recommended! You'll get vital information and meet other new students. <br><b>4. Explore the Campus:</b> Take a walk around. Find your lecture halls, the library, the cafeteria (Mensa), and the International Office. <br><b>5. Activate your Library Account:</b> Go to the library desk with your student ID to activate your account for borrowing books and accessing online resources.",
+        "de": "Herzlichen Glückwunsch zum Studienstart! Die ersten Tage können überwältigend sein, aber diese Checkliste hilft dir bei der Orientierung: <br><b>1. Studierendenausweis abholen:</b> Geh zum Studienbüro, um deinen Studierendenausweis abzuholen. Diese Karte ist für viele Dienste unerlässlich. <br><b>2. IT-Zugangsdaten erhalten:</b> Du erhältst deine initialen Zugangsdaten für alle IT-Dienste der Hochschule (Moodle, Webmail, PRIMUSS). Ändere dein Passwort sofort. <br><b>3. An Orientierungsveranstaltungen teilnehmen:</b> Das International Office und deine Fakultät bieten Orientierungsveranstaltungen an. Die Teilnahme wird dringend empfohlen! Du erhältst wichtige Informationen und lernst andere neue Studierende kennen. <br><b>4. Den Campus erkunden:</b> Mach einen Spaziergang. Finde deine Hörsäle, die Bibliothek, die Mensa und das International Office. <br><b>5. Bibliothekskonto aktivieren:</b> Geh mit deinem Studierendenausweis zur Theke der Bibliothek, um dein Konto für die Ausleihe von Büchern und den Zugriff auf Online-Ressourcen zu aktivieren.",
+        "ar": "تهانينا على بدء دراستك! قد تكون الأيام القليلة الأولى مربكة، لكن قائمة المراجعة هذه ستساعدك على التنقل فيها: <br><b>1. استلام بطاقة الطالب:</b> اذهب إلى مكتب الطلاب (Studienbüro) لاستلام بطاقة الطالب الخاصة بك. هذه البطاقة ضرورية للعديد من الخدمات. <br><b>2. الحصول على بيانات اعتماد تكنولوجيا المعلومات الخاصة بك:</b> ستتلقى تفاصيل تسجيل الدخول الأولية لجميع خدمات تكنولوجيا المعلومات بالجامعة (Moodle ، Webmail ، PRIMUSS). قم بتغيير كلمة المرور الخاصة بك على الفور. <br><b>3. حضور فعاليات التوجيه:</b> يقدم المكتب الدولي وكليتك جلسات توجيه. يوصى بشدة بالحضور! ستحصل على معلومات حيوية وتلتقي بطلاب جدد آخرين. <br><b>4. استكشاف الحرم الجامعي:</b> تجول. ابحث عن قاعات المحاضرات والمكتبة والكافتيريا (Mensa) والمكتب الدولي. <br><b>5. تفعيل حساب المكتبة الخاص بك:</b> اذهب إلى مكتب المكتبة ببطاقة الطالب الخاصة بك لتفعيل حسابك لاستعارة الكتب والوصول إلى الموارد عبر الإنترنت.",
+        "hi": "आपकी पढ़ाई शुरू करने पर बधाई! पहले कुछ दिन भारी पड़ सकते हैं, लेकिन यह चेकलिस्ट आपको उनसे निपटने में मदद करेगी: <br><b>1. छात्र आईडी प्राप्त करें:</b> अपना छात्र आईडी कार्ड लेने के लिए छात्र कार्यालय (Studienbüro) जाएं। यह कार्ड कई सेवाओं के लिए आवश्यक है। <br><b>2. अपने आईटी क्रेडेंशियल प्राप्त करें:</b> आपको सभी विश्वविद्यालय आईटी सेवाओं (Moodle, Webmail, PRIMUSS) के लिए अपने प्रारंभिक लॉगिन विवरण प्राप्त होंगे। अपना पासवर्ड तुरंत बदलें। <br><b>3. ओरिएंटेशन कार्यक्रमों में भाग लें:</b> अंतर्राष्ट्रीय कार्यालय और आपका संकाय ओरिएंटेशन सत्र प्रदान करते हैं। इसमें भाग लेने की अत्यधिक अनुशंसा की जाती है! आपको महत्वपूर्ण जानकारी मिलेगी और अन्य नए छात्रों से मिलेंगे। <br><b>4. कैंपस का अन्वेषण करें:</b> घूमें। अपने व्याख्यान कक्ष, पुस्तकालय, कैफेटेरिया (Mensa), और अंतर्राष्ट्रीय कार्यालय का पता लगाएं। <br><b>5. अपना पुस्तकालय खाता सक्रिय करें:</b> किताबें उधार लेने और ऑनलाइन संसाधनों तक पहुंचने के لیے अपना खाता सक्रिय करने के लिए अपनी छात्र आईडी के साथ पुस्तकालय डेस्क पर जाएं।",
+        "es": "¡Felicidades por comenzar tus estudios! Los primeros días pueden ser abrumadores, pero esta lista de verificación te ayudará a superarlos: <br><b>1. Recoge tu carné de estudiante:</b> Ve a la Oficina de Estudiantes (Studienbüro) para recoger tu carné de estudiante. Esta tarjeta es esencial para muchos servicios. <br><b>2. Obtén tus credenciales de TI:</b> Recibirás tus datos de acceso iniciales para todos los servicios de TI de la universidad (Moodle, Webmail, PRIMUSS). Cambia tu contraseña inmediatamente. <br><b>3. Asiste a los eventos de orientación:</b> La Oficina Internacional y tu facultad ofrecen sesiones de orientación. ¡Es muy recomendable asistir! Obtendrás información vital y conocerás a otros estudiantes nuevos. <br><b>4. Explora el campus:</b> Date un paseo. Encuentra tus aulas, la biblioteca, la cafetería (Mensa) y la Oficina Internacional. <br><b>5. Activa tu cuenta de la biblioteca:</b> Ve al mostrador de la biblioteca con tu carné de estudiante para activar tu cuenta para tomar prestados libros y acceder a recursos en línea.",
+        "zh": "恭喜您开始学业！最初几天可能会让人不知所措，但这份清单将帮助您顺利度过：<br><b>1. 领取学生证：</b>前往学生办公室（Studienbüro）领取您的学生证。此卡对于许多服务至关重要。<br><b>2. 获取您的IT凭据：</b>您将收到所有大学IT服务（Moodle、Webmail、PRIMUSS）的初始登录信息。请立即更改密码。<br><b>3. 参加迎新活动：</b>国际办公室和您所在的院系会提供迎新会。强烈建议参加！您将获得重要信息并结识其他新生。<br><b>4. 探索校园：</b>四处走走。找到您的演讲厅、图书馆、食堂（Mensa）和国际办公室。<br><b>5. 激活您的图书馆账户：</b>带上您的学生证到图书馆服务台激活您的账户，以便借阅书籍和访问在线资源。"
+    },
+    "welcome_page_sub2_title": {
+        "en": "Campus Overview & Key Locations",
+        "de": "Campus-Übersicht & wichtige Orte",
+        "ar": "نظرة عامة على الحرم الجامعي والمواقع الرئيسية",
+        "hi": "कैंपस का अवलोकन और मुख्य स्थान",
+        "es": "Vista general del campus y lugares clave",
+        "zh": "校园概览与关键地点"
+    },
+    "welcome_page_sub2_text": {
+        "en": "Our university has two campuses: one in Amberg and one in Weiden. Make sure you know which campus your faculty is located on. Key locations on both campuses include: <br>• <b>Library (Bibliothek):</b> For books, quiet study spaces, group work rooms, and digital resources. <br>• <b>Cafeteria (Mensa):</b> Offers affordable, subsidized meals. Pay with your student ID card. Check the weekly menu online! <br>• <b>Student Office (Studienbüro):</b> For administrative matters like enrollment, re-registration, and official documents. <br>• <b>International Office:</b> Your main point of contact for all international student affairs, visa questions, and support programs. <br>• <b>Computer Labs (CIP-Pools):</b> For studying, using special software, and project work. <br>Campus maps are available online and at information desks.",
+        "de": "Unsere Hochschule hat zwei Standorte: einen in Amberg und einen in Weiden. Stelle sicher, dass du weißt, an welchem Campus sich deine Fakultät befindet. Wichtige Orte an beiden Standorten sind: <br>• <b>Bibliothek:</b> Für Bücher, ruhige Lernplätze, Gruppenarbeitsräume und digitale Ressourcen. <br>• <b>Mensa:</b> Bietet günstige, subventionierte Mahlzeiten. Bezahle mit deinem Studierendenausweis. Den wöchentlichen Speiseplan findest du online! <br>• <b>Studienbüro:</b> Für administrative Angelegenheiten wie Immatrikulation, Rückmeldung und offizielle Dokumente. <br>• <b>International Office:</b> Deine zentrale Anlaufstelle für alle Belange internationaler Studierender, Visafragen und Betreuungsprogramme. <br>• <b>Computerräume (CIP-Pools):</b> Zum Lernen, für die Nutzung spezieller Software und für Projektarbeiten. <br>Lagepläne findest du online und an den Info-Schaltern.",
+        "ar": "جامعتنا لها حرمان جامعيان: واحد في آمبرغ والآخر في فايدن. تأكد من أنك تعرف في أي حرم تقع كليتك. تشمل المواقع الرئيسية في كلا الحرمين: <br>• <b>المكتبة (Bibliothek):</b> للكتب وأماكن الدراسة الهادئة وغرف العمل الجماعي والموارد الرقمية. <br>• <b>الكافتيريا (Mensa):</b> تقدم وجبات مدعومة بأسعار معقولة. ادفع ببطاقة الطالب الخاصة بك. تحقق من القائمة الأسبوعية عبر الإنترنت! <br>• <b>مكتب الطلاب (Studienbüro):</b> للمسائل الإدارية مثل التسجيل وإعادة التسجيل والمستندات الرسمية. <br>• <b>المكتب الدولي:</b> نقطة الاتصال الرئيسية لجميع شؤون الطلاب الدوليين وأسئلة التأشيرة وبرامج الدعم. <br>• <b>مختبرات الحاسوب (CIP-Pools):</b> للدراسة واستخدام برامج خاصة والعمل على المشاريع. <br>تتوفر خرائط الحرم الجامعي عبر الإنترنت وفي مكاتب المعلومات.",
+        "hi": "हमारे विश्वविद्यालय के दो परिसर हैं: एक एमबर्ग में और एक वेडेन में। सुनिश्चित करें कि आप जानते हैं कि आपका संकाय किस परिसर में स्थित है। दोनों परिसरों में प्रमुख स्थानों में शामिल हैं: <br>• <b>पुस्तकालय (Bibliothek):</b> किताबों, शांत अध्ययन स्थानों, समूह कार्य कमरों और डिजिटल संसाधनों के लिए। <br>• <b>कैफेटेरिया (Mensa):</b> सस्ती, रियायती भोजन प्रदान करता है। अपने छात्र आईडी कार्ड से भुगतान करें। साप्ताहिक मेनू ऑनलाइन देखें! <br>• <b>छात्र कार्यालय (Studienbüro):</b> नामांकन, पुन: पंजीकरण और आधिकारिक दस्तावेजों जैसे प्रशासनिक मामलों के लिए। <br>• <b>अंतर्राष्ट्रीय कार्यालय:</b> सभी अंतरराष्ट्रीय छात्र मामलों, वीजा प्रश्नों और सहायता कार्यक्रमों के लिए आपका मुख्य संपर्क बिंदु। <br>• <b>कंप्यूटर लैब्स (CIP-Pools):</b> अध्ययन, विशेष सॉफ्टवेयर का उपयोग करने और परियोजना कार्य के लिए। <br>कैंपस के नक्शे ऑनलाइन और सूचना डेस्क पर उपलब्ध हैं।",
+        "es": "Nuestra universidad tiene dos campus: uno en Amberg y otro en Weiden. Asegúrate de saber en qué campus se encuentra tu facultad. Los lugares clave en ambos campus incluyen: <br>• <b>Biblioteca (Bibliothek):</b> Para libros, espacios de estudio tranquilos, salas de trabajo en grupo y recursos digitales. <br>• <b>Comedor (Mensa):</b> Ofrece comidas asequibles y subvencionadas. Paga con tu carné de estudiante. ¡Consulta el menú semanal en línea! <br>• <b>Oficina de Estudiantes (Studienbüro):</b> Para asuntos administrativos como la matrícula, la reinscripción y documentos oficiales. <br>• <b>Oficina Internacional:</b> Tu principal punto de contacto para todos los asuntos de estudiantes internacionales, preguntas sobre visados y programas de apoyo. <br>• <b>Salas de ordenadores (CIP-Pools):</b> Para estudiar, usar software especial y trabajar en proyectos. <br>Los mapas del campus están disponibles en línea y en los puntos de información.",
+        "zh": "我们的大学有两个校区：一个在安贝格，一个在魏登。请确保您知道您所在的院系位于哪个校区。两个校区的关键地点包括：<br>• <b>图书馆 (Bibliothek):</b> 提供书籍、安静的学习空间、小组工作室和数字资源。<br>• <b>食堂 (Mensa):</b> 提供价格实惠、有补贴的餐点。用您的学生证支付。请在线查看每周菜单！<br>• <b>学生办公室 (Studienbüro):</b> 处理注册、重新注册和官方文件等行政事务。<br>• <b>国际办公室:</b> 您处理所有国际学生事务、签证问题和支持项目的主要联系点。<br>• <b>计算机房 (CIP-Pools):</b> 用于学习、使用特殊软件和项目工作。<br>校园地图可在线获取或在信息台索取。"
+    },
+    "welcome_page_sub3_title": {
+        "en": "Your Digital Toolkit",
+        "de": "Deine digitalen Werkzeuge",
+        "ar": "أدواتك الرقمية",
+        "hi": "आपका डिजिटल टूलकिट",
+        "es": "Tu kit de herramientas digitales",
+        "zh": "您的数字工具包"
+    },
+    "welcome_page_sub3_text": {
+        "en": "Get familiar with the essential online platforms from day one: <br>• <b>Moodle:</b> This is the learning platform. Here you'll find course materials, submit assignments, participate in forums, and communicate with professors. It is your responsibility to check Moodle daily. <br>• <b>PRIMUSS:</b> The campus portal for all administrative tasks. You will use it for course registration, exam registration, viewing your grades, and updating your personal data. <br>• <b>Webmail:</b> Your official university email address (e.g., name@oth-aw.de). All official communication from the university will be sent here. Check it daily! <br>• <b>VPN (Virtual Private Network):</b> To access certain university resources (like library databases) from off-campus, you need to install and use the VPN client. Instructions for setup are on the IT service website.",
+        "de": "Mach dich vom ersten Tag an mit den wichtigsten Online-Plattformen vertraut: <br>• <b>Moodle:</b> Dies ist die Lernplattform. Hier findest du Kursmaterialien, reichst Aufgaben ein, nimmst an Foren teil und kommunizierst mit Professoren. Es liegt in deiner Verantwortung, Moodle täglich zu überprüfen. <br>• <b>PRIMUSS:</b> Das Campus-Portal für alle administrativen Aufgaben. Du nutzt es für die Kurs- und Prüfungsanmeldung, die Einsicht deiner Noten und die Aktualisierung deiner persönlichen Daten. <br>• <b>Webmail:</b> Deine offizielle Hochschul-E-Mail-Adresse (z.B. name@oth-aw.de). Die gesamte offizielle Kommunikation der Hochschule wird hierher gesendet. Überprüfe sie täglich! <br>• <b>VPN (Virtual Private Network):</b> Um von außerhalb des Campus auf bestimmte Hochschulressourcen (wie Bibliotheksdatenbanken) zuzugreifen, musst du den VPN-Client installieren und verwenden. Anleitungen zur Einrichtung findest du auf der Website des IT-Servicezentrums.",
+        "ar": "تعرف على المنصات الإلكترونية الأساسية من اليوم الأول: <br>• <b>Moodle:</b> هذه هي منصة التعلم. ستجد هنا مواد الدورة التدريبية، وتقدم الواجبات، وتشارك في المنتديات، وتتواصل مع الأساتذة. تقع على عاتقك مسؤولية التحقق من Moodle يوميًا. <br>• <b>PRIMUSS:</b> بوابة الحرم الجامعي لجميع المهام الإدارية. ستستخدمها للتسجيل في الدورات، والتسجيل في الامتحانات، وعرض درجاتك، وتحديث بياناتك الشخصية. <br>• <b>Webmail:</b> عنوان بريدك الإلكتروني الجامعي الرسمي (على سبيل المثال، name@oth-aw.de). سيتم إرسال جميع الاتصالات الرسمية من الجامعة إلى هنا. تحقق منه يوميًا! <br>• <b>VPN (الشبكة الخاصة الافتراضية):</b> للوصول إلى موارد جامعية معينة (مثل قواعد بيانات المكتبة) من خارج الحرم الجامعي، تحتاج إلى تثبيت واستخدام عميل VPN. توجد تعليمات الإعداد على موقع خدمة تكنولوجيا المعلومات.",
+        "hi": "पहले दिन से ही आवश्यक ऑनलाइन प्लेटफ़ॉर्म से परिचित हों: <br>• <b>Moodle:</b> यह लर्निंग प्लेटफ़ॉर्म है। यहां आपको पाठ्यक्रम सामग्री मिलेगी, असाइनमेंट जमा करेंगे, फ़ोरम में भाग लेंगे, और प्रोफेसरों के साथ संवाद करेंगे। Moodle को रोज़ाना जांचना आपकी ज़िम्मेदारी है। <br>• <b>PRIMUSS:</b> सभी प्रशासनिक कार्यों के लिए कैंपस पोर्टल। आप इसका उपयोग पाठ्यक्रम पंजीकरण, परीक्षा पंजीकरण, अपने ग्रेड देखने और अपने व्यक्तिगत डेटा को अपडेट करने के लिए करेंगे। <br>• <b>Webmail:</b> आपका आधिकारिक विश्वविद्यालय ईमेल पता (जैसे, name@oth-aw.de)। विश्वविद्यालय से सभी आधिकारिक संचार यहीं भेजे जाएंगे। इसे रोज़ाना जांचें! <br>• <b>VPN (वर्चुअल प्राइवेट नेटवर्क):</b> ऑफ-कैंपस से कुछ विश्वविद्यालय संसाधनों (जैसे पुस्तकालय डेटाबेस) तक पहुंचने के लिए, आपको VPN क्लाइंट को स्थापित और उपयोग करने की आवश्यकता है। सेटअप के लिए निर्देश आईटी सेवा वेबसाइट पर हैं।",
+        "es": "Familiarízate con las plataformas en línea esenciales desde el primer día: <br>• <b>Moodle:</b> Esta es la plataforma de aprendizaje. Aquí encontrarás materiales de los cursos, entregarás trabajos, participarás en foros y te comunicarás con los profesores. Es tu responsabilidad revisar Moodle a diario. <br>• <b>PRIMUSS:</b> El portal del campus para todas las tareas administrativas. Lo usarás para la inscripción en cursos, la inscripción en exámenes, ver tus calificaciones y actualizar tus datos personales. <br>• <b>Webmail:</b> Tu dirección de correo electrónico oficial de la universidad (p. ej., nombre@oth-aw.de). Toda la comunicación oficial de la universidad se enviará aquí. ¡Revísala a diario! <br>• <b>VPN (Red Privada Virtual):</b> Para acceder a ciertos recursos de la universidad (como bases de datos de la biblioteca) desde fuera del campus, necesitas instalar y usar el cliente VPN. Las instrucciones de configuración están en el sitio web del servicio de TI.",
+        "zh": "从第一天起就熟悉必要的在线平台：<br>• <b>Moodle:</b> 这是学习平台。您可以在此找到课程资料、提交作业、参与论坛并与教授交流。您有责任每天检查Moodle。<br>• <b>PRIMUSS:</b> 用于所有行政任务的校园门户。您将使用它进行课程注册、考试注册、查看成绩和更新个人数据。<br>• <b>Webmail:</b> 您的官方大学电子邮件地址（例如，name@oth-aw.de）。大学的所有官方通讯都将发送到此处。请每天检查！<br>• <b>VPN (虚拟专用网络):</b> 要从校外访问某些大学资源（如图书馆数据库），您需要安装和使用VPN客户端。设置说明可在IT服务网站上找到。"
+    },
+    "page_title_arrival": {
+        "en": "Arrival & First Steps - QuickStart Guide",
+        "de": "Ankunft & Erste Schritte - QuickStart Guide",
+        "ar": "الوصول والخطوات الأولى - دليل البداية السريعة",
+        "hi": "आगमन और पहले कदम - क्विकस्टार्ट गाइड",
+        "es": "Llegada y Primeros Pasos - Guía de Inicio Rápido",
+        "zh": "抵达与起步 - 快速入门指南"
+    },
+    "arrival_page_main_title": {
+        "en": "Arrival and First Steps",
+        "de": "Ankunft und erste Schritte",
+        "ar": "الوصول والخطوات الأولى",
+        "hi": "आगमन और पहले कदम",
+        "es": "Llegada y primeros pasos",
+        "zh": "抵达与初步流程"
+    },
+    "arrival_page_sub1_title": {
+        "en": "Getting to Amberg & Weiden",
+        "de": "Anreise nach Amberg & Weiden",
+        "ar": "الوصول إلى آمبرغ وفايدن",
+        "hi": "एमबर्ग और वेडेन पहुँचना",
+        "es": "Cómo llegar a Amberg y Weiden",
+        "zh": "如何到达安贝格和魏登"
+    },
+    "arrival_page_sub1_text": {
+        "en": "Welcome to Bavaria! The nearest major international airports are Nuremberg (NUE) and Munich (MUC). <br>• <b>From Nuremberg Airport (NUE):</b> This is the easiest option. Take the U2 subway line to Nuremberg main station (Nürnberg Hbf), which takes about 15 minutes. From there, direct regional trains (e.g., RE) go to Amberg (approx. 50-60 minutes) and Weiden (approx. 1.5 hours). <br>• <b>From Munich Airport (MUC):</b> This journey is longer. Take the S-Bahn (S1 or S8) to Munich main station (München Hbf). From there, you can take trains towards Nuremberg or Regensburg, with a connection to Amberg/Weiden. Total travel time is around 2.5-3.5 hours. <br><b>Tip:</b> Download the 'DB Navigator' app from Deutsche Bahn. It is the best tool to check connections, see delays, and buy tickets. You can often save money by buying a 'Bayern-Ticket' if you travel in a group or on weekends.",
+        "de": "Willkommen in Bayern! Die nächstgelegenen großen internationalen Flughäfen sind Nürnberg (NUE) und München (MUC). <br>• <b>Vom Flughafen Nürnberg (NUE):</b> Dies ist die einfachste Option. Nimm die U-Bahn-Linie U2 zum Nürnberger Hauptbahnhof, was etwa 15 Minuten dauert. Von dort fahren direkte Regionalzüge (z.B. RE) nach Amberg (ca. 50-60 Minuten) und Weiden (ca. 1,5 Stunden). <br>• <b>Vom Flughafen München (MUC):</b> Diese Reise ist länger. Nimm die S-Bahn (S1 oder S8) zum Münchner Hauptbahnhof. Von dort kannst du Züge Richtung Nürnberg oder Regensburg nehmen, mit Anschluss nach Amberg/Weiden. Die Gesamtreisezeit beträgt etwa 2,5-3,5 Stunden. <br><b>Tipp:</b> Lade die App 'DB Navigator' der Deutschen Bahn herunter. Sie ist das beste Werkzeug, um Verbindungen zu prüfen, Verspätungen zu sehen und Tickets zu kaufen. Mit einem 'Bayern-Ticket' kannst du oft Geld sparen, wenn du in einer Gruppe oder am Wochenende reist.",
+        "ar": "أهلاً بكم في بافاريا! أقرب المطارات الدولية الرئيسية هي نورمبرغ (NUE) وميونخ (MUC). <br>• <b>من مطار نورمبرغ (NUE):</b> هذا هو الخيار الأسهل. استقل خط مترو الأنفاق U2 إلى محطة نورمبرغ الرئيسية (Nürnberg Hbf)، ويستغرق ذلك حوالي 15 دقيقة. من هناك، تنطلق قطارات إقليمية مباشرة (مثل RE) إلى آمبرغ (حوالي 50-60 دقيقة) وفايدن (حوالي 1.5 ساعة). <br>• <b>من مطار ميونخ (MUC):</b> هذه الرحلة أطول. استقل قطار S-Bahn (S1 أو S8) إلى محطة ميونخ الرئيسية (München Hbf). من هناك، يمكنك ركوب القطارات باتجاه نورمبرغ أو ريغنسبورغ، مع تغيير قطار إلى آمبرغ/فايدن. يبلغ إجمالي وقت السفر حوالي 2.5-3.5 ساعة. <br><b>نصيحة:</b> قم بتنزيل تطبيق 'DB Navigator' من Deutsche Bahn. إنه أفضل أداة للتحقق من الرحلات، ورؤية التأخير، وشراء التذاكر. يمكنك غالبًا توفير المال عن طريق شراء 'Bayern-Ticket' إذا كنت تسافر في مجموعة أو في عطلات نهاية الأسبوع.",
+        "hi": "बवेरिया में आपका स्वागत है! निकटतम प्रमुख अंतरराष्ट्रीय हवाई अड्डे नूर्नबर्ग (NUE) और म्यूनिख (MUC) हैं। <br>• <b>नूर्नबर्ग हवाई अड्डे (NUE) से:</b> यह सबसे आसान विकल्प है। U2 मेट्रो लाइन से नूर्नबर्ग मुख्य स्टेशन (Nürnberg Hbf) तक जाएं, जिसमें लगभग 15 मिनट लगते हैं। वहां से, एमबर्ग (लगभग 50-60 मिनट) और वेडेन (लगभग 1.5 घंटे) के लिए सीधी क्षेत्रीय ट्रेनें (जैसे, RE) हैं। <br>• <b>म्यूनिख हवाई अड्डे (MUC) से:</b> यह यात्रा लंबी है। S-Bahn (S1 या S8) से म्यूनिख मुख्य स्टेशन (München Hbf) तक जाएं। वहां से, आप नूर्नबर्ग या रेगेन्सबर्ग की ओर जाने वाली ट्रेनें ले सकते हैं, जहाँ से एमबर्ग/वेडेन के लिए कनेक्शन मिलेगा। कुल यात्रा समय लगभग 2.5-3.5 घंटे है। <br><b>सुझाव:</b> ड्यूश बान से 'DB Navigator' ऐप डाउनलोड करें। यह कनेक्शन की जांच करने, देरी देखने और टिकट खरीदने के लिए सबसे अच्छा उपकरण है। यदि आप एक समूह में या सप्ताहांत पर यात्रा करते हैं तो आप अक्सर 'बायर्न-टिकट' खरीदकर पैसे बचा सकते हैं।",
+        "es": "¡Bienvenido a Baviera! Los aeropuertos internacionales más cercanos son Núremberg (NUE) y Múnich (MUC). <br>• <b>Desde el aeropuerto de Núremberg (NUE):</b> Esta es la opción más fácil. Toma la línea de metro U2 hasta la estación central de Núremberg (Nürnberg Hbf), lo que tarda unos 15 minutos. Desde allí, hay trenes regionales directos (p. ej., RE) a Amberg (aprox. 50-60 minutos) y Weiden (aprox. 1.5 horas). <br>• <b>Desde el aeropuerto de Múnich (MUC):</b> Este viaje es más largo. Toma el S-Bahn (S1 o S8) hasta la estación central de Múnich (München Hbf). Desde allí, puedes tomar trenes hacia Núremberg o Ratisbona, con conexión a Amberg/Weiden. El tiempo total de viaje es de alrededor de 2.5-3.5 horas. <br><b>Consejo:</b> Descarga la aplicación 'DB Navigator' de Deutsche Bahn. Es la mejor herramienta para consultar conexiones, ver retrasos y comprar billetes. A menudo puedes ahorrar dinero comprando un 'Bayern-Ticket' si viajas en grupo o los fines de semana.",
+        "zh": "欢迎来到巴伐利亚！最近的主要国际机场是纽伦堡（NUE）和慕尼黑（MUC）。<br>• <b>从纽伦堡机场（NUE）出发：</b>这是最简单的选择。乘坐U2地铁线到纽伦堡火车总站（Nürnberg Hbf），大约需要15分钟。从那里，有直达的区域火车（例如RE）前往安贝格（约50-60分钟）和魏登（约1.5小时）。<br>• <b>从慕尼黑机场（MUC）出发：</b>这段旅程较长。乘坐S-Bahn（S1或S8）到慕尼黑火车总站（München Hbf）。从那里，您可以乘坐开往纽伦堡或雷根斯堡方向的火车，然后换乘前往安贝格/魏登。总行程时间约为2.5-3.5小时。<br><b>提示：</b>下载德国铁路（Deutsche Bahn）的“DB Navigator”应用程序。它是查询班次、查看延误和购买车票的最佳工具。如果您是团体出行或在周末旅行，购买“拜仁票”（Bayern-Ticket）通常可以省钱。"
+    },
+    "arrival_page_sub2_title": {
+        "en": "City Registration (Anmeldung)",
+        "de": "Anmeldung beim Einwohnermeldeamt (Anmeldung)",
+        "ar": "تسجيل السكن في المدينة (Anmeldung)",
+        "hi": "शहर पंजीकरण (Anmeldung)",
+        "es": "Registro de residencia (Anmeldung)",
+        "zh": "居民登记 (Anmeldung)"
+    },
+    "arrival_page_sub2_text": {
+        "en": "This is your first and most important bureaucratic step in Germany. Anyone staying for more than 3 months must register their address. <br><b>When:</b> Within two weeks of moving into your permanent accommodation. <br><b>Where:</b> At the local citizens' office ('Einwohnermeldeamt' or 'Bürgerbüro') in Amberg or Weiden. You may need to book an appointment online beforehand. <br><b>What you need:</b><br>• Your valid passport/ID card. <br>• The completed registration form ('Anmeldeformular'). You can usually download this from the city's website. <br>• A confirmation letter from your landlord ('Wohnungsgeberbestätigung'). This is absolutely mandatory. Your landlord is legally required to give it to you. <br>After registration, you will receive a registration certificate ('Meldebescheinigung'). Keep this document safe! You will need it for opening a bank account, getting a tax ID, and applying for your residence permit.",
+        "de": "Dies ist dein erster und wichtigster bürokratischer Schritt in Deutschland. Jeder, der länger als 3 Monate bleibt, muss seine Adresse anmelden. <br><b>Wann:</b> Innerhalb von zwei Wochen nach Einzug in deine feste Unterkunft. <br><b>Wo:</b> Beim örtlichen Einwohnermeldeamt oder Bürgerbüro in Amberg oder Weiden. Möglicherweise musst du vorab online einen Termin buchen. <br><b>Was du brauchst:</b><br>• Deinen gültigen Reisepass/Personalausweis. <br>• Das ausgefüllte Anmeldeformular. Dieses kannst du normalerweise von der Website der Stadt herunterladen. <br>• Eine Wohnungsgeberbestätigung von deinem Vermieter. Diese ist absolut notwendig. Dein Vermieter ist gesetzlich verpflichtet, sie dir auszuhändigen. <br>Nach der Anmeldung erhältst du eine Meldebescheinigung. Bewahre dieses Dokument sicher auf! Du benötigst es zur Eröffnung eines Bankkontos, für deine Steuer-ID und für den Antrag auf deine Aufenthaltserlaubnis.",
+        "ar": "هذه هي خطوتك البيروقراطية الأولى والأكثر أهمية في ألمانيا. يجب على أي شخص يقيم لأكثر من 3 أشهر تسجيل عنوانه. <br><b>متى:</b> في غضون أسبوعين من الانتقال إلى سكنك الدائم. <br><b>أين:</b> في مكتب المواطنين المحلي ('Einwohnermeldeamt' أو 'Bürgerbüro') في آمبرغ أو فايدن. قد تحتاج إلى حجز موعد عبر الإنترنت مسبقًا. <br><b>ماذا تحتاج:</b><br>• جواز سفرك/بطاقة هويتك سارية المفعول. <br>• استمارة التسجيل المكتملة ('Anmeldeformular'). يمكنك عادةً تنزيلها من موقع المدينة على الويب. <br>• رسالة تأكيد من مالك العقار ('Wohnungsgeberbestätigung'). هذا إلزامي تمامًا. مالك العقار ملزم قانونًا بإعطائه لك. <br>بعد التسجيل، ستحصل على شهادة تسجيل ('Meldebescheinigung'). احتفظ بهذا المستند في مكان آمن! ستحتاج إليه لفتح حساب مصرفي، والحصول على رقم تعريف ضريبي، والتقدم بطلب للحصول على تصريح إقامتك.",
+        "hi": "यह जर्मनी में आपका पहला और सबसे महत्वपूर्ण नौकरशाही कदम है। 3 महीने से अधिक समय तक रहने वाले किसी भी व्यक्ति को अपना पता पंजीकृत करना होगा। <br><b>कब:</b> अपने स्थायी आवास में जाने के दो सप्ताह के भीतर। <br><b>कहां:</b> एमबर्ग या वेडेन में स्थानीय नागरिक कार्यालय ('Einwohnermeldeamt' या 'Bürgerbüro') में। आपको पहले से ऑनलाइन अपॉइंटमेंट बुक करने की आवश्यकता हो सकती है। <br><b>आपको क्या चाहिए:</b><br>• आपका वैध पासपोर्ट/आईडी कार्ड। <br>• पूरा किया हुआ पंजीकरण फॉर्म ('Anmeldeformular')। आप इसे आमतौर पर शहर की वेबसाइट से डाउनलोड कर सकते हैं। <br>• आपके मकान मालिक से एक पुष्टि पत्र ('Wohnungsgeberbestätigung')। यह बिल्कुल अनिवार्य है। आपका मकान मालिक आपको इसे देने के लिए कानूनी रूप से बाध्य है। <br>पंजीकरण के बाद, आपको एक पंजीकरण प्रमाण पत्र ('Meldebescheinigung') प्राप्त होगा। इस दस्तावेज़ को सुरक्षित रखें! आपको बैंक खाता खोलने, टैक्स आईडी प्राप्त करने और अपने निवास परमिट के लिए आवेदन करने के लिए इसकी आवश्यकता होगी।",
+        "es": "Este es tu primer y más importante paso burocrático en Alemania. Cualquier persona que se quede más de 3 meses debe registrar su dirección. <br><b>Cuándo:</b> Dentro de las dos semanas posteriores a la mudanza a tu alojamiento permanente. <br><b>Dónde:</b> En la oficina de registro de ciudadanos ('Einwohnermeldeamt' o 'Bürgerbüro') en Amberg o Weiden. Es posible que necesites reservar una cita en línea con antelación. <br><b>Qué necesitas:</b><br>• Tu pasaporte/DNI válido. <br>• El formulario de registro completado ('Anmeldeformular'). Generalmente puedes descargarlo del sitio web de la ciudad. <br>• Una carta de confirmación de tu arrendador ('Wohnungsgeberbestätigung'). Esto es absolutamente obligatorio. Tu arrendador está legalmente obligado a dártela. <br>Después del registro, recibirás un certificado de registro ('Meldebescheinigung'). ¡Guarda este documento en un lugar seguro! Lo necesitarás para abrir una cuenta bancaria, obtener un número de identificación fiscal y solicitar tu permiso de residencia.",
+        "zh": "这是您在德国的第一个也是最重要的行政步骤。任何居住超过3个月的人都必须登记其地址。<br><b>时间：</b>在您搬入固定住所后的两周内。<br><b>地点：</b>在安贝格或魏登当地的居民登记处（'Einwohnermeldeamt' 或 'Bürgerbüro'）。您可能需要提前在线预约。<br><b>您需要什么：</b><br>• 您的有效护照/身份证。<br>• 填写完整的登记表（'Anmeldeformular'）。您通常可以从市政府网站下载此表格。<br>• 您的房东出具的住房证明（'Wohnungsgeberbestätigung'）。这是绝对强制的。您的房东有法律义务向您提供此文件。<br>登记后，您将收到一份登记证明（'Meldebescheinigung'）。请妥善保管此文件！您在开设银行账户、获取税号和申请居留许可时都需要它。"
+    },
+    "arrival_page_sub3_title": {
+        "en": "Residence Permit, Bank Account & Health Insurance",
+        "de": "Aufenthaltserlaubnis, Bankkonto & Krankenversicherung",
+        "ar": "تصريح الإقامة والحساب البنكي والتأمين الصحي",
+        "hi": "निवास परमिट, बैंक खाता और स्वास्थ्य बीमा",
+        "es": "Permiso de residencia, cuenta bancaria y seguro médico",
+        "zh": "居留许可、银行账户与健康保险"
+    },
+    "arrival_page_sub3_text": {
+        "en": "<b>Residence Permit (Aufenthaltserlaubnis):</b> Non-EU/EEA students must apply for a residence permit at the local Foreigners' Office ('Ausländerbehörde') after arrival. Book an appointment early! <br><b>Bank Account (Konto):</b> A German bank account is essential. Most students open a 'Girokonto' (current account), often free for students. You'll need your passport and 'Meldebescheinigung'. Popular banks are Sparkasse, Volksbank, Commerzbank, and online banks like N26. <br><b>Health Insurance (Krankenversicherung):</b> Mandatory in Germany! Public providers like AOK, TK, or Barmer offer student rates (approx. €120/month). You need proof of insurance for enrollment and your residence permit. <br><b>SIM Card:</b> Get a German SIM card for calls and mobile data. Prepaid options from providers like Aldi Talk, Lidl Connect or Ja! Mobil are flexible and cheap. You can buy them in supermarkets.",
+        "de": "<b>Aufenthaltserlaubnis:</b> Studierende aus Nicht-EU/EWR-Ländern müssen nach der Ankunft bei der örtlichen Ausländerbehörde eine Aufenthaltserlaubnis beantragen. Buche frühzeitig einen Termin! <br><b>Bankkonto (Konto):</b> Ein deutsches Bankkonto ist unerlässlich. Die meisten Studierenden eröffnen ein 'Girokonto', das für Studierende oft kostenlos ist. Du benötigst deinen Reisepass und die 'Meldebescheinigung'. Beliebte Banken sind Sparkasse, Volksbank, Commerzbank und Online-Banken wie N26. <br><b>Krankenversicherung:</b> In Deutschland Pflicht! Gesetzliche Anbieter wie AOK, TK oder Barmer bieten Studententarife an (ca. 120 €/Monat). Du benötigst einen Versicherungsnachweis für die Immatrikulation und deine Aufenthaltserlaubnis. <br><b>SIM-Karte:</b> Hol dir eine deutsche SIM-Karte für Anrufe und mobile Daten. Prepaid-Optionen von Anbietern wie Aldi Talk, Lidl Connect oder Ja! Mobil sind flexibel und günstig. Du kannst sie in Supermärkten kaufen.",
+        "ar": "<b>تصريح الإقامة (Aufenthaltserlaubnis):</b> يجب على الطلاب من خارج الاتحاد الأوروبي/المنطقة الاقتصادية الأوروبية التقدم بطلب للحصول على تصريح إقامة في مكتب الأجانب المحلي ('Ausländerbehörde') بعد الوصول. احجز موعدًا مبكرًا! <br><b>الحساب البنكي (Konto):</b> الحساب البنكي الألماني ضروري. يفتح معظم الطلاب حساب 'Girokonto' (حساب جاري)، غالبًا ما يكون مجانيًا للطلاب. ستحتاج إلى جواز سفرك و 'Meldebescheinigung'. البنوك الشهيرة هي Sparkasse و Volksbank و Commerzbank والبنوك عبر الإنترنت مثل N26. <br><b>التأمين الصحي (Krankenversicherung):</b> إلزامي في ألمانيا! يقدم مقدمو الخدمات العامة مثل AOK أو TK أو Barmer أسعارًا للطلاب (حوالي 120 يورو شهريًا). تحتاج إلى إثبات التأمين للتسجيل ولتصريح إقامتك. <br><b>بطاقة SIM:</b> احصل على بطاقة SIM ألمانية للمكالمات وبيانات الجوال. خيارات الدفع المسبق من مزودين مثل Aldi Talk أو Lidl Connect أو Ja! Mobil مرنة ورخيصة. يمكنك شراؤها من محلات السوبر ماركت.",
+        "hi": "<b>निवास परमिट (Aufenthaltserlaubnis):</b> गैर-यूरोपीय संघ/ईईए के छात्रों को आगमन के बाद स्थानीय विदेशियों के कार्यालय ('Ausländerbehörde') में निवास परमिट के लिए आवेदन करना होगा। जल्दी अपॉइंटमेंट बुक करें! <br><b>बैंक खाता (Konto):</b> एक जर्मन बैंक खाता आवश्यक है। अधिकांश छात्र एक 'Girokonto' (चालू खाता) खोलते हैं, जो अक्सर छात्रों के लिए मुफ्त होता है। आपको अपने पासपोर्ट और 'Meldebescheinigung' की आवश्यकता होगी। लोकप्रिय बैंक Sparkasse, Volksbank, Commerzbank, और N26 जैसे ऑनलाइन बैंक हैं। <br><b>स्वास्थ्य बीमा (Krankenversicherung):</b> जर्मनी में अनिवार्य! AOK, TK, या Barmer जैसे सार्वजनिक प्रदाता छात्र दरों (लगभग €120/माह) की पेशकश करते हैं। आपको नामांकन और अपने निवास परमिट के लिए बीमा के प्रमाण की आवश्यकता है। <br><b>सिम कार्ड:</b> कॉल और मोबाइल डेटा के लिए एक जर्मन सिम कार्ड प्राप्त करें। Aldi Talk, Lidl Connect या Ja! Mobil जैसे प्रदाताओं से प्रीपेड विकल्प लचीले और सस्ते हैं। आप उन्हें सुपरमार्केट में खरीद सकते हैं।",
+        "es": "<b>Permiso de residencia (Aufenthaltserlaubnis):</b> Los estudiantes de fuera de la UE/EEE deben solicitar un permiso de residencia en la oficina de extranjería local ('Ausländerbehörde') después de su llegada. ¡Reserva una cita con antelación! <br><b>Cuenta bancaria (Konto):</b> Una cuenta bancaria alemana es esencial. La mayoría de los estudiantes abren una 'Girokonto' (cuenta corriente), a menudo gratuita para estudiantes. Necesitarás tu pasaporte y la 'Meldebescheinigung'. Bancos populares son Sparkasse, Volksbank, Commerzbank y bancos en línea como N26. <br><b>Seguro de salud (Krankenversicherung):</b> ¡Obligatorio en Alemania! Proveedores públicos como AOK, TK o Barmer ofrecen tarifas para estudiantes (aprox. 120 €/mes). Necesitas un comprobante del seguro para la matrícula y tu permiso de residencia. <br><b>Tarjeta SIM:</b> Consigue una tarjeta SIM alemana para llamadas y datos móviles. Las opciones de prepago de proveedores como Aldi Talk, Lidl Connect o Ja! Mobil son flexibles y baratas. Puedes comprarlas en los supermercados.",
+        "zh": "<b>居留许可 (Aufenthaltserlaubnis):</b> 非欧盟/欧洲经济区的学生抵达后必须在当地的外国人管理局（'Ausländerbehörde'）申请居留许可。请尽早预约！<br><b>银行账户 (Konto):</b> 德国银行账户至关重要。大多数学生开设一个“Girokonto”（活期账户），通常对学生免费。您需要护照和“Meldebescheinigung”。受欢迎的银行有Sparkasse、Volksbank、Commerzbank以及像N26这样的网上银行。<br><b>健康保险 (Krankenversicherung):</b> 在德国是强制性的！像AOK、TK或Barmer这样的公共保险公司为学生提供优惠费率（约120欧元/月）。您在注册和申请居留许可时需要保险证明。<br><b>SIM卡:</b> 购买一张德国SIM卡用于通话和移动数据。像Aldi Talk、Lidl Connect或Ja! Mobil等提供商的预付卡选项灵活且便宜。您可以在超市购买。"
+    }
+}
+,
+    "page_title_city": {
+        "en": "City Life - QuickStart Guide",
+        "de": "Stadtleben - QuickStart Guide",
+        "ar": "الحياة في المدينة - دليل البداية السريعة",
+        "hi": "शहर का जीवन - क्विकस्टार्ट गाइड",
+        "es": "Vida en la ciudad - Guía de Inicio Rápido",
+        "zh": "城市生活 - 快速入门指南"
+    },
+    "city_page_main_title": {
+        "en": "Life in Amberg & Weiden",
+        "de": "Leben in Amberg & Weiden",
+        "ar": "الحياة في آمبرغ وفايدن",
+        "hi": "एमबर्ग और वेडेन में जीवन",
+        "es": "La vida en Amberg y Weiden",
+        "zh": "在安贝格和魏登的生活"
+    },
+    "city_page_sub1_title": {
+        "en": "Shopping, Food & Daily Needs",
+        "de": "Einkaufen, Essen & Tägliche Bedürfnisse",
+        "ar": "التسوق والطعام والاحتياجات اليومية",
+        "hi": "खरीदारी, भोजन और दैनिक जरूरतें",
+        "es": "Compras, Comida y Necesidades Diarias",
+        "zh": "购物、饮食与日常需求"
+    },
+    "city_page_sub1_text": {
+        "en": "<b>Supermarkets:</b> There are two main types. Discounters like Aldi and Lidl are cheaper with a basic selection. Supermarkets like Rewe, Edeka, and Kaufland offer a wider variety of brands and fresh produce. For toiletries, go to a 'Drogeriemarkt' like dm or Rossmann. Remember: All shops are closed on Sundays and public holidays! <br><b>Pfand (Deposit System):</b> On most plastic and glass bottles/cans, you pay a deposit ('Pfand') of €0.08 or €0.25. You get this money back by returning the empty containers to a reverse vending machine ('Pfandautomat'), found in any supermarket. <br><b>Finding Doctors:</b> If you are sick, you first go to a general practitioner ('Hausarzt'). For specialized issues, the GP will give you a referral ('Überweisung') to a specialist ('Facharzt'). You can search for doctors (e.g., who speak English) on the 'jameda.de' website or the KVB doctor search. In an emergency, go to the emergency room ('Notaufnahme') of the local hospital.",
+        "de": "<b>Supermärkte:</b> Es gibt zwei Haupttypen. Discounter wie Aldi und Lidl sind günstiger mit einer Basisauswahl. Supermärkte wie Rewe, Edeka und Kaufland bieten eine größere Vielfalt an Marken und frischen Produkten. Für Drogerieartikel gehst du in einen 'Drogeriemarkt' wie dm oder Rossmann. Denk daran: Alle Geschäfte sind an Sonn- und Feiertagen geschlossen! <br><b>Pfand:</b> Auf die meisten Plastik- und Glasflaschen/Dosen zahlst du ein Pfand von 0,08 € oder 0,25 €. Du bekommst dieses Geld zurück, indem du die leeren Behälter an einem Pfandautomaten zurückgibst, den es in jedem Supermarkt gibt. <br><b>Arztsuche:</b> Wenn du krank bist, gehst du zuerst zu einem Allgemeinmediziner ('Hausarzt'). Für spezielle Probleme gibt dir der Hausarzt eine Überweisung zu einem Facharzt. Du kannst auf 'jameda.de' oder der KVB-Arztsuche nach Ärzten suchen (z.B. nach Englischkenntnissen filtern). Im Notfall gehst du in die Notaufnahme des örtlichen Krankenhauses.",
+        "ar": "<b>محلات السوبر ماركت:</b> هناك نوعان رئيسيان. المتاجر المخفضة مثل Aldi و Lidl أرخص مع مجموعة أساسية. تقدم محلات السوبر ماركت مثل Rewe و Edeka و Kaufland مجموعة أوسع من العلامات التجارية والمنتجات الطازجة. لمستلزمات النظافة، اذهب إلى 'Drogeriemarkt' مثل dm أو Rossmann. تذكر: جميع المتاجر مغلقة أيام الأحد والعطلات الرسمية! <br><b>نظام الوديعة (Pfand):</b> على معظم الزجاجات والعلب البلاستيكية والزجاجية، تدفع وديعة ('Pfand') قدرها 0.08 يورو أو 0.25 يورو. تستعيد هذا المال عن طريق إعادة العبوات الفارغة إلى آلة استرداد ('Pfandautomat')، الموجودة في أي سوبر ماركت. <br><b>العثور على الأطباء:</b> إذا كنت مريضًا، تذهب أولاً إلى طبيب عام ('Hausarzt'). للمشاكل المتخصصة، سيعطيك الطبيب العام إحالة ('Überweisung') إلى أخصائي ('Facharzt'). يمكنك البحث عن أطباء (على سبيل المثال، يتحدثون الإنجليزية) على موقع 'jameda.de' أو بحث الأطباء الخاص بـ KVB. في حالة الطوارئ، اذهب إلى غرفة الطوارئ ('Notaufnahme') في المستشفى المحلي.",
+        "hi": "<b>सुपरमार्केट:</b> दो मुख्य प्रकार हैं। Aldi और Lidl जैसे डिस्काउंटर सस्ते होते हैं और उनमें बुनियादी चयन होता है। Rewe, Edeka, और Kaufland जैसे सुपरमार्केट ब्रांडों और ताजे उत्पादों की एक विस्तृत विविधता प्रदान करते हैं। प्रसाधन सामग्री के लिए, dm या Rossmann जैसे 'Drogeriemarkt' में जाएं। याद रखें: सभी दुकानें रविवार और सार्वजनिक छुट्टियों पर बंद रहती हैं! <br><b>Pfand (जमा प्रणाली):</b> अधिकांश प्लास्टिक और कांच की बोतलों/कैन पर, आप €0.08 या €0.25 की जमा राशि ('Pfand') का भुगतान करते हैं। आप खाली कंटेनरों को एक रिवर्स वेंडिंग मशीन ('Pfandautomat') में वापस करके यह पैसा वापस पा सकते हैं, जो किसी भी सुपरमार्केट में मिलती है। <br><b>डॉक्टर ढूंढना:</b> यदि आप बीमार हैं, तो आप पहले एक सामान्य चिकित्सक ('Hausarzt') के पास जाते हैं। विशेष समस्याओं के लिए, जीपी आपको एक विशेषज्ञ ('Facharzt') के लिए एक रेफरल ('Überweisung') देगा। आप 'jameda.de' वेबसाइट या KVB डॉक्टर खोज पर डॉक्टरों (जैसे, जो अंग्रेजी बोलते हैं) की खोज कर सकते हैं। आपात स्थिति में, स्थानीय अस्पताल के आपातकालीन कक्ष ('Notaufnahme') में जाएं।",
+        "es": "<b>Supermercados:</b> Hay dos tipos principales. Las tiendas de descuento como Aldi y Lidl son más baratas con una selección básica. Supermercados como Rewe, Edeka y Kaufland ofrecen una mayor variedad de marcas y productos frescos. Para artículos de tocador, ve a un 'Drogeriemarkt' como dm o Rossmann. ¡Recuerda: Todas las tiendas cierran los domingos y festivos! <br><b>Pfand (Sistema de depósito):</b> En la mayoría de las botellas y latas de plástico y vidrio, pagas un depósito ('Pfand') de 0,08 € o 0,25 €. Recuperas este dinero devolviendo los envases vacíos a una máquina de vending inverso ('Pfandautomat'), que se encuentra en cualquier supermercado. <br><b>Encontrar médicos:</b> Si estás enfermo, primero vas a un médico de cabecera ('Hausarzt'). Para problemas especializados, el médico de cabecera te dará una derivación ('Überweisung') a un especialista ('Facharzt'). Puedes buscar médicos (p. ej., que hablen inglés) en el sitio web 'jameda.de' o en la búsqueda de médicos de la KVB. En una emergencia, ve a la sala de urgencias ('Notaufnahme') del hospital local.",
+        "zh": "<b>超市：</b>主要有两种类型。像Aldi和Lidl这样的折扣店价格更便宜，但商品选择基本。像Rewe、Edeka和Kaufland这样的超市提供更广泛的品牌和新鲜产品。如需购买洗漱用品，请前往像dm或Rossmann这样的“日用品超市”（Drogeriemarkt）。请记住：所有商店在周日和公共假日都关门！<br><b>押金制度 (Pfand)：</b>在大多数塑料和玻璃瓶/罐上，您需要支付0.08欧元或0.25欧元的押金（'Pfand'）。通过将空容器退还给任何超市都有的自动回收机（'Pfandautomat'），您可以取回这笔钱。<br><b>寻找医生：</b>如果您生病了，首先去看全科医生（'Hausarzt'）。对于专业问题，全科医生会给您开具转诊单（'Überweisung'）给专科医生（'Facharzt'）。您可以在“jameda.de”网站或KVB医生搜索中查找医生（例如，筛选会说英语的医生）。在紧急情况下，请前往当地医院的急诊室（'Notaufnahme'）。"
+    },
+    "city_page_sub2_title": {
+        "en": "Transport, Culture & Etiquette",
+        "de": "Verkehr, Kultur & Etikette",
+        "ar": "المواصلات والثقافة وآداب السلوك",
+        "hi": "परिवहन, संस्कृति और शिष्टाचार",
+        "es": "Transporte, Cultura y Etiqueta",
+        "zh": "交通、文化与礼仪"
+    },
+    "city_page_sub2_text": {
+        "en": "<b>Transport:</b> Both cities are quite walkable and very bike-friendly. Buying a used bike can be a great investment. For public transport, check if your student ID includes a 'Semesterticket', which may allow free use of local transport. <br><b>Punctuality:</b> Being on time for appointments (university, official, or even social) is highly valued. Being 5 minutes late is already considered unpunctual. <br><b>Ruhezeit (Quiet Hours):</b> This is legally enforced, typically from 10 PM to 7 AM and all day on Sundays. Avoid loud music, vacuuming, or parties during these times. <br><b>Greetings:</b> A firm handshake is common. When entering a small shop or a doctor's waiting room, it's polite to say a general 'Guten Tag' (Good Day) or 'Hallo' (Hello).",
+        "de": "<b>Verkehr:</b> Beide Städte sind gut zu Fuß und sehr fahrradfreundlich. Ein gebrauchtes Fahrrad zu kaufen, kann eine gute Investition sein. Prüfe für den öffentlichen Nahverkehr, ob dein Studierendenausweis ein 'Semesterticket' enthält, das möglicherweise die kostenlose Nutzung des Nahverkehrs ermöglicht. <br><b>Pünktlichkeit:</b> Pünktlichkeit bei Terminen (Uni, offiziell oder sogar sozial) wird sehr geschätzt. 5 Minuten zu spät zu sein, gilt bereits als unpünktlich. <br><b>Ruhezeit:</b> Diese ist gesetzlich vorgeschrieben, typischerweise von 22 bis 7 Uhr und ganztägig an Sonntagen. Vermeide laute Musik, Staubsaugen oder Partys während dieser Zeiten. <br><b>Begrüßungen:</b> Ein fester Händedruck ist üblich. Wenn du einen kleinen Laden oder ein Wartezimmer beim Arzt betrittst, ist es höflich, ein allgemeines 'Guten Tag' oder 'Hallo' zu sagen.",
+        "ar": "<b>المواصلات:</b> كلتا المدينتين يمكن المشي فيهما بسهولة وصديقتان جداً للدراجات. شراء دراجة مستعملة يمكن أن يكون استثمارًا رائعًا. بالنسبة للمواصلات العامة، تحقق مما إذا كانت بطاقة الطالب الخاصة بك تتضمن 'Semesterticket'، والذي قد يسمح بالاستخدام المجاني لوسائل النقل المحلية. <br><b>الالتزام بالمواعيد:</b> الالتزام بالمواعيد في المواعيد (الجامعية، الرسمية، أو حتى الاجتماعية) يحظى بتقدير كبير. التأخر 5 دقائق يعتبر بالفعل عدم التزام بالموعد. <br><b>ساعات الهدوء (Ruhezeit):</b> هذه مفروضة قانونيًا، عادةً من الساعة 10 مساءً حتى 7 صباحًا وطوال يوم الأحد. تجنب الموسيقى الصاخبة أو استخدام المكنسة الكهربائية أو الحفلات خلال هذه الأوقات. <br><b>التحيات:</b> المصافحة القوية شائعة. عند دخول متجر صغير أو غرفة انتظار الطبيب، من الأدب أن تقول 'Guten Tag' (يوم جيد) أو 'Hallo' (مرحبًا).",
+        "hi": "<b>परिवहन:</b> दोनों शहर काफी पैदल चलने योग्य और बहुत बाइक-अनुकूल हैं। एक पुरानी बाइक खरीदना एक बेहतरीन निवेश हो सकता है। सार्वजनिक परिवहन के लिए, जांचें कि क्या आपके छात्र आईडी में 'सेमेस्टर टिकट' शामिल है, जो स्थानीय परिवहन का मुफ्त उपयोग करने की अनुमति दे सकता है। <br><b>समय की पाबंदी:</b> नियुक्तियों (विश्वविद्यालय, आधिकारिक, या सामाजिक) के लिए समय पर होना बहुत महत्वपूर्ण माना जाता है। 5 मिनट की देरी को भी समय का पाबंद न होना माना जाता है। <br><b>Ruhezeit (शांत घंटे):</b> यह कानूनी रूप से लागू होता है, आमतौर पर रात 10 बजे से सुबह 7 बजे तक और पूरे दिन रविवार को। इन समयों के दौरान तेज संगीत, वैक्यूमिंग या पार्टियों से बचें। <br><b>अभिवादन:</b> एक दृढ़ हाथ मिलाना आम है। एक छोटी सी दुकान या डॉक्टर के प्रतीक्षा कक्ष में प्रवेश करते समय, एक सामान्य 'Guten Tag' (नमस्ते) या 'Hallo' (हैलो) कहना विनम्रता है।",
+        "es": "<b>Transporte:</b> Ambas ciudades son bastante transitables a pie y muy aptas para bicicletas. Comprar una bicicleta de segunda mano puede ser una gran inversión. Para el transporte público, comprueba si tu carné de estudiante incluye un 'Semesterticket', que puede permitir el uso gratuito del transporte local. <br><b>Puntualidad:</b> Ser puntual en las citas (universitarias, oficiales o incluso sociales) es muy valorado. Llegar 5 minutos tarde ya se considera impuntual. <br><b>Ruhezeit (Horas de silencio):</b> Esto se hace cumplir legalmente, típicamente de 10 PM a 7 AM y todo el día los domingos. Evita la música alta, pasar la aspiradora o las fiestas durante estos horarios. <br><b>Saludos:</b> Un apretón de manos firme es común. Al entrar en una tienda pequeña o en la sala de espera de un médico, es educado decir un 'Guten Tag' (Buenos días) o 'Hallo' (Hola) general.",
+        "zh": "<b>交通：</b>这两个城市都非常适合步行和骑自行车。购买一辆二手自行车可能是一项很好的投资。对于公共交通，请检查您的学生证是否包含“学期票”（Semesterticket），它可能允许免费使用当地交通。<br><b>守时：</b>准时赴约（大学、官方，甚至社交约会）受到高度重视。迟到5分钟就已经被认为是不守时。<br><b>安静时间 (Ruhezeit)：</b>这是法律强制执行的，通常是从晚上10点到早上7点以及整个周日。在这些时间避免大声播放音乐、吸尘或开派对。<br><b>问候：</b>坚定的握手很常见。进入小商店或医生候诊室时，礼貌地说一句“Guten Tag”（白天好）或“Hallo”（你好）。"
+    },
+    "city_page_sub3_title": {
+        "en": "Contracts & Broadcasting Fee",
+        "de": "Verträge & Rundfunkbeitrag",
+        "ar": "العقود ورسوم البث",
+        "hi": "अनुबंध और प्रसारण शुल्क",
+        "es": "Contratos y Tasa de radiodifusión",
+        "zh": "合同与广播电视费"
+    },
+    "city_page_sub3_text": {
+        "en": "<b>Mobile/Internet Contracts:</b> Be very careful when signing long-term contracts (e.g., for a mobile phone or gym membership). They often have a 24-month minimum term and automatic renewal. Prepaid SIM cards are a much safer and more flexible option for students. <br><b>Broadcasting Fee (Rundfunkbeitrag):</b> This is a mandatory fee for every household in Germany (approx. €18.36/month) to fund public broadcasting (TV and radio), regardless of whether you use it. If you live in a shared flat (WG), you can split the cost among all flatmates. You will receive a letter from 'ARD ZDF Deutschlandradio Beitragsservice' after your city registration ('Anmeldung'). Do not ignore this letter!",
+        "de": "<b>Handy-/Internetverträge:</b> Sei sehr vorsichtig beim Abschluss langfristiger Verträge (z.B. für ein Handy oder eine Fitnessstudio-Mitgliedschaft). Sie haben oft eine Mindestlaufzeit von 24 Monaten und eine automatische Verlängerung. Prepaid-SIM-Karten sind eine viel sicherere und flexiblere Option für Studierende. <br><b>Rundfunkbeitrag:</b> Dies ist eine obligatorische Gebühr für jeden Haushalt in Deutschland (ca. 18,36 €/Monat) zur Finanzierung des öffentlich-rechtlichen Rundfunks (Fernsehen und Radio), unabhängig davon, ob du ihn nutzt. Wenn du in einer WG wohnst, könnt ihr die Kosten unter allen Mitbewohnern aufteilen. Du erhältst nach deiner Anmeldung einen Brief vom 'ARD ZDF Deutschlandradio Beitragsservice'. Ignoriere diesen Brief nicht!",
+        "ar": "<b>عقود الهاتف المحمول/الإنترنت:</b> كن حذرًا جدًا عند توقيع عقود طويلة الأجل (مثل الهاتف المحمول أو عضوية صالة الألعاب الرياضية). غالبًا ما يكون لديهم حد أدنى لمدة 24 شهرًا وتجديد تلقائي. تعد بطاقات SIM مسبقة الدفع خيارًا أكثر أمانًا ومرونة للطلاب. <br><b>رسوم البث (Rundfunkbeitrag):</b> هذه رسوم إلزامية لكل أسرة في ألمانيا (حوالي 18.36 يورو شهريًا) لتمويل البث العام (التلفزيون والإذاعة)، بغض النظر عما إذا كنت تستخدمه. إذا كنت تعيش في شقة مشتركة (WG)، يمكنك تقسيم التكلفة بين جميع زملاء السكن. ستتلقى رسالة من 'ARD ZDF Deutschlandradio Beitragsservice' بعد تسجيلك في المدينة ('Anmeldung'). لا تتجاهل هذه الرسالة!",
+        "hi": "<b>मोबाइल/इंटरनेट अनुबंध:</b> लंबी अवधि के अनुबंधों (जैसे, मोबाइल फोन या जिम सदस्यता के लिए) पर हस्ताक्षर करते समय बहुत सावधान रहें। उनकी अक्सर 24 महीने की न्यूनतम अवधि और स्वत: नवीनीकरण होता है। छात्रों के लिए प्रीपेड सिम कार्ड एक बहुत सुरक्षित और अधिक लचीला विकल्प है। <br><b>प्रसारण शुल्क (Rundfunkbeitrag):</b> यह जर्मनी में हर घर के लिए एक अनिवार्य शुल्क (लगभग €18.36/माह) है, जो सार्वजनिक प्रसारण (टीवी और रेडियो) को निधि देने के लिए है, भले ही आप इसका उपयोग करते हों या नहीं। यदि आप एक साझा फ्लैट (WG) में रहते हैं, तो आप सभी फ्लैटमेट्स के बीच लागत को विभाजित कर सकते हैं। आपको अपने शहर पंजीकरण ('Anmeldung') के बाद 'ARD ZDF Deutschlandradio Beitragsservice' से एक पत्र प्राप्त होगा। इस पत्र को अनदेखा न करें!",
+        "es": "<b>Contratos de móvil/internet:</b> Ten mucho cuidado al firmar contratos a largo plazo (p. ej., para un teléfono móvil o una membresía de gimnasio). A menudo tienen un período mínimo de 24 meses y renovación automática. Las tarjetas SIM de prepago son una opción mucho más segura y flexible para los estudiantes. <br><b>Tasa de radiodifusión (Rundfunkbeitrag):</b> Es una tasa obligatoria para cada hogar en Alemania (aprox. 18,36 €/mes) para financiar la radiodifusión pública (TV y radio), independientemente de si la usas. Si vives en un piso compartido (WG), podéis dividir el coste entre todos los compañeros de piso. Recibirás una carta del 'ARD ZDF Deutschlandradio Beitragsservice' después de tu registro en la ciudad ('Anmeldung'). ¡No ignores esta carta!",
+        "zh": "<b>手机/网络合同：</b>签署长期合同（例如，手机或健身房会员）时要非常小心。它们通常有24个月的最短合同期和自动续约。对于学生来说，预付SIM卡是一个更安全、更灵活的选择。<br><b>广播电视费 (Rundfunkbeitrag)：</b>这是德国每个家庭的强制性费用（约18.36欧元/月），用于资助公共广播（电视和广播），无论您是否使用。如果您住在合租公寓（WG），您可以与所有室友分摊费用。在您完成居民登记（'Anmeldung'）后，您会收到来自“ARD ZDF Deutschlandradio Beitragsservice”的信件。请不要忽略这封信！"
+    },
+    "page_title_studies": {
+        "en": "Studies - QuickStart Guide",
+        "de": "Studium - QuickStart Guide",
+        "ar": "الدراسة - دليل البداية السريعة",
+        "hi": "अध्ययन - क्विकस्टार्ट गाइड",
+        "es": "Estudios - Guía de Inicio Rápido",
+        "zh": "学习 - 快速入门指南"
+    },
+    "studies_page_main_title": {
+        "en": "Studies & Organization",
+        "de": "Studium & Organisation",
+        "ar": "الدراسة والتنظيم",
+        "hi": "अध्ययन और संगठन",
+        "es": "Estudios y Organización",
+        "zh": "学习与组织"
+    },
+    "studies_page_sub1_title": {
+        "en": "Course Registration & Timetable",
+        "de": "Kursanmeldung & Stundenplan",
+        "ar": "التسجيل في الدورات والجدول الزمني",
+        "hi": "कोर्स पंजीकरण और समय सारिणी",
+        "es": "Inscripción en cursos y Horario",
+        "zh": "课程注册与时间表"
+    },
+    "studies_page_sub1_text": {
+        "en": "Course and exam registration is managed via the <b>PRIMUSS</b> portal. It is crucial to adhere to the registration deadlines ('Anmeldefristen') published at the beginning of each semester. Missing a deadline can mean you cannot take an exam! Your personal timetable ('Stundenplan') can also be found in PRIMUSS or on your faculty's website. It shows you the times, dates, and rooms for your lectures and seminars. Check it regularly, as changes can occur.",
+        "de": "Die An- und Abmeldung zu Kursen und Prüfungen wird über das <b>PRIMUSS</b>-Portal verwaltet. Es ist entscheidend, die zu Beginn jedes Semesters veröffentlichten Anmeldefristen einzuhalten. Das Versäumen einer Frist kann bedeuten, dass du eine Prüfung nicht ablegen kannst! Deinen persönlichen Stundenplan findest du ebenfalls in PRIMUSS oder auf der Website deiner Fakultät. Er zeigt dir die Zeiten, Daten und Räume für deine Vorlesungen und Seminare. Überprüfe ihn regelmäßig, da es zu Änderungen kommen kann.",
+        "ar": "تتم إدارة تسجيل المقررات والامتحانات عبر بوابة <b>PRIMUSS</b>. من الأهمية بمكان الالتزام بمواعيد التسجيل النهائية ('Anmeldefristen') المنشورة في بداية كل فصل دراسي. قد يعني تفويت الموعد النهائي أنه لا يمكنك إجراء الامتحان! يمكن أيضًا العثور على جدولك الزمني الشخصي ('Stundenplan') في PRIMUSS أو على موقع كليتك. يعرض لك أوقات وتواريخ وغرف محاضراتك وندواتك. تحقق منه بانتظام، حيث يمكن أن تحدث تغييرات.",
+        "hi": "पाठ्यक्रम और परीक्षा पंजीकरण <b>PRIMUSS</b> पोर्टल के माध्यम से प्रबंधित किया जाता है। प्रत्येक सेमेस्टर की शुरुआत में प्रकाशित पंजीकरण की समय सीमा ('Anmeldefristen') का पालन करना महत्वपूर्ण है। समय सीमा चूकने का मतलब यह हो सकता है कि आप परीक्षा नहीं दे सकते! आपकी व्यक्तिगत समय सारिणी ('Stundenplan') भी PRIMUSS में या आपके संकाय की वेबसाइट पर पाई जा सकती है। यह आपको आपके व्याख्यानों और सेमिनारों के लिए समय, तिथियां और कमरे दिखाता है। इसे नियमित रूप से जांचें, क्योंकि परिवर्तन हो सकते हैं।",
+        "es": "La inscripción a cursos y exámenes se gestiona a través del portal <b>PRIMUSS</b>. Es crucial cumplir con los plazos de inscripción ('Anmeldefristen') publicados al principio de cada semestre. ¡No cumplir un plazo puede significar que no puedas hacer un examen! Tu horario personal ('Stundenplan') también se puede encontrar en PRIMUSS o en el sitio web de tu facultad. Te muestra las horas, fechas y aulas de tus clases y seminarios. Revísalo regularmente, ya que pueden ocurrir cambios.",
+        "zh": "课程和考试注册通过<b>PRIMUSS</b>门户网站进行管理。遵守每学期初公布的注册截止日期（'Anmeldefristen'）至关重要。错过截止日期可能意味着您无法参加考试！您的个人课程表（'Stundenplan'）也可以在PRIMUSS或您所在院系的网站上找到。它会显示您讲座和研讨会的时间、日期和房间。请定期检查，因为可能会有变动。"
+    }
+,
+    "studies_page_sub2_title": {
+        "en": "Exams, Grades & Academic Integrity",
+        "de": "Prüfungen, Noten & Wissenschaftliche Integrität",
+        "ar": "الامتحانات والدرجات والنزاهة الأكاديمية",
+        "hi": "परीक्षा, ग्रेड और अकादमिक ईमानदारी",
+        "es": "Exámenes, Calificaciones e Integridad Académica",
+        "zh": "考试、成绩与学术诚信"
+    },
+    "studies_page_sub2_text": {
+        "en": "The exam period ('Prüfungszeit') is at the end of the lecture period. The schedule is published by the Examination Office ('Prüfungsamt'). <br><b>German Grading System:</b> 1.0 is the best, 4.0 is the minimum passing grade, and 5.0 is a fail. <br>• <b>1.0 - 1.5:</b> Very Good (Sehr Gut) <br>• <b>1.6 - 2.5:</b> Good (Gut) <br>• <b>2.6 - 3.5:</b> Satisfactory (Befriedigend) <br>• <b>3.6 - 4.0:</b> Sufficient (Ausreichend) <br>• <b>5.0:</b> Fail (Nicht bestanden) <br><b>Academic Integrity:</b> Plagiarism (copying text without proper citation) is a very serious offense in Germany. It can lead to failing a course or even exmatriculation. Always cite your sources correctly! The library offers courses on this topic.",
+        "de": "Die Prüfungszeit liegt am Ende der Vorlesungszeit. Der Plan wird vom Prüfungsamt veröffentlicht. <br><b>Deutsches Notensystem:</b> 1,0 ist die beste, 4,0 die schlechteste Bestehensnote und 5,0 bedeutet nicht bestanden. <br>• <b>1,0 - 1,5:</b> Sehr Gut <br>• <b>1,6 - 2,5:</b> Gut <br>• <b>2,6 - 3,5:</b> Befriedigend <br>• <b>3,6 - 4,0:</b> Ausreichend <br>• <b>5,0:</b> Nicht bestanden <br><b>Wissenschaftliche Integrität:</b> Plagiat (das Kopieren von Texten ohne korrekte Quellenangabe) ist in Deutschland ein sehr schwerwiegendes Vergehen. Es kann zum Nichtbestehen eines Kurses oder sogar zur Exmatrikulation führen. Zitiere deine Quellen immer korrekt! Die Bibliothek bietet Kurse zu diesem Thema an.",
+        "ar": "فترة الامتحانات ('Prüfungszeit') تكون في نهاية فترة المحاضرات. يتم نشر الجدول من قبل مكتب الامتحانات ('Prüfungsamt'). <br><b>نظام التقييم الألماني:</b> 1.0 هي الأفضل، 4.0 هي أدنى درجة نجاح، و 5.0 هي رسوب. <br>• <b>1.0 - 1.5:</b> جيد جداً (Sehr Gut) <br>• <b>1.6 - 2.5:</b> جيد (Gut) <br>• <b>2.6 - 3.5:</b> مرضي (Befriedigend) <br>• <b>3.6 - 4.0:</b> كافٍ (Ausreichend) <br>• <b>5.0:</b> راسب (Nicht bestanden) <br><b>النزاهة الأكاديمية:</b> الانتحال (نسخ النص دون الاستشهاد به بشكل صحيح) هو جريمة خطيرة جدًا في ألمانيا. يمكن أن يؤدي إلى الرسوب في المقرر الدراسي أو حتى الفصل من الجامعة. استشهد دائمًا بمصادرك بشكل صحيح! تقدم المكتبة دورات حول هذا الموضوع.",
+        "hi": "परीक्षा अवधि ('Prüfungszeit') व्याख्यान अवधि के अंत में होती है। अनुसूची परीक्षा कार्यालय ('Prüfungsamt') द्वारा प्रकाशित की जाती है। <br><b>जर्मन ग्रेडिंग प्रणाली:</b> 1.0 सबसे अच्छा है, 4.0 न्यूनतम उत्तीर्ण ग्रेड है, और 5.0 एक असफल है। <br>• <b>1.0 - 1.5:</b> बहुत अच्छा (Sehr Gut) <br>• <b>1.6 - 2.5:</b> अच्छा (Gut) <br>• <b>2.6 - 3.5:</b> संतोषजनक (Befriedigend) <br>• <b>3.6 - 4.0:</b> पर्याप्त (Ausreichend) <br>• <b>5.0:</b> असफल (Nicht bestanden) <br><b>अकादमिक ईमानदारी:</b> साहित्यिक चोरी (उचित उद्धरण के बिना पाठ की नकल करना) जर्मनी में एक बहुत ही गंभीर अपराध है। यह एक कोर्स में असफल होने या यहां तक कि निष्कासन का कारण बन सकता है। हमेशा अपने स्रोतों का सही ढंग से उद्धरण दें! पुस्तकालय इस विषय पर पाठ्यक्रम प्रदान करता है।",
+        "es": "El período de exámenes ('Prüfungszeit') es al final del período de clases. El calendario es publicado por la Oficina de Exámenes ('Prüfungsamt'). <br><b>Sistema de calificación alemán:</b> 1.0 es la mejor, 4.0 es la nota mínima para aprobar y 5.0 es un suspenso. <br>• <b>1.0 - 1.5:</b> Muy Bueno (Sehr Gut) <br>• <b>1.6 - 2.5:</b> Bueno (Gut) <br>• <b>2.6 - 3.5:</b> Satisfactorio (Befriedigend) <br>• <b>3.6 - 4.0:</b> Suficiente (Ausreichend) <br>• <b>5.0:</b> Suspenso (Nicht bestanden) <br><b>Integridad académica:</b> El plagio (copiar texto sin la cita adecuada) es una ofensa muy grave en Alemania. Puede llevar a suspender una asignatura o incluso a la expulsión. ¡Cita siempre tus fuentes correctamente! La biblioteca ofrece cursos sobre este tema.",
+        "zh": "考试期（'Prüfungszeit'）在授课期结束时。考试时间表由考试办公室（'Prüfungsamt'）公布。<br><b>德国评分系统：</b>1.0分是最高分，4.0分是最低及格分，5.0分是不及格。<br>• <b>1.0 - 1.5:</b> 优秀 (Sehr Gut)<br>• <b>1.6 - 2.5:</b> 良好 (Gut)<br>• <b>2.6 - 3.5:</b> 中等 (Befriedigend)<br>• <b>3.6 - 4.0:</b> 及格 (Ausreichend)<br>• <b>5.0:</b> 不及格 (Nicht bestanden)<br><b>学术诚信：</b>在德国，剽窃（抄袭文本而未正确引用）是一种非常严重的违规行为。它可能导致课程不及格甚至被开除。请务必正确引用您的来源！图书馆提供关于此主题的课程。"
+    },
+    "studies_page_sub3_title": {
+        "en": "Library & Study Resources",
+        "de": "Bibliothek & Lernressourcen",
+        "ar": "المكتبة ومصادر الدراسة",
+        "hi": "पुस्तकालय और अध्ययन संसाधन",
+        "es": "Biblioteca y Recursos de Estudio",
+        "zh": "图书馆与学习资源"
+    },
+    "studies_page_sub3_text": {
+        "en": "The university library ('Bibliothek') is more than just books. It's your central hub for academic success. <br>• <b>Borrowing:</b> Use your student ID to borrow books, usually for several weeks. <br>• <b>Online Databases:</b> The library provides access to a huge range of scientific databases, e-journals, and e-books. To access them from home, you must be connected via the university's VPN. <br>• <b>Study Spaces:</b> There are quiet individual study desks as well as group work rooms that you can book. <br>• <b>Support & Courses:</b> The library staff is very helpful. They offer introductory courses on research techniques and how to use citation management software (like Citavi), which can save you a lot of time.",
+        "de": "Die Hochschulbibliothek ist mehr als nur Bücher. Sie ist dein zentraler Knotenpunkt für den akademischen Erfolg. <br>• <b>Ausleihe:</b> Nutze deinen Studierendenausweis, um Bücher auszuleihen, normalerweise für mehrere Wochen. <br>• <b>Online-Datenbanken:</b> Die Bibliothek bietet Zugang zu einer riesigen Auswahl an wissenschaftlichen Datenbanken, E-Journals und E-Books. Um von zu Hause darauf zuzugreifen, musst du über das VPN der Hochschule verbunden sein. <br>• <b>Lernplätze:</b> Es gibt ruhige Einzelarbeitsplätze sowie buchbare Gruppenarbeitsräume. <br>• <b>Unterstützung & Kurse:</b> Das Bibliothekspersonal ist sehr hilfsbereit. Sie bieten Einführungskurse zu Recherchetechniken und zur Nutzung von Literaturverwaltungsprogrammen (wie Citavi) an, was dir viel Zeit sparen kann.",
+        "ar": "مكتبة الجامعة ('Bibliothek') هي أكثر من مجرد كتب. إنها مركزك الرئيسي للنجاح الأكاديمي. <br>• <b>الاستعارة:</b> استخدم بطاقة الطالب الخاصة بك لاستعارة الكتب، عادة لعدة أسابيع. <br>• <b>قواعد البيانات عبر الإنترنت:</b> توفر المكتبة الوصول إلى مجموعة كبيرة من قواعد البيانات العلمية والمجلات الإلكترونية والكتب الإلكترونية. للوصول إليها من المنزل، يجب أن تكون متصلاً عبر VPN الخاص بالجامعة. <br>• <b>أماكن الدراسة:</b> توجد مكاتب دراسة فردية هادئة بالإضافة إلى غرف عمل جماعية يمكنك حجزها. <br>• <b>الدعم والدورات:</b> موظفو المكتبة متعاونون للغاية. يقدمون دورات تمهيدية حول تقنيات البحث وكيفية استخدام برامج إدارة المراجع (مثل Citavi)، والتي يمكن أن توفر لك الكثير من الوقت.",
+        "hi": "विश्वविद्यालय पुस्तकालय ('Bibliothek') सिर्फ किताबों से कहीं बढ़कर है। यह आपकी अकादमिक सफलता के लिए आपका केंद्रीय केंद्र है। <br>• <b>उधार लेना:</b> अपनी छात्र आईडी का उपयोग करके किताबें उधार लें, आमतौर पर कई हफ्तों के लिए। <br>• <b>ऑनलाइन डेटाबेस:</b> पुस्तकालय वैज्ञानिक डेटाबेस, ई-पत्रिकाओं और ई-पुस्तकों की एक विशाल श्रृंखला तक पहुँच प्रदान करता है। घर से उन तक पहुँचने के लिए, आपको विश्वविद्यालय के वीपीएन के माध्यम से जुड़ा होना चाहिए। <br>• <b>अध्ययन स्थान:</b> शांत व्यक्तिगत अध्ययन डेस्क के साथ-साथ समूह कार्य कमरे भी हैं जिन्हें आप बुक कर सकते हैं। <br>• <b>समर्थन और पाठ्यक्रम:</b> पुस्तकालय के कर्मचारी बहुत मददगार हैं। वे अनुसंधान तकनीकों और उद्धरण प्रबंधन सॉफ्टवेयर (जैसे Citavi) का उपयोग करने के तरीके पर परिचयात्मक पाठ्यक्रम प्रदान करते हैं, जो आपका बहुत समय बचा सकता है।",
+        "es": "La biblioteca de la universidad ('Bibliothek') es más que solo libros. Es tu centro neurálgico para el éxito académico. <br>• <b>Préstamo:</b> Usa tu carné de estudiante para tomar prestados libros, generalmente por varias semanas. <br>• <b>Bases de datos en línea:</b> La biblioteca proporciona acceso a una amplia gama de bases de datos científicas, revistas electrónicas y libros electrónicos. Para acceder a ellos desde casa, debes estar conectado a través de la VPN de la universidad. <br>• <b>Espacios de estudio:</b> Hay escritorios de estudio individuales y silenciosos, así como salas de trabajo en grupo que puedes reservar. <br>• <b>Apoyo y cursos:</b> El personal de la biblioteca es muy servicial. Ofrecen cursos de introducción a técnicas de investigación y cómo usar software de gestión de citas (como Citavi), lo que puede ahorrarte mucho tiempo.",
+        "zh": "大学图书馆（'Bibliothek'）不仅仅是书籍。它是您学术成功的中心枢纽。<br>• <b>借阅：</b>使用您的学生证借阅书籍，通常可以借几周。<br>• <b>在线数据库：</b>图书馆提供对大量科学数据库、电子期刊和电子书的访问。要从家里访问它们，您必须通过大学的VPN连接。<br>• <b>学习空间：</b>有安静的个人学习桌以及可以预订的小组工作室。<br>• <b>支持与课程：</b>图书馆工作人员非常乐于助人。他们提供关于研究技巧和如何使用文献管理软件（如Citavi）的入门课程，这可以为您节省大量时间。"
+    },
+    "page_title_finance": {
+        "en": "Finances - QuickStart Guide",
+        "de": "Finanzen - QuickStart Guide",
+        "ar": "الأمور المالية - دليل البداية السريعة",
+        "hi": "वित्त - क्विकस्टार्ट गाइड",
+        "es": "Finanzas - Guía de Inicio Rápido",
+        "zh": "财务 - 快速入门指南"
+    },
+    "finance_page_main_title": {
+        "en": "Financial Matters",
+        "de": "Finanzielle Angelegenheiten",
+        "ar": "الأمور المالية",
+        "hi": "वित्तीय मामले",
+        "es": "Asuntos financieros",
+        "zh": "财务事宜"
+    },
+    "finance_page_sub1_title": {
+        "en": "Semester Contribution & Fees",
+        "de": "Semesterbeitrag & Gebühren",
+        "ar": "المساهمة الفصلية والرسوم",
+        "hi": "सेमेस्टर योगदान और शुल्क",
+        "es": "Contribución semestral y tasas",
+        "zh": "学期费与杂费"
+    },
+    "finance_page_sub1_text": {
+        "en": "There are generally no tuition fees at public universities in Bavaria. However, every student must pay a mandatory <b>'Semesterbeitrag'</b> (semester contribution) before each semester to stay enrolled. <br>• <b>What it covers:</b> This fee supports the Student Services organization ('Studentenwerk'), which runs the cafeterias and dormitories, and the student representatives (StuV). It is NOT a tuition fee. In some cities, it also includes a public transport ticket ('Semesterticket'). <br>• <b>Amount:</b> The fee is currently around €100-€150 per semester. The exact amount is communicated via email during the re-registration period ('Rückmeldung'). <br>• <b>Deadline:</b> Paying this fee on time is extremely important. If you miss the deadline, you risk being exmatriculated!",
+        "de": "An öffentlichen Hochschulen in Bayern gibt es in der Regel keine Studiengebühren. Jeder Studierende muss jedoch vor jedem Semester einen obligatorischen <b>'Semesterbeitrag'</b> zahlen, um immatrikuliert zu bleiben. <br>• <b>Was er abdeckt:</b> Dieser Beitrag unterstützt das Studentenwerk, das die Mensen und Wohnheime betreibt, sowie die Studierendenvertretung (StuV). Es ist KEINE Studiengebühr. In manchen Städten beinhaltet er auch ein Semesterticket für den öffentlichen Nahverkehr. <br>• <b>Betrag:</b> Der Beitrag liegt derzeit bei ca. 100-150 € pro Semester. Der genaue Betrag wird während der Rückmeldefrist per E-Mail mitgeteilt. <br>• <b>Frist:</b> Die rechtzeitige Zahlung dieses Beitrags ist extrem wichtig. Wenn du die Frist verpasst, riskierst du die Exmatrikulation!",
+        "ar": "بشكل عام، لا توجد رسوم دراسية في الجامعات الحكومية في بافاريا. ومع ذلك، يجب على كل طالب دفع <b>'Semesterbeitrag'</b> (مساهمة فصلية) إلزامية قبل كل فصل دراسي للبقاء مسجلاً. <br>• <b>ماذا يغطي:</b> تدعم هذه الرسوم منظمة خدمات الطلاب ('Studentenwerk')، التي تدير الكافيتريات والمساكن، وممثلي الطلاب (StuV). إنها ليست رسومًا دراسية. في بعض المدن، تشمل أيضًا تذكرة نقل عام ('Semesterticket'). <br>• <b>المبلغ:</b> تبلغ الرسوم حاليًا حوالي 100-150 يورو لكل فصل دراسي. يتم إبلاغ المبلغ المحدد عبر البريد الإلكتروني خلال فترة إعادة التسجيل ('Rückmeldung'). <br>• <b>الموعد النهائي:</b> دفع هذه الرسوم في الوقت المحدد مهم للغاية. إذا فاتك الموعد النهائي، فإنك تخاطر بالفصل من الجامعة!",
+        "hi": "बवेरिया में सार्वजनिक विश्वविद्यालयों में आम तौर पर कोई ट्यूशन फीस नहीं होती है। हालांकि, प्रत्येक छात्र को नामांकित रहने के लिए प्रत्येक सेमेस्टर से पहले एक अनिवार्य <b>'सेमेस्टरबीट्राग'</b> (सेमेस्टर योगदान) का भुगतान करना होगा। <br>• <b>यह क्या कवर करता है:</b> यह शुल्क छात्र सेवा संगठन ('Studentenwerk') का समर्थन करता है, जो कैफेटेरिया और छात्रावास चलाता है, और छात्र प्रतिनिधियों (StuV) का। यह ट्यूशन फीस नहीं है। कुछ शहरों में, इसमें एक सार्वजनिक परिवहन टिकट ('सेमेस्टर टिकट') भी शामिल है। <br>• <b>राशि:</b> यह शुल्क वर्तमान में प्रति सेमेस्टर लगभग €100-€150 है। सटीक राशि पुन: पंजीकरण अवधि ('Rückmeldung') के दौरान ईमेल के माध्यम से सूचित की जाती है। <br>• <b>समय सीमा:</b> इस शुल्क का समय पर भुगतान करना अत्यंत महत्वपूर्ण है। यदि आप समय सीमा चूक जाते हैं, तो आपको निष्कासित किए जाने का खतरा है!",
+        "es": "Generalmente no hay tasas de matrícula en las universidades públicas de Baviera. Sin embargo, cada estudiante debe pagar una <b>'Semesterbeitrag'</b> (contribución semestral) obligatoria antes de cada semestre para permanecer matriculado. <br>• <b>Qué cubre:</b> Esta tasa apoya a la organización de Servicios Estudiantiles ('Studentenwerk'), que gestiona las cafeterías y residencias, y a los representantes de los estudiantes (StuV). NO es una tasa de matrícula. En algunas ciudades, también incluye un billete de transporte público ('Semesterticket'). <br>• <b>Cantidad:</b> La tasa es actualmente de unos 100-150 € por semestre. La cantidad exacta se comunica por correo electrónico durante el período de reinscripción ('Rückmeldung'). <br>• <b>Plazo:</b> Pagar esta tasa a tiempo es extremadamente importante. ¡Si no cumples el plazo, corres el riesgo de ser expulsado!",
+        "zh": "巴伐利亚的公立大学通常不收学费。但是，每位学生每学期前都必须支付强制性的<b>“学期费”</b>（Semesterbeitrag）以保持注册状态。<br>• <b>它涵盖什么：</b>这笔费用用于支持学生服务中心（'Studentenwerk'），该中心运营食堂和宿舍，以及学生代表（StuV）。它不是学费。在某些城市，它还包括一张公共交通票（'Semesterticket'）。<br>• <b>金额：</b>该费用目前约为每学期100-150欧元。确切金额将在重新注册期（'Rückmeldung'）通过电子邮件通知。<br>• <b>截止日期：</b>按时支付此费用非常重要。如果您错过截止日期，将有被开除的风险！"
+    },
+    "finance_page_sub2_title": {
+        "en": "Estimated Cost of Living",
+        "de": "Geschätzte Lebenshaltungskosten",
+        "ar": "التكلفة التقديرية للمعيشة",
+        "hi": "अनुमानित जीवन यापन की लागत",
+        "es": "Costo de vida estimado",
+        "zh": "预估生活成本"
+    },
+    "finance_page_sub2_text": {
+        "en": "Living in Amberg or Weiden is more affordable than in big German cities like Munich or Berlin. You should budget approximately <b>€750 - €950 per month</b>. This is the amount the German government also officially requires for the visa/residence permit. Here is a rough breakdown: <br>• <b>Rent (Warmmiete):</b> €300 - €450 (This is your biggest expense) <br>• <b>Health Insurance:</b> ~€120 (Mandatory for all students) <br>• <b>Food & Groceries:</b> €150 - €200 (Cooking at home saves a lot of money) <br>• <b>Phone/Internet:</b> €20 - €40 <br>• <b>Broadcasting Fee:</b> €18.36 (or a share of it if you live in a WG) <br>• <b>Study Materials & Books:</b> €20 - €40 <br>• <b>Leisure, Clothing, Other:</b> €50 - €100+ <br>These are estimates and can vary based on your personal lifestyle and spending habits.",
+        "de": "Das Leben in Amberg oder Weiden ist günstiger als in deutschen Großstädten wie München oder Berlin. Du solltest ungefähr <b>750 - 950 € pro Monat</b> einplanen. Dies ist auch der Betrag, den die deutsche Regierung offiziell für das Visum/die Aufenthaltserlaubnis verlangt. Hier ist eine grobe Aufschlüsselung: <br>• <b>Miete (Warmmiete):</b> 300 - 450 € (Dies ist dein größter Ausgabenposten) <br>• <b>Krankenversicherung:</b> ~120 € (Pflicht für alle Studierenden) <br>• <b>Lebensmittel:</b> 150 - 200 € (Selbst kochen spart viel Geld) <br>• <b>Telefon/Internet:</b> 20 - 40 € <br>• <b>Rundfunkbeitrag:</b> 18,36 € (oder ein Anteil davon, wenn du in einer WG lebst) <br>• <b>Lernmaterialien & Bücher:</b> 20 - 40 € <br>• <b>Freizeit, Kleidung, Sonstiges:</b> 50 - 100+ € <br>Dies sind Schätzungen und können je nach persönlichem Lebensstil und Ausgabengewohnheiten variieren.",
+        "ar": "المعيشة في آمبرغ أو فايدن أقل تكلفة من المدن الألمانية الكبرى مثل ميونخ أو برلين. يجب أن تخصص ميزانية تقريبية تبلغ <b>750 - 950 يورو شهريًا</b>. هذا هو المبلغ الذي تطلبه الحكومة الألمانية رسميًا أيضًا للحصول على التأشيرة/تصريح الإقامة. إليك تفصيل تقريبي: <br>• <b>الإيجار (Warmmiete):</b> 300 - 450 يورو (هذا هو أكبر نفقاتك) <br>• <b>التأمين الصحي:</b> ~120 يورو (إلزامي لجميع الطلاب) <br>• <b>الطعام والبقالة:</b> 150 - 200 يورو (الطبخ في المنزل يوفر الكثير من المال) <br>• <b>الهاتف/الإنترنت:</b> 20 - 40 يورو <br>• <b>رسوم البث:</b> 18.36 يورو (أو حصة منها إذا كنت تعيش في شقة مشتركة) <br>• <b>مواد الدراسة والكتب:</b> 20 - 40 يورو <br>• <b>الترفيه، الملابس، أخرى:</b> 50 - 100+ يورو <br>هذه تقديرات ويمكن أن تختلف بناءً على نمط حياتك الشخصي وعادات الإنفاق.",
+        "hi": "एमबर्ग या वेडेन में रहना म्यूनिख या बर्लिन जैसे बड़े जर्मन शहरों की तुलना में अधिक किफायती है। आपको प्रति माह लगभग <b>€750 - €950</b> का बजट बनाना चाहिए। यह वह राशि है जिसकी जर्मन सरकार भी वीजा/निवास परमिट के लिए आधिकारिक तौर पर मांग करती है। यहाँ एक मोटा-मोटा ब्यौरा है: <br>• <b>किराया (Warmmiete):</b> €300 - €450 (यह आपका सबसे बड़ा खर्च है) <br>• <b>स्वास्थ्य बीमा:</b> ~€120 (सभी छात्रों के लिए अनिवार्य) <br>• <b>भोजन और किराने का सामान:</b> €150 - €200 (घर पर खाना पकाने से बहुत सारा पैसा बचता है) <br>• <b>फोन/इंटरनेट:</b> €20 - €40 <br>• <b>प्रसारण शुल्क:</b> €18.36 (या यदि आप एक WG में रहते हैं तो इसका एक हिस्सा) <br>• <b>अध्ययन सामग्री और किताबें:</b> €20 - €40 <br>• <b>अवकाश, कपड़े, अन्य:</b> €50 - €100+ <br>ये अनुमान हैं और आपकी व्यक्तिगत जीवनशैली और खर्च करने की आदतों के आधार पर भिन्न हो सकते हैं।",
+        "es": "Vivir en Amberg o Weiden es más asequible que en grandes ciudades alemanas como Múnich o Berlín. Deberías presupuestar aproximadamente <b>750 - 950 € al mes</b>. Esta es la cantidad que el gobierno alemán también exige oficialmente para el visado/permiso de residencia. Aquí tienes un desglose aproximado: <br>• <b>Alquiler (Warmmiete):</b> 300 - 450 € (Este es tu mayor gasto) <br>• <b>Seguro de salud:</b> ~120 € (Obligatorio para todos los estudiantes) <br>• <b>Comida y comestibles:</b> 150 - 200 € (Cocinar en casa ahorra mucho dinero) <br>• <b>Teléfono/Internet:</b> 20 - 40 € <br>• <b>Tasa de radiodifusión:</b> 18,36 € (o una parte si vives en un WG) <br>• <b>Material de estudio y libros:</b> 20 - 40 € <br>• <b>Ocio, Ropa, Otros:</b> 50 - 100+ € <br>Estas son estimaciones y pueden variar según tu estilo de vida personal y tus hábitos de gasto.",
+        "zh": "在安贝格或魏登的生活成本比慕尼黑或柏林等德国大城市要低。您应该预算每月大约<b>750 - 950欧元</b>。这也是德国政府官方要求的签证/居留许可金额。以下是一个粗略的分类：<br>• <b>租金（暖租）:</b> 300 - 450欧元（这是您最大的开销）<br>• <b>健康保险:</b> 约120欧元（所有学生强制）<br>• <b>食品和杂货:</b> 150 - 200欧元（在家做饭可以省很多钱）<br>• <b>电话/网络:</b> 20 - 40欧元<br>• <b>广播电视费:</b> 18.36欧元（如果您住在合租公寓，则为其中一部分）<br>• <b>学习材料和书籍:</b> 20 - 40欧元<br>• <b>休闲、服装、其他:</b> 50 - 100+欧元<br>这些是估算值，可能会根据您的个人生活方式和消费习惯而有所不同。"
+    },
+    "finance_page_sub3_title": {
+        "en": "Funding, Scholarships & Jobs",
+        "de": "Finanzierung, Stipendien & Jobs",
+        "ar": "التمويل والمنح الدراسية والوظائف",
+        "hi": "अनुदान, छात्रवृत्ति और नौकरियां",
+        "es": "Financiación, becas y trabajos",
+        "zh": "资金、奖学金与工作"
+    },
+    "finance_page_sub3_text": {
+        "en": "<b>Scholarships:</b> Actively look for scholarships. The DAAD (German Academic Exchange Service) has a great scholarship database. Our university also offers the 'Deutschlandstipendium' and other grants for excellent students. The International Office is the best place to ask for information and deadlines. <br><b>Part-time Jobs:</b> Non-EU students are allowed to work up to 120 full days or 240 half days per year. A 'Minijob' (earning up to €538/month) is tax-free and a popular option. Look for student assistant jobs at the university ('HiWi-Jobs') on the university's job portal, or check local job boards (e.g., 'Agentur für Arbeit', 'Indeed') for positions in restaurants, shops, or companies. Having basic German skills highly increases your chances!",
+        "de": "<b>Stipendien:</b> Suche aktiv nach Stipendien. Der DAAD (Deutscher Akademischer Austauschdienst) hat eine großartige Stipendiendatenbank. Unsere Hochschule bietet auch das 'Deutschlandstipendium' und andere Förderungen für exzellente Studierende an. Das International Office ist die beste Anlaufstelle für Informationen und Fristen. <br><b>Teilzeitjobs:</b> Studierende aus Nicht-EU-Ländern dürfen bis zu 120 volle oder 240 halbe Tage pro Jahr arbeiten. Ein 'Minijob' (bis zu 538 €/Monat verdienen) ist steuerfrei und eine beliebte Option. Suche nach Jobs als studentische Hilfskraft an der Hochschule ('HiWi-Jobs') im Jobportal der Hochschule oder schaue auf lokalen Jobbörsen (z.B. 'Agentur für Arbeit', 'Indeed') nach Stellen in Restaurants, Geschäften oder Unternehmen. Grundlegende Deutschkenntnisse erhöhen deine Chancen erheblich!",
+        "ar": "<b>المنح الدراسية:</b> ابحث بنشاط عن المنح الدراسية. لدى DAAD (خدمة التبادل الأكاديمي الألمانية) قاعدة بيانات رائعة للمنح الدراسية. تقدم جامعتنا أيضًا 'Deutschlandstipendium' ومنح أخرى للطلاب المتميزين. المكتب الدولي هو أفضل مكان لطلب المعلومات والمواعيد النهائية. <br><b>الوظائف بدوام جزئي:</b> يُسمح للطلاب من خارج الاتحاد الأوروبي بالعمل لمدة تصل إلى 120 يومًا كاملاً أو 240 نصف يوم في السنة. 'Minijob' (كسب ما يصل إلى 538 يورو شهريًا) معفى من الضرائب وهو خيار شائع. ابحث عن وظائف مساعد طالب في الجامعة ('HiWi-Jobs') على بوابة الوظائف بالجامعة، أو تحقق من لوحات الوظائف المحلية (مثل 'Agentur für Arbeit', 'Indeed') لشغل وظائف في المطاعم أو المتاجر أو الشركات. وجود مهارات أساسية في اللغة الألمانية يزيد من فرصك بشكل كبير!",
+        "hi": "<b>छात्रवृत्तियां:</b> सक्रिय रूप से छात्रवृत्ति की तलाश करें। DAAD (जर्मन अकादमिक विनिमय सेवा) के पास एक बेहतरीन छात्रवृत्ति डेटाबेस है। हमारा विश्वविद्यालय उत्कृष्ट छात्रों के लिए 'Deutschlandstipendium' और अन्य अनुदान भी प्रदान करता है। अंतर्राष्ट्रीय कार्यालय जानकारी और समय सीमा के लिए पूछने के लिए सबसे अच्छी जगह है। <br><b>अंशकालिक नौकरियां:</b> गैर-यूरोपीय संघ के छात्रों को प्रति वर्ष 120 पूरे दिन या 240 आधे दिन तक काम करने की अनुमति है। 'Minijob' (प्रति माह €538 तक कमाना) कर-मुक्त है और एक लोकप्रिय विकल्प है। विश्वविद्यालय के जॉब पोर्टल पर विश्वविद्यालय में छात्र सहायक नौकरियों ('HiWi-Jobs') की तलाश करें, या रेस्तरां, दुकानों या कंपनियों में पदों के लिए स्थानीय जॉब बोर्ड (जैसे, 'Agentur für Arbeit', 'Indeed') देखें। बुनियादी जर्मन कौशल होने से आपके मौके बहुत बढ़ जाते हैं!",
+        "es": "<b>Becas:</b> Busca activamente becas. El DAAD (Servicio Alemán de Intercambio Académico) tiene una excelente base de datos de becas. Nuestra universidad también ofrece el 'Deutschlandstipendium' y otras ayudas para estudiantes excelentes. La Oficina Internacional es el mejor lugar para pedir información y plazos. <br><b>Trabajos a tiempo parcial:</b> Los estudiantes de fuera de la UE pueden trabajar hasta 120 días completos o 240 medios días al año. Un 'Minijob' (ganando hasta 538 €/mes) está libre de impuestos y es una opción popular. Busca trabajos de asistente de estudiante en la universidad ('HiWi-Jobs') en el portal de empleo de la universidad, o consulta las bolsas de trabajo locales (p. ej., 'Agentur für Arbeit', 'Indeed') para puestos en restaurantes, tiendas o empresas. ¡Tener conocimientos básicos de alemán aumenta mucho tus posibilidades!",
+        "zh": "<b>奖学金：</b>积极寻找奖学金。DAAD（德意志学术交流中心）有一个很棒的奖学金数据库。我们大学也为优秀学生提供“德国奖学金”（Deutschlandstipendium）和其他助学金。国际办公室是咨询信息和截止日期的最佳地点。<br><b>兼职工作：</b>非欧盟学生每年最多可以工作120个全天或240个半天。“迷你工作”（Minijob，月收入最高538欧元）是免税的，是一个很受欢迎的选择。在大学的招聘门户网站上寻找学生助理的工作（'HiWi-Jobs'），或在当地的招聘网站（例如“Agentur für Arbeit”、“Indeed”）上查找餐馆、商店或公司的职位。拥有基本的德语技能会大大增加您的机会！"
+    }
+
+,
+    "page_title_contacts": {
+        "en": "Contacts - QuickStart Guide",
+        "de": "Kontakte - QuickStart Guide",
+        "ar": "جهات الاتصال - دليل البداية السريعة",
+        "hi": "संपर्क - क्विकस्टार्ट गाइड",
+        "es": "Contactos - Guía de Inicio Rápido",
+        "zh": "联系方式 - 快速入门指南"
+    },
+    "contacts_page_main_title": {
+        "en": "Important Contacts & Support",
+        "de": "Wichtige Kontakte & Unterstützung",
+        "ar": "جهات الاتصال الهامة والدعم",
+        "hi": "महत्वपूर्ण संपर्क और सहायता",
+        "es": "Contactos importantes y Soporte",
+        "zh": "重要联系方式与支持"
+    },
+    "contacts_page_sub1_title": {
+        "en": "Academic & Administrative Contacts",
+        "de": "Akademische & Administrative Kontakte",
+        "ar": "جهات الاتصال الأكاديمية والإدارية",
+        "hi": "शैक्षणिक और प्रशासनिक संपर्क",
+        "es": "Contactos Académicos y Administrativos",
+        "zh": "学术与行政联系方式"
+    },
+    "contacts_page_sub1_text": {
+        "en": "• <b>International Office:</b> Your first and most important contact for visa, residence permit, orientation, and general support for international students. <br>• <b>Faculty / Program Coordinator:</b> For specific questions about your curriculum, course selection, and exam regulations (SPO). <br>• <b>Student Office (Studienbüro):</b> For administrative tasks like enrollment, re-registration, and official university documents. <br>• <b>Examination Office (Prüfungsamt):</b> Responsible for exam registration, grades, and medical certificates in case of sickness. <br>• <b>Student Representatives (Fachschaft/StuV):</b> Students who offer peer-to-peer advice, organize events, and represent your interests.",
+        "de": "• <b>International Office:</b> Dein erster und wichtigster Kontakt für Visum, Aufenthaltserlaubnis, Orientierung und allgemeine Unterstützung für internationale Studierende. <br>• <b>Fakultät / Studiengangskoordination:</b> Für spezifische Fragen zu deinem Studienplan, deiner Kurswahl und Prüfungsordnungen (SPO). <br>• <b>Studienbüro:</b> Für administrative Aufgaben wie Immatrikulation, Rückmeldung und offizielle Hochschuldokumente. <br>• <b>Prüfungsamt:</b> Verantwortlich für Prüfungsanmeldung, Noten und ärztliche Atteste im Krankheitsfall. <br>• <b>Studierendenvertretung (Fachschaft/StuV):</b> Studierende, die Kommilitonen-Beratung anbieten, Veranstaltungen organisieren und deine Interessen vertreten.",
+        "ar": "• <b>المكتب الدولي:</b> جهة الاتصال الأولى والأكثر أهمية للتأشيرة وتصريح الإقامة والتوجيه والدعم العام للطلاب الدوليين. <br>• <b>منسق الكلية / البرنامج:</b> للأسئلة المحددة حول المناهج الدراسية واختيار المقررات ولوائح الامتحانات (SPO). <br>• <b>مكتب الطلاب (Studienbüro):</b> للمهام الإدارية مثل التسجيل وإعادة التسجيل والمستندات الجامعية الرسمية. <br>• <b>مكتب الامتحانات (Prüfungsamt):</b> مسؤول عن تسجيل الامتحانات والدرجات والشهادات الطبية في حالة المرض. <br>• <b>ممثلو الطلاب (Fachschaft/StuV):</b> طلاب يقدمون المشورة من نظير إلى نظير وينظمون الفعاليات ويمثلون اهتماماتك.",
+        "hi": "• <b>अंतर्राष्ट्रीय कार्यालय:</b> वीजा, निवास परमिट, अभिविन्यास और अंतरराष्ट्रीय छात्रों के लिए सामान्य समर्थन के लिए आपका पहला और सबसे महत्वपूर्ण संपर्क। <br>• <b>संकाय / कार्यक्रम समन्वयक:</b> आपके पाठ्यक्रम, पाठ्यक्रम चयन और परीक्षा नियमों (SPO) के बारे में विशिष्ट प्रश्नों के लिए। <br>• <b>छात्र कार्यालय (Studienbüro):</b> नामांकन, पुन: पंजीकरण और आधिकारिक विश्वविद्यालय दस्तावेजों जैसे प्रशासनिक कार्यों के लिए। <br>• <b>परीक्षा कार्यालय (Prüfungsamt):</b> परीक्षा पंजीकरण, ग्रेड और बीमारी के मामले में चिकित्सा प्रमाण पत्र के लिए जिम्मेदार। <br>• <b>छात्र प्रतिनिधि (Fachschaft/StuV):</b> छात्र जो सहकर्मी-से-सहकर्मी सलाह देते हैं, कार्यक्रमों का आयोजन करते हैं, और आपके हितों का प्रतिनिधित्व करते हैं।",
+        "es": "• <b>Oficina Internacional:</b> Tu primer y más importante contacto para visados, permisos de residencia, orientación y apoyo general para estudiantes internacionales. <br>• <b>Facultad / Coordinador del Programa:</b> Para preguntas específicas sobre tu plan de estudios, selección de cursos y normativas de exámenes (SPO). <br>• <b>Oficina de Estudiantes (Studienbüro):</b> Para tareas administrativas como la matrícula, la reinscripción y documentos oficiales de la universidad. <br>• <b>Oficina de Exámenes (Prüfungsamt):</b> Responsable del registro de exámenes, calificaciones y certificados médicos en caso de enfermedad. <br>• <b>Representantes de Estudiantes (Fachschaft/StuV):</b> Estudiantes que ofrecen asesoramiento entre pares, organizan eventos y representan tus intereses.",
+        "zh": "• <b>国际办公室：</b>您作为国际学生的首要和最重要的联系点，负责签证、居留许可、迎新和一般支持。<br>• <b>院系/项目协调员：</b>负责关于您的课程、选课和考试规定（SPO）的具体问题。<br>• <b>学生办公室（Studienbüro）：</b>负责注册、重新注册和官方大学文件等行政任务。<br>• <b>考试办公室（Prüfungsamt）：</b>负责考试注册、成绩以及生病时的医疗证明。<br>• <b>学生代表（Fachschaft/StuV）：</b>提供同伴建议、组织活动并代表您利益的学生。"
+    },
+    "contacts_page_sub2_title": {
+        "en": "Emergency & Medical Contacts",
+        "de": "Notfall- & Medizinische Kontakte",
+        "ar": "اتصالات الطوارئ والطبية",
+        "hi": "आपातकालीन और चिकित्सा संपर्क",
+        "es": "Contactos Médicos y de Emergencia",
+        "zh": "紧急与医疗联系方式"
+    },
+    "contacts_page_sub2_text": {
+        "en": "<b>Save these numbers in your phone!</b> They are free to call from any phone. <br>• <b>112:</b> For Fire Department and Ambulance/Medical Emergencies. Use this for fires, serious accidents, and life-threatening situations (e.g., heart attack). <br>• <b>110:</b> For Police. Use this to report crimes or for urgent police assistance. <br>• <b>116 117:</b> Non-emergency medical service. Call this number if you need a doctor outside of regular office hours (at night or on weekends) and it's not life-threatening. They will tell you which doctor is on duty near you. <br><b>Hospital Emergency Room ('Notaufnahme'):</b> For serious injuries or illnesses that are not immediately life-threatening but cannot wait for a GP, go to the emergency room of the local hospital ('Klinikum').",
+        "de": "<b>Speichere diese Nummern in deinem Handy!</b> Sie sind von jedem Telefon aus kostenlos anrufbar. <br>• <b>112:</b> Für Feuerwehr und Rettungsdienst/medizinische Notfälle. Nutze diese Nummer bei Bränden, schweren Unfällen und lebensbedrohlichen Situationen (z.B. Herzinfarkt). <br>• <b>110:</b> Für die Polizei. Nutze diese Nummer, um Straftaten zu melden oder für dringende polizeiliche Hilfe. <br>• <b>116 117:</b> Ärztlicher Bereitschaftsdienst. Rufe diese Nummer an, wenn du außerhalb der normalen Sprechzeiten (nachts oder am Wochenende) einen Arzt benötigst und es nicht lebensbedrohlich ist. Sie sagen dir, welcher Arzt in deiner Nähe Dienst hat. <br><b>Notaufnahme im Krankenhaus:</b> Bei ernsten Verletzungen oder Krankheiten, die nicht sofort lebensbedrohlich sind, aber nicht bis zum nächsten Hausarzttermin warten können, gehe in die Notaufnahme des örtlichen Klinikums.",
+        "ar": "<b>احفظ هذه الأرقام في هاتفك!</b> الاتصال بها مجاني من أي هاتف. <br>• <b>112:</b> لإدارة الإطفاء والإسعاف/الطوارئ الطبية. استخدم هذا للحرائق والحوادث الخطيرة والحالات المهددة للحياة (مثل النوبة القلبية). <br>• <b>110:</b> للشرطة. استخدم هذا للإبلاغ عن الجرائم أو للمساعدة الشرطية العاجلة. <br>• <b>116 117:</b> الخدمة الطبية غير الطارئة. اتصل بهذا الرقم إذا كنت بحاجة إلى طبيب خارج ساعات العمل العادية (في الليل أو في عطلات نهاية الأسبوع) وهي ليست حالة مهددة للحياة. سيخبرونك أي طبيب في الخدمة بالقرب منك. <br><b>غرفة طوارئ المستشفى ('Notaufnahme'):</b> للإصابات أو الأمراض الخطيرة التي ليست مهددة للحياة على الفور ولكن لا يمكنها الانتظار لموعد طبيب عام، اذهب إلى غرفة الطوارئ في المستشفى المحلي ('Klinikum').",
+        "hi": "<b>इन नंबरों को अपने फोन में सेव करें!</b> वे किसी भी फोन से कॉल करने के लिए मुफ्त हैं। <br>• <b>112:</b> अग्निशमन विभाग और एम्बुलेंस/चिकित्सा आपात स्थिति के लिए। आग, गंभीर दुर्घटनाओं और जानलेवा स्थितियों (जैसे, दिल का दौरा) के लिए इसका उपयोग करें। <br>• <b>110:</b> पुलिस के लिए। अपराधों की रिपोर्ट करने या तत्काल पुलिस सहायता के लिए इसका उपयोग करें। <br>• <b>116 117:</b> गैर-आपातकालीन चिकित्सा सेवा। यदि आपको नियमित कार्यालय समय के बाहर (रात में या सप्ताहांत पर) डॉक्टर की आवश्यकता है और यह जानलेवा नहीं है, तो इस नंबर पर कॉल करें। वे आपको बताएंगे कि आपके पास कौन सा डॉक्टर ड्यूटी पर है। <br><b>अस्पताल का आपातकालीन कक्ष ('Notaufnahme'):</b> गंभीर चोटों या बीमारियों के लिए जो तुरंत जानलेवा नहीं हैं, लेकिन एक जीपी के लिए इंतजार नहीं कर सकती हैं, स्थानीय अस्पताल ('Klinikum') के आपातकालीन कक्ष में जाएं।",
+        "es": "<b>¡Guarda estos números en tu teléfono!</b> Se puede llamar gratis desde cualquier teléfono. <br>• <b>112:</b> Para Bomberos y Ambulancia/Emergencias Médicas. Úsalo para incendios, accidentes graves y situaciones que pongan en peligro la vida (p. ej., un ataque al corazón). <br>• <b>110:</b> Para la Policía. Úsalo para denunciar delitos o para asistencia policial urgente. <br>• <b>116 117:</b> Servicio médico no urgente. Llama a este número si necesitas un médico fuera del horario de consulta habitual (por la noche o los fines de semana) y no es una emergencia vital. Te dirán qué médico está de guardia cerca de ti. <br><b>Sala de emergencias del hospital ('Notaufnahme'):</b> Para lesiones o enfermedades graves que no son inmediatamente mortales pero no pueden esperar a una cita con el médico de cabecera, ve a la sala de emergencias del hospital local ('Klinikum').",
+        "zh": "<b>将这些号码保存在您的手机中！</b>您可以从任何电话免费拨打它们。<br>• <b>112:</b> 用于消防部门和救护车/医疗急救。用于火灾、严重事故和危及生命的情况（例如心脏病发作）。<br>• <b>110:</b> 用于警察。用于报案或紧急警察援助。<br>• <b>116 117:</b> 非紧急医疗服务。如果您在正常办公时间之外（晚上或周末）需要医生，并且情况不危及生命，请拨打此号码。他们会告诉您附近哪位医生在值班。<br><b>医院急诊室（'Notaufnahme'）：</b>对于不立即危及生命但不能等到全科医生预约的严重伤害或疾病，请前往当地医院（'Klinikum'）的急诊室。"
+    },
+    "contacts_page_sub3_title": {
+        "en": "Psychological Counseling & General Advice",
+        "de": "Psychologische Beratung & Allgemeine Anlaufstellen",
+        "ar": "الإرشاد النفسي والمشورة العامة",
+        "hi": "मनोवैज्ञानिक परामर्श और सामान्य सलाह",
+        "es": "Asesoramiento Psicológico y General",
+        "zh": "心理咨询与综合建议"
+    },
+    "contacts_page_sub3_text": {
+        "en": "It's okay to ask for help. Studying abroad is challenging, and these services are here for you. <br>• <b>Psychological Counseling:</b> The 'Studentenwerk' offers free and confidential counseling for all students. They can help with exam anxiety, stress, loneliness, or personal problems. Seeking help is a sign of strength! <br>• <b>General Student Advisory Service ('Allgemeine Studienberatung'):</b> Contact them if you are thinking about changing your study program, have general organizational questions, or are facing difficulties in your studies. <br>• <b>International Office Tutors:</b> The International Office often has experienced student tutors who can help you with practical questions about daily life and studying.",
+        "de": "Es ist in Ordnung, um Hilfe zu bitten. Im Ausland zu studieren ist herausfordernd, und diese Dienste sind für dich da. <br>• <b>Psychologische Beratung:</b> Das Studentenwerk bietet kostenlose und vertrauliche Beratung für alle Studierenden an. Sie können bei Prüfungsangst, Stress, Einsamkeit oder persönlichen Problemen helfen. Hilfe zu suchen ist ein Zeichen von Stärke! <br>• <b>Allgemeine Studienberatung:</b> Kontaktiere sie, wenn du überlegst, deinen Studiengang zu wechseln, allgemeine organisatorische Fragen hast oder Schwierigkeiten im Studium hast. <br>• <b>Tutoren des International Office:</b> Das International Office hat oft erfahrene studentische Tutoren, die dir bei praktischen Fragen zum Alltag und Studium helfen können.",
+        "ar": "لا بأس في طلب المساعدة. الدراسة في الخارج تمثل تحديًا، وهذه الخدمات متاحة لك. <br>• <b>الإرشاد النفسي:</b> يقدم 'Studentenwerk' استشارات مجانية وسرية لجميع الطلاب. يمكنهم المساعدة في قلق الامتحانات أو التوتر أو الوحدة أو المشاكل الشخصية. طلب المساعدة هو علامة قوة! <br>• <b>خدمة الإرشاد الطلابي العام ('Allgemeine Studienberatung'):</b> اتصل بهم إذا كنت تفكر في تغيير برنامجك الدراسي، أو لديك أسئلة تنظيمية عامة، أو تواجه صعوبات في دراستك. <br>• <b>مدرسو المكتب الدولي:</b> غالبًا ما يكون لدى المكتب الدولي مدرسون طلاب ذوو خبرة يمكنهم مساعدتك في الأسئلة العملية حول الحياة اليومية والدراسة.",
+        "hi": "मदद मांगना ठीक है। विदेश में पढ़ाई करना चुनौतीपूर्ण है, और ये सेवाएं आपके लिए हैं। <br>• <b>मनोवैज्ञानिक परामर्श:</b> 'Studentenwerk' सभी छात्रों के लिए मुफ्त और गोपनीय परामर्श प्रदान करता है। वे परीक्षा की चिंता, तनाव, अकेलेपन या व्यक्तिगत समस्याओं में मदद कर सकते हैं। मदद मांगना ताकत की निशानी है! <br>• <b>सामान्य छात्र सलाहकार सेवा ('Allgemeine Studienberatung'):</b> यदि आप अपना अध्ययन कार्यक्रम बदलने के बारे में सोच रहे हैं, सामान्य संगठनात्मक प्रश्न हैं, या अपनी पढ़ाई में कठिनाइयों का सामना कर रहे हैं, तो उनसे संपर्क करें। <br>• <b>अंतर्राष्ट्रीय कार्यालय के ट्यूटर:</b> अंतर्राष्ट्रीय कार्यालय में अक्सर अनुभवी छात्र ट्यूटर होते हैं जो दैनिक जीवन और अध्ययन के बारे में व्यावहारिक प्रश्नों में आपकी मदद कर सकते हैं।",
+        "es": "Está bien pedir ayuda. Estudiar en el extranjero es un desafío, y estos servicios están aquí para ti. <br>• <b>Asesoramiento Psicológico:</b> El 'Studentenwerk' ofrece asesoramiento gratuito y confidencial para todos los estudiantes. Pueden ayudar con la ansiedad ante los exámenes, el estrés, la soledad o problemas personales. ¡Buscar ayuda es un signo de fortaleza! <br>• <b>Servicio General de Asesoramiento Estudiantil ('Allgemeine Studienberatung'):</b> Contacta con ellos si estás pensando en cambiar de programa de estudios, tienes preguntas organizativas generales o te enfrentas a dificultades en tus estudios. <br>• <b>Tutores de la Oficina Internacional:</b> La Oficina Internacional a menudo tiene tutores estudiantiles con experiencia que pueden ayudarte con preguntas prácticas sobre la vida diaria y los estudios.",
+        "zh": "寻求帮助是正常的。在国外学习充满挑战，这些服务随时为您提供帮助。<br>• <b>心理咨询：</b>“学生服务中心”（Studentenwerk）为所有学生提供免费且保密的咨询服务。他们可以帮助解决考试焦虑、压力、孤独或个人问题。寻求帮助是坚强的表现！<br>• <b>综合学生咨询服务（'Allgemeine Studienberatung'）：</b>如果您正在考虑更换学习项目、有一般性的组织问题或在学习中遇到困难，请联系他们。<br>• <b>国际办公室导师：</b>国际办公室通常有经验丰富的学生导师，他们可以帮助您解决关于日常生活和学习的实际问题。"
+    },
+    "page_title_leisure": {
+        "en": "Leisure - QuickStart Guide",
+        "de": "Freizeit - QuickStart Guide",
+        "ar": "الترفيه - دليل البداية السريعة",
+        "hi": "अवकाश - क्विकस्टार्ट गाइड",
+        "es": "Ocio - Guía de Inicio Rápido",
+        "zh": "休闲 - 快速入门指南"
+    },
+    "leisure_page_main_title": {
+        "en": "Leisure, Sports & Culture",
+        "de": "Freizeit, Sport & Kultur",
+        "ar": "الترفيه والرياضة والثقافة",
+        "hi": "अवकाश, खेल और संस्कृति",
+        "es": "Ocio, Deportes y Cultura",
+        "zh": "休闲、运动与文化"
+    },
+    "leisure_page_sub1_title": {
+        "en": "University Sports (Hochschulsport)",
+        "de": "Hochschulsport",
+        "ar": "الرياضة الجامعية (Hochschulsport)",
+        "hi": "विश्वविद्यालय खेल (Hochschulsport)",
+        "es": "Deportes Universitarios (Hochschulsport)",
+        "zh": "大学体育 (Hochschulsport)"
+    },
+    "leisure_page_sub1_text": {
+        "en": "The university sports program is a fantastic and affordable way to stay active, meet new people, and balance your studies. A wide range of courses is offered each semester, such as: <br>• <b>Team Sports:</b> Volleyball, Basketball, Soccer, Futsal. <br>• <b>Individual Sports:</b> Fitness training, Yoga, Zumba, Climbing, Badminton, Table Tennis. <br><b>How it works:</b> The program is published on the university website shortly before the semester starts. Sign-up is online and on a first-come, first-served basis. Popular courses can fill up within minutes, so be ready and fast on registration day! Most courses are free or cost a very small fee for the entire semester.",
+        "de": "Das Hochschulsportprogramm ist eine fantastische und günstige Möglichkeit, aktiv zu bleiben, neue Leute kennenzulernen und einen Ausgleich zum Studium zu schaffen. Jedes Semester wird eine breite Palette von Kursen angeboten, wie zum Beispiel: <br>• <b>Mannschaftssportarten:</b> Volleyball, Basketball, Fußball, Futsal. <br>• <b>Einzelsportarten:</b> Fitnesstraining, Yoga, Zumba, Klettern, Badminton, Tischtennis. <br><b>Wie es funktioniert:</b> Das Programm wird kurz vor Semesterbeginn auf der Hochschulwebsite veröffentlicht. Die Anmeldung erfolgt online nach dem Prinzip 'Wer zuerst kommt, mahlt zuerst'. Beliebte Kurse können innerhalb von Minuten ausgebucht sein, sei also am Anmeldetag bereit und schnell! Die meisten Kurse sind kostenlos oder kosten eine sehr geringe Gebühr für das gesamte Semester.",
+        "ar": "برنامج الرياضة الجامعية هو وسيلة رائعة ومعقولة التكلفة للبقاء نشيطًا، والتعرف على أشخاص جدد، وتحقيق التوازن في دراستك. يتم تقديم مجموعة واسعة من الدورات كل فصل دراسي، مثل: <br>• <b>الرياضات الجماعية:</b> الكرة الطائرة، كرة السلة، كرة القدم، كرة الصالات. <br>• <b>الرياضات الفردية:</b> تدريب اللياقة البدنية، اليوغا، الزومبا، التسلق، كرة الريشة، تنس الطاولة. <br><b>كيف يعمل:</b> يتم نشر البرنامج على موقع الجامعة قبل بدء الفصل الدراسي بوقت قصير. التسجيل عبر الإنترنت وعلى أساس أسبقية الحضور. يمكن أن تمتلئ الدورات الشهيرة في غضون دقائق، لذا كن مستعدًا وسريعًا في يوم التسجيل! معظم الدورات مجانية أو تكلف رسومًا رمزية للفصل الدراسي بأكمله.",
+        "hi": "विश्वविद्यालय खेल कार्यक्रम सक्रिय रहने, नए लोगों से मिलने और अपनी पढ़ाई को संतुलित करने का एक शानदार और किफायती तरीका है। प्रत्येक सेमेस्टर में कई तरह के पाठ्यक्रम पेश किए जाते हैं, जैसे: <br>• <b>टीम खेल:</b> वॉलीबॉल, बास्केटबॉल, सॉकर, फुटसल। <br>• <b>व्यक्तिगत खेल:</b> फिटनेस प्रशिक्षण, योग, ज़ुम्बा, चढ़ाई, बैडमिंटन, टेबल टेनिस। <br><b>यह कैसे काम करता है:</b> कार्यक्रम सेमेस्टर शुरू होने से कुछ समय पहले विश्वविद्यालय की वेबसाइट पर प्रकाशित किया जाता है। साइन-अप ऑनलाइन और 'पहले आओ, पहले पाओ' के आधार पर होता है। लोकप्रिय पाठ्यक्रम मिनटों में भर सकते हैं, इसलिए पंजीकरण के दिन तैयार और तेज रहें! अधिकांश पाठ्यक्रम मुफ्त हैं या पूरे सेमेस्टर के लिए बहुत कम शुल्क लेते हैं।",
+        "es": "El programa de deportes universitarios es una forma fantástica y asequible de mantenerse activo, conocer gente nueva y equilibrar tus estudios. Cada semestre se ofrece una amplia gama de cursos, como: <br>• <b>Deportes de equipo:</b> Voleibol, Baloncesto, Fútbol, Fútbol Sala. <br>• <b>Deportes individuales:</b> Entrenamiento físico, Yoga, Zumba, Escalada, Bádminton, Tenis de mesa. <br><b>Cómo funciona:</b> El programa se publica en el sitio web de la universidad poco antes de que comience el semestre. La inscripción es en línea y por orden de llegada. Los cursos populares pueden llenarse en minutos, ¡así que prepárate y sé rápido el día de la inscripción! La mayoría de los cursos son gratuitos o tienen una tarifa muy pequeña para todo el semestre.",
+        "zh": "大学体育项目是保持活力、结识新朋友和平衡学业的绝佳且经济实惠的方式。每个学期都提供各种各样的课程，例如：<br>• <b>团队运动：</b>排球、篮球、足球、五人制足球。<br>• <b>个人运动：</b>健身训练、瑜伽、尊巴、攀岩、羽毛球、乒乓球。<br><b>运作方式：</b>课程表在学期开始前不久在大学网站上公布。报名在线进行，先到先得。热门课程可能在几分钟内就报满，所以在报名当天要准备好并迅速行动！大多数课程是免费的，或者整个学期只需支付少量费用。"
+    }
+
+,
+    "leisure_page_sub2_title": {
+        "en": "Culture & Events in the City",
+        "de": "Kultur & Events in der Stadt",
+        "ar": "الثقافة والفعاليات في المدينة",
+        "hi": "शहर में संस्कृति और कार्यक्रम",
+        "es": "Cultura y eventos en la ciudad",
+        "zh": "城市文化与活动"
+    },
+    "leisure_page_sub2_text": {
+        "en": "Amberg and Weiden have charming historic city centers and a lively cultural scene. <br>• <b>Explore the Old Town:</b> Both cities have beautiful medieval architecture. In Amberg, don't miss the 'Stadtbrille' (city glasses), a unique water gate. <br>• <b>Museums & Theaters:</b> Check out the local city museums and theaters for exhibitions and plays. Students often get discounted tickets. <br>• <b>Festivals:</b> Keep an eye out for local festivals ('Feste'). The Christmas markets ('Weihnachtsmarkt') in December are magical. In summer, there are city festivals ('Bürgerfest') with live music and food stalls. <br>• <b>Student Parties:</b> The student representatives (StuV/Fachschaft) organize parties regularly, especially at the beginning of the semester. It's a great way to meet people.",
+        "de": "Amberg und Weiden haben charmante historische Stadtkerne und eine lebendige Kulturszene. <br>• <b>Erkunde die Altstadt:</b> Beide Städte haben wunderschöne mittelalterliche Architektur. Verpasse in Amberg nicht die 'Stadtbrille', ein einzigartiges Wassertor. <br>• <b>Museen & Theater:</b> Besuche die lokalen Stadtmuseen und Theater für Ausstellungen und Stücke. Studierende erhalten oft ermäßigte Tickets. <br>• <b>Feste:</b> Halte Ausschau nach lokalen Festen. Die Weihnachtsmärkte im Dezember sind magisch. Im Sommer gibt es Bürgerfeste mit Live-Musik und Essensständen. <br>• <b>Studentenpartys:</b> Die Studierendenvertretungen (StuV/Fachschaft) organisieren regelmäßig Partys, besonders zu Semesterbeginn. Das ist eine großartige Möglichkeit, Leute kennenzulernen.",
+        "ar": "تتمتع آمبرغ وفايدن بمراكز مدن تاريخية ساحرة ومشهد ثقافي حيوي. <br>• <b>استكشف المدينة القديمة:</b> تتمتع كلتا المدينتين بهندسة معمارية جميلة من القرون الوسطى. في آمبرغ، لا تفوت 'Stadtbrille' (نظارات المدينة)، وهي بوابة مائية فريدة من نوعها. <br>• <b>المتاحف والمسارح:</b> تحقق من متاحف المدينة والمسارح المحلية للمعارض والمسرحيات. غالبًا ما يحصل الطلاب على تذاكر مخفضة. <br>• <b>المهرجانات:</b> ترقب المهرجانات المحلية ('Feste'). أسواق عيد الميلاد ('Weihnachtsmarkt') في ديسمبر ساحرة. في الصيف، تقام مهرجانات المدينة ('Bürgerfest') مع موسيقى حية وأكشاك طعام. <br>• <b>حفلات الطلاب:</b> ينظم ممثلو الطلاب (StuV/Fachschaft) حفلات بانتظام، خاصة في بداية الفصل الدراسي. إنها طريقة رائعة للقاء الناس.",
+        "hi": "एमबर्ग और वेडेन में आकर्षक ऐतिहासिक शहर केंद्र और एक जीवंत सांस्कृतिक दृश्य है। <br>• <b>पुराने शहर का अन्वेषण करें:</b> दोनों शहरों में सुंदर मध्ययुगीन वास्तुकला है। एमबर्ग में, 'Stadtbrille' (शहर के चश्मे), एक अद्वितीय जल द्वार, को न भूलें। <br>• <b>संग्रहालय और थिएटर:</b> प्रदर्शनियों और नाटकों के लिए स्थानीय शहर के संग्रहालयों और थिएटरों की जाँच करें। छात्रों को अक्सर रियायती टिकट मिलते हैं। <br>• <b>त्योहार:</b> स्थानीय त्योहारों ('Feste') पर नज़र रखें। दिसंबर में क्रिसमस बाजार ('Weihnachtsmarkt') जादुई होते हैं। गर्मियों में, लाइव संगीत और भोजन स्टालों के साथ शहर के त्योहार ('Bürgerfest') होते हैं। <br>• <b>छात्र पार्टियां:</b> छात्र प्रतिनिधि (StuV/Fachschaft) नियमित रूप से पार्टियों का आयोजन करते हैं, खासकर सेमेस्टर की शुरुआत में। यह लोगों से मिलने का एक शानदार तरीका है।",
+        "es": "Amberg y Weiden tienen encantadores centros históricos y una animada escena cultural. <br>• <b>Explora el casco antiguo:</b> Ambas ciudades tienen una hermosa arquitectura medieval. En Amberg, no te pierdas el 'Stadtbrille' (gafas de la ciudad), una puerta de agua única. <br>• <b>Museos y Teatros:</b> Echa un vistazo a los museos y teatros de la ciudad para ver exposiciones y obras. Los estudiantes a menudo obtienen entradas con descuento. <br>• <b>Festivales:</b> Mantente atento a los festivales locales ('Feste'). Los mercados de Navidad ('Weihnachtsmarkt') en diciembre son mágicos. En verano, hay festivales de la ciudad ('Bürgerfest') con música en vivo y puestos de comida. <br>• <b>Fiestas de estudiantes:</b> Los representantes de los estudiantes (StuV/Fachschaft) organizan fiestas regularmente, especialmente al principio del semestre. Es una excelente manera de conocer gente.",
+        "zh": "安贝格和魏登拥有迷人的历史悠久的市中心和充满活力的文化景观。<br>• <b>探索老城：</b>这两个城市都有美丽的中世纪建筑。在安贝格，不要错过独特的“城市眼镜”（Stadtbrille）水门。<br>• <b>博物馆与剧院：</b>查看当地的城市博物馆和剧院，了解展览和戏剧。学生通常可以获得折扣票。<br>• <b>节日：</b>留意当地的节日（'Feste'）。十二月的圣诞市场（'Weihnachtsmarkt'）非常神奇。夏天有城市节（'Bürgerfest'），有现场音乐和美食摊位。<br>• <b>学生派对：</b>学生代表（StuV/Fachschaft）会定期组织派对，尤其是在学期初。这是结识新朋友的好方法。"
+    },
+    "leisure_page_sub3_title": {
+        "en": "Exploring Bavaria and Beyond",
+        "de": "Bayern und Umgebung erkunden",
+        "ar": "استكشاف بافاريا وما وراءها",
+        "hi": "बवेरिया और उससे आगे की खोज",
+        "es": "Explorando Baviera y más allá",
+        "zh": "探索巴伐利亚及周边地区"
+    },
+    "leisure_page_sub3_text": {
+        "en": "The region of Oberpfalz is beautiful and perfect for nature lovers. <br>• <b>Hiking & Cycling:</b> Explore the 'Oberpfälzer Wald' (Upper Palatinate Forest) or the numerous lakes in the area. There are well-marked trails everywhere. <br>• <b>Day Trips:</b> Nearby cities like Regensburg (a UNESCO World Heritage site) and Nuremberg are great for day trips and easily reachable by train in about an hour. <br>• <b>Bayern-Ticket:</b> This special train ticket is perfect for exploring. For a fixed price (around €27 for 1 person + €9 for each additional person up to 5), you can travel on all regional trains in Bavaria for a whole day. It's an amazing deal for weekend excursions with friends. <br>• <b>Czech Republic:</b> Weiden is very close to the Czech border. A trip to Prague or the spa towns of Karlovy Vary and Mariánské Lázně is a great weekend adventure.",
+        "de": "Die Region Oberpfalz ist wunderschön und perfekt für Naturliebhaber. <br>• <b>Wandern & Radfahren:</b> Erkunde den 'Oberpfälzer Wald' oder die zahlreichen Seen in der Umgebung. Es gibt überall gut markierte Wege. <br>• <b>Tagesausflüge:</b> Nahegelegene Städte wie Regensburg (ein UNESCO-Weltkulturerbe) und Nürnberg eignen sich hervorragend für Tagesausflüge und sind mit dem Zug in etwa einer Stunde leicht erreichbar. <br>• <b>Bayern-Ticket:</b> Dieses spezielle Zugticket ist perfekt zum Erkunden. Für einen Festpreis (ca. 27 € für 1 Person + 9 € für jede weitere Person bis zu 5) kannst du einen ganzen Tag lang alle Regionalzüge in Bayern nutzen. Ein tolles Angebot für Wochenendausflüge mit Freunden. <br>• <b>Tschechische Republik:</b> Weiden liegt sehr nah an der tschechischen Grenze. Ein Ausflug nach Prag oder in die Kurorte Karlsbad und Marienbad ist ein großartiges Wochenendabenteuer.",
+        "ar": "منطقة أوبربفالتس جميلة ومثالية لمحبي الطبيعة. <br>• <b>المشي لمسافات طويلة وركوب الدراجات:</b> استكشف 'Oberpfälzer Wald' (غابة بالاتينات العليا) أو البحيرات العديدة في المنطقة. هناك مسارات محددة جيدًا في كل مكان. <br>• <b>رحلات اليوم الواحد:</b> تعد المدن القريبة مثل ريغنسبورغ (موقع تراث عالمي لليونسكو) ونورمبرغ رائعة للرحلات اليومية ويمكن الوصول إليها بسهولة بالقطار في حوالي ساعة. <br>• <b>تذكرة بايرن (Bayern-Ticket):</b> تذكرة القطار الخاصة هذه مثالية للاستكشاف. بسعر ثابت (حوالي 27 يورو لشخص واحد + 9 يورو لكل شخص إضافي حتى 5 أشخاص)، يمكنك السفر على جميع القطارات الإقليمية في بافاريا ليوم كامل. إنها صفقة رائعة للرحلات في عطلة نهاية الأسبوع مع الأصدقاء. <br>• <b>جمهورية التشيك:</b> فايدن قريبة جدًا من الحدود التشيكية. رحلة إلى براغ أو مدن السبا كارلوفي فاري وماريانسكي لازني هي مغامرة رائعة في عطلة نهاية الأسبوع.",
+        "hi": "Oberpfalz का क्षेत्र सुंदर है और प्रकृति प्रेमियों के लिए एकदम सही है। <br>• <b>लंबी पैदल यात्रा और साइकिल चलाना:</b> 'Oberpfälzer Wald' (अपर पैलेटिनेट फ़ॉरेस्ट) या क्षेत्र की कई झीलों का अन्वेषण करें। हर जगह अच्छी तरह से चिह्नित रास्ते हैं। <br>• <b>दिन की यात्राएं:</b> रेगेन्सबर्ग (एक यूनेस्को विश्व धरोहर स्थल) और नूर्नबर्ग जैसे आस-पास के शहर दिन की यात्राओं के लिए बहुत अच्छे हैं और लगभग एक घंटे में ट्रेन द्वारा आसानी से पहुँचा जा सकता है। <br>• <b>बायर्न-टिकट:</b> यह विशेष ट्रेन टिकट खोज के लिए एकदम सही है। एक निश्चित मूल्य (1 व्यक्ति के लिए लगभग €27 + 5 तक प्रत्येक अतिरिक्त व्यक्ति के लिए €9) के लिए, आप पूरे दिन बवेरिया में सभी क्षेत्रीय ट्रेनों पर यात्रा कर सकते हैं। यह दोस्तों के साथ सप्ताहांत की सैर के लिए एक अद्भुत सौदा है। <br>• <b>चेक गणराज्य:</b> वेडेन चेक सीमा के बहुत करीब है। प्राग या कार्लोवी वेरी और मारियांस्के लाज़्ने के स्पा शहरों की यात्रा एक शानदार सप्ताहांत साहसिक कार्य है।",
+        "es": "La región de Oberpfalz es hermosa y perfecta para los amantes de la naturaleza. <br>• <b>Senderismo y Ciclismo:</b> Explora el 'Oberpfälzer Wald' (Bosque del Alto Palatinado) o los numerosos lagos de la zona. Hay senderos bien señalizados por todas partes. <br>• <b>Excursiones de un día:</b> Ciudades cercanas como Ratisbona (Patrimonio de la Humanidad por la UNESCO) y Núremberg son ideales para excursiones de un día y son fácilmente accesibles en tren en aproximadamente una hora. <br>• <b>Bayern-Ticket:</b> Este billete de tren especial es perfecto para explorar. Por un precio fijo (alrededor de 27 € para 1 persona + 9 € por cada persona adicional hasta 5), puedes viajar en todos los trenes regionales de Baviera durante todo un día. Es una oferta increíble para excursiones de fin de semana con amigos. <br>• <b>República Checa:</b> Weiden está muy cerca de la frontera checa. Un viaje a Praga o a las ciudades balneario de Karlovy Vary y Mariánské Lázně es una gran aventura de fin de semana.",
+        "zh": "上普法尔茨地区风景优美，非常适合自然爱好者。<br>• <b>远足与骑行：</b>探索“上普法尔茨森林”（Oberpfälzer Wald）或该地区的众多湖泊。到处都有标记清晰的小径。<br>• <b>一日游：</b>像雷根斯堡（联合国教科文组织世界遗产）和纽伦堡这样的附近城市非常适合一日游，乘火车大约一小时即可轻松到达。<br>• <b>拜仁票 (Bayern-Ticket)：</b>这种特殊的火车票非常适合探索。以固定价格（1人约27欧元 + 每增加一人加9欧元，最多5人），您可以在巴伐利亚全境乘坐所有区域火车一整天。对于与朋友进行周末短途旅行来说，这是一笔非常划算的交易。<br>• <b>捷克共和国：</b>魏登非常靠近捷克边境。去布拉格或卡罗维发利和玛丽亚温泉市等温泉小镇旅行是一次很棒的周末探险。"
+    },
+    "page_title_links": {
+        "en": "Links - QuickStart Guide",
+        "de": "Links - QuickStart Guide",
+        "ar": "روابط - دليل البداية السريعة",
+        "hi": "लिंक - क्विकस्टार्ट गाइड",
+        "es": "Enlaces - Guía de Inicio Rápido",
+        "zh": "链接 - 快速入门指南"
+    },
+    "links_page_main_title": {
+        "en": "Useful Links",
+        "de": "Nützliche Links",
+        "ar": "روابط مفيدة",
+        "hi": "उपयोगी लिंक",
+        "es": "Enlaces útiles",
+        "zh": "实用链接"
+    },
+    "links_page_sub1_title": {
+        "en": "University Platforms",
+        "de": "Hochschul-Plattformen",
+        "ar": "منصات الجامعة",
+        "hi": "विश्वविद्यालय प्लेटफार्म",
+        "es": "Plataformas universitarias",
+        "zh": "大学平台"
+    },
+    "links_page_sub1_text": {
+        "en": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>OTH Amberg-Weiden Official Website</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Moodle Learning Platform</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>PRIMUSS Campus Portal</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Webmail Service</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Library Catalogue (OPAC)</a>",
+        "de": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Offizielle Webseite der OTH Amberg-Weiden</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Moodle Lernplattform</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>PRIMUSS Campus-Portal</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Webmail-Dienst</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Bibliothekskatalog (OPAC)</a>",
+        "ar": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>الموقع الرسمي لجامعة OTH Amberg-Weiden</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>منصة Moodle التعليمية</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>بوابة الحرم الجامعي PRIMUSS</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>خدمة البريد الإلكتروني</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>فهرس المكتبة (OPAC)</a>",
+        "hi": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>OTH Amberg-Weiden आधिकारिक वेबसाइट</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Moodle लर्निंग प्लेटफॉर्म</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>PRIMUSS कैम्पस पोर्टल</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>वेबमेल सेवा</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>पुस्तकालय कैटलॉग (OPAC)</a>",
+        "es": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Sitio web oficial de OTH Amberg-Weiden</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Plataforma de aprendizaje Moodle</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Portal del campus PRIMUSS</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Servicio de Webmail</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Catálogo de la biblioteca (OPAC)</a>",
+        "zh": "• <a href='https://www.oth-aw.de/' target='_blank' rel='noopener noreferrer'>OTH 安贝格-魏登官方网站</a> <br>• <a href='https://moodle.oth-aw.de/' target='_blank' rel='noopener noreferrer'>Moodle 学习平台</a> <br>• <a href='https://primuss.oth-aw.de/' target='_blank' rel='noopener noreferrer'>PRIMUSS 校园门户</a> <br>• <a href='https://webmail.oth-aw.de/' target='_blank' rel='noopener noreferrer'>网页邮箱服务</a> <br>• <a href='https://bibliothek.oth-aw.de/' target='_blank' rel='noopener noreferrer'>图书馆目录 (OPAC)</a>"
+    },
+    "links_page_sub2_title": {
+        "en": "Administrative & Support Links",
+        "de": "Verwaltung & Unterstützung",
+        "ar": "روابط إدارية وداعمة",
+        "hi": "प्रशासनिक और सहायता लिंक",
+        "es": "Enlaces administrativos y de apoyo",
+        "zh": "行政与支持链接"
+    },
+    "links_page_sub2_text": {
+        "en": "• <a href='https://www.oth-aw.de/en/international/' target='_blank' rel='noopener noreferrer'>International Office</a> <br>• <a href='https://www.stwno.de/en/' target='_blank' rel='noopener noreferrer'>Student Services (Studentenwerk)</a> (for dorms, BAföG, counseling) <br>• <a href='https://www.oth-aw.de/en/university/organisation/service-centres/student-and-academic-affairs/' target='_blank' rel='noopener noreferrer'>Examination Office & Student Office</a> <br>• <a href='https://www.oth-aw.de/en/study/advice-and-services/student-counselling-service/' target='_blank' rel='noopener noreferrer'>General Student Advisory Service</a> <br>• <a href='https://www.oth-aw.de/en/university/organisation/representatives/stuv/' target='_blank' rel='noopener noreferrer'>Student Representatives (StuV)</a>",
+        "de": "• <a href='https://www.oth-aw.de/international/' target='_blank' rel='noopener noreferrer'>International Office</a> <br>• <a href='https://www.stwno.de/de/' target='_blank' rel='noopener noreferrer'>Studentenwerk</a> (für Wohnheime, BAföG, Beratung) <br>• <a href='https://www.oth-aw.de/hochschule/organisation/service-und-beratungsstellen/studien-und-pruefungsangelegenheiten/' target='_blank' rel='noopener noreferrer'>Prüfungsamt & Studienbüro</a> <br>• <a href='https://www.oth-aw.de/studium/beratung-und-service/studienberatung/' target='_blank' rel='noopener noreferrer'>Allgemeine Studienberatung</a> <br>• <a href='https://www.oth-aw.de/hochschule/organisation/beauftragte-und-vertretungen/stuv/' target='_blank' rel='noopener noreferrer'>Studierendenvertretung (StuV)</a>",
+        "ar": "• <a href='https://www.oth-aw.de/en/international/' target='_blank' rel='noopener noreferrer'>المكتب الدولي</a> <br>• <a href='https://www.stwno.de/en/' target='_blank' rel='noopener noreferrer'>خدمات الطلاب (Studentenwerk)</a> (للسكن، BAföG، الإرشاد) <br>• <a href='https://www.oth-aw.de/en/university/organisation/service-centres/student-and-academic-affairs/' target='_blank' rel='noopener noreferrer'>مكتب الامتحانات ومكتب الطلاب</a> <br>• <a href='https://www.oth-aw.de/en/study/advice-and-services/student-counselling-service/' target='_blank' rel='noopener noreferrer'>خدمة الإرشاد الطلابي العام</a> <br>• <a href='https://www.oth-aw.de/en/university/organisation/representatives/stuv/' target='_blank' rel='noopener noreferrer'>ممثلو الطلاب (StuV)</a>",
+        "hi": "• <a href='https://www.oth-aw.de/en/international/' target='_blank' rel='noopener noreferrer'>अंतर्राष्ट्रीय कार्यालय</a> <br>• <a href='https://www.stwno.de/en/' target='_blank' rel='noopener noreferrer'>छात्र सेवाएं (Studentenwerk)</a> (छात्रावास, BAföG, परामर्श के लिए) <br>• <a href='https://www.oth-aw.de/en/university/organisation/service-centres/student-and-academic-affairs/' target='_blank' rel='noopener noreferrer'>परीक्षा कार्यालय और छात्र कार्यालय</a> <br>• <a href='https://www.oth-aw.de/en/study/advice-and-services/student-counselling-service/' target='_blank' rel='noopener noreferrer'>सामान्य छात्र सलाहकार सेवा</a> <br>• <a href='https://www.oth-aw.de/en/university/organisation/representatives/stuv/' target='_blank' rel='noopener noreferrer'>छात्र प्रतिनिधि (StuV)</a>",
+        "es": "• <a href='https://www.oth-aw.de/en/international/' target='_blank' rel='noopener noreferrer'>Oficina Internacional</a> <br>• <a href='https://www.stwno.de/en/' target='_blank' rel='noopener noreferrer'>Servicios Estudiantiles (Studentenwerk)</a> (para residencias, BAföG, asesoramiento) <br>• <a href='https://www.oth-aw.de/en/university/organisation/service-centres/student-and-academic-affairs/' target='_blank' rel='noopener noreferrer'>Oficina de Exámenes y Oficina de Estudiantes</a> <br>• <a href='https://www.oth-aw.de/en/study/advice-and-services/student-counselling-service/' target='_blank' rel='noopener noreferrer'>Servicio General de Asesoramiento Estudiantil</a> <br>• <a href='https://www.oth-aw.de/en/university/organisation/representatives/stuv/' target='_blank' rel='noopener noreferrer'>Representantes Estudiantiles (StuV)</a>",
+        "zh": "• <a href='https://www.oth-aw.de/en/international/' target='_blank' rel='noopener noreferrer'>国际办公室</a> <br>• <a href='https://www.stwno.de/en/' target='_blank' rel='noopener noreferrer'>学生服务中心 (Studentenwerk)</a> (负责宿舍、助学金、咨询) <br>• <a href='https://www.oth-aw.de/en/university/organisation/service-centres/student-and-academic-affairs/' target='_blank' rel='noopener noreferrer'>考试办公室和学生办公室</a> <br>• <a href='https://www.oth-aw.de/en/study/advice-and-services/student-counselling-service/' target='_blank' rel='noopener noreferrer'>综合学生咨询服务</a> <br>• <a href='https://www.oth-aw.de/en/university/organisation/representatives/stuv/' target='_blank' rel='noopener noreferrer'>学生代表 (StuV)</a>"
+    },
+    "links_page_sub3_title": {
+        "en": "Daily Life & City Links",
+        "de": "Alltag & Stadt",
+        "ar": "روابط الحياة اليومية والمدينة",
+        "hi": "दैनिक जीवन और शहर के लिंक",
+        "es": "Enlaces de la vida diaria y la ciudad",
+        "zh": "日常生活与城市链接"
+    },
+    "links_page_sub3_text": {
+        "en": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>Official Website City of Amberg</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>Official Website City of Weiden</a> <br>• <a href='https://www.bahn.de/en' target='_blank' rel='noopener noreferrer'>German Railway (Deutsche Bahn)</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>Website for finding shared flats (WG)</a> <br>• <a href='https://www.make-it-in-germany.com/en/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (Official government portal for qualified professionals) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>Broadcasting Fee (Rundfunkbeitrag)</a>",
+        "de": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>Offizielle Webseite der Stadt Amberg</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>Offizielle Webseite der Stadt Weiden</a> <br>• <a href='https://www.bahn.de/de' target='_blank' rel='noopener noreferrer'>Deutsche Bahn</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>Webseite zur Suche nach WGs</a> <br>• <a href='https://www.make-it-in-germany.com/de/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (Offizielles Regierungsportal für Fachkräfte) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>Rundfunkbeitrag</a>",
+        "ar": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>الموقع الرسمي لمدينة آمبرغ</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>الموقع الرسمي لمدينة فايدن</a> <br>• <a href='https://www.bahn.de/en' target='_blank' rel='noopener noreferrer'>السكك الحديدية الألمانية (Deutsche Bahn)</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>موقع للعثور على شقق مشتركة (WG)</a> <br>• <a href='https://www.make-it-in-germany.com/en/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (بوابة حكومية رسمية للمهنيين المؤهلين) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>رسوم البث (Rundfunkbeitrag)</a>",
+        "hi": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>एमबर्ग शहर की आधिकारिक वेबसाइट</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>वेडेन शहर की आधिकारिक वेबसाइट</a> <br>• <a href='https://www.bahn.de/en' target='_blank' rel='noopener noreferrer'>जर्मन रेलवे (Deutsche Bahn)</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>साझा फ्लैट (WG) खोजने के लिए वेबसाइट</a> <br>• <a href='https://www.make-it-in-germany.com/en/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (योग्य पेशेवरों के लिए आधिकारिक सरकारी पोर्टल) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>प्रसारण शुल्क (Rundfunkbeitrag)</a>",
+        "es": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>Sitio web oficial de la ciudad de Amberg</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>Sitio web oficial de la ciudad de Weiden</a> <br>• <a href='https://www.bahn.de/es' target='_blank' rel='noopener noreferrer'>Ferrocarriles alemanes (Deutsche Bahn)</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>Sitio web para encontrar pisos compartidos (WG)</a> <br>• <a href='https://www.make-it-in-germany.com/en/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (Portal oficial del gobierno para profesionales cualificados) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>Tasa de radiodifusión (Rundfunkbeitrag)</a>",
+        "zh": "• <a href='https://www.amberg.de/' target='_blank' rel='noopener noreferrer'>安贝格市官方网站</a> <br>• <a href='https://www.weiden.de/' target='_blank' rel='noopener noreferrer'>魏登市官方网站</a> <br>• <a href='https://www.bahn.de/en' target='_blank' rel='noopener noreferrer'>德国铁路 (Deutsche Bahn)</a> <br>• <a href='https://www.wg-gesucht.de/' target='_blank' rel='noopener noreferrer'>寻找合租公寓 (WG) 的网站</a> <br>• <a href='https://www.make-it-in-germany.com/en/' target='_blank' rel='noopener noreferrer'>Make it in Germany</a> (德国政府为合格专业人士设立的官方门户网站) <br>• <a href='https://www.rundfunkbeitrag.de/' target='_blank' rel='noopener noreferrer'>广播电视费 (Rundfunkbeitrag)</a>"
+    },
+    "page_title_language": {
+        "en": "Language - QuickStart Guide",
+        "de": "Sprache - QuickStart Guide",
+        "ar": "اللغة - دليل البداية السريعة",
+        "hi": "भाषा - क्विकस्टार्ट गाइड",
+        "es": "Idioma - Guía de Inicio Rápido",
+        "zh": "语言 - 快速入门指南"
+    },
+    "language_page_main_title": {
+        "en": "Language Support",
+        "de": "Sprachliche Unterstützung",
+        "ar": "دعم اللغة",
+        "hi": "भाषा सहायता",
+        "es": "Apoyo lingüístico",
+        "zh": "语言支持"
+    },
+    "language_page_sub1_title": {
+        "en": "German Language Courses",
+        "de": "Deutschkurse",
+        "ar": "دورات اللغة الألمانية",
+        "hi": "जर्मन भाषा पाठ्यक्रम",
+        "es": "Cursos de alemán",
+        "zh": "德语课程"
+    },
+    "language_page_sub1_text": {
+        "en": "While your studies might be in English, learning German is essential for daily life, making friends, and future job opportunities in Germany. <br>• <b>OTH-AW Language Center:</b> The university's 'Sprachenzentrum' offers German courses at various levels (A1-C1) during the semester. These courses are specifically designed for students and are often free or very affordable. Check their website for the current course schedule and registration deadlines. <br>• <b>Volkshochschule (VHS):</b> The local adult education centers in Amberg and Weiden also offer a wide range of German courses, including more intensive options. These are usually more expensive but can be a good alternative.",
+        "de": "Auch wenn dein Studium auf Englisch sein mag, ist das Erlernen der deutschen Sprache für den Alltag, das Schließen von Freundschaften und zukünftige Jobchancen in Deutschland unerlässlich. <br>• <b>Sprachenzentrum der OTH-AW:</b> Das 'Sprachenzentrum' der Hochschule bietet während des Semesters Deutschkurse auf verschiedenen Niveaus (A1-C1) an. Diese Kurse sind speziell für Studierende konzipiert und oft kostenlos oder sehr günstig. Informiere dich auf ihrer Website über den aktuellen Kursplan und die Anmeldefristen. <br>• <b>Volkshochschule (VHS):</b> Die örtlichen Volkshochschulen in Amberg und Weiden bieten ebenfalls eine breite Palette an Deutschkursen an, einschließlich intensiverer Optionen. Diese sind in der Regel teurer, können aber eine gute Alternative sein.",
+        "ar": "بينما قد تكون دراستك باللغة الإنجليزية، فإن تعلم اللغة الألمانية ضروري للحياة اليومية، وتكوين صداقات، وفرص العمل المستقبلية في ألمانيا. <br>• <b>مركز اللغات في OTH-AW:</b> يقدم 'Sprachenzentrum' بالجامعة دورات لغة ألمانية على مستويات مختلفة (A1-C1) خلال الفصل الدراسي. تم تصميم هذه الدورات خصيصًا للطلاب وغالبًا ما تكون مجانية أو بأسعار معقولة جدًا. تحقق من موقعهم على الإنترنت للحصول على جدول الدورات الحالي ومواعيد التسجيل. <br>• <b>Volkshochschule (VHS):</b> تقدم مراكز تعليم الكبار المحلية في آمبرغ وفايدن أيضًا مجموعة واسعة من دورات اللغة الألمانية، بما في ذلك خيارات أكثر كثافة. عادة ما تكون هذه أكثر تكلفة ولكن يمكن أن تكون بديلاً جيدًا.",
+        "hi": "हालांकि आपकी पढ़ाई अंग्रेजी में हो सकती है, लेकिन जर्मनी में दैनिक जीवन, दोस्त बनाने और भविष्य में नौकरी के अवसरों के लिए जर्मन सीखना आवश्यक है। <br>• <b>OTH-AW भाषा केंद्र:</b> विश्वविद्यालय का 'Sprachenzentrum' सेमेस्टर के दौरान विभिन्न स्तरों (A1-C1) पर जर्मन पाठ्यक्रम प्रदान करता है। ये पाठ्यक्रम विशेष रूप से छात्रों के लिए डिज़ाइन किए गए हैं और अक्सर मुफ्त या बहुत सस्ते होते हैं। वर्तमान पाठ्यक्रम अनुसूची और पंजीकरण की समय सीमा के लिए उनकी वेबसाइट देखें। <br>• <b>Volkshochschule (VHS):</b> एमबर्ग और वेडेन में स्थानीय वयस्क शिक्षा केंद्र भी जर्मन पाठ्यक्रमों की एक विस्तृत श्रृंखला प्रदान करते हैं, जिसमें अधिक गहन विकल्प भी शामिल हैं। ये आमतौर पर अधिक महंगे होते हैं लेकिन एक अच्छा विकल्प हो सकते हैं।",
+        "es": "Aunque tus estudios sean en inglés, aprender alemán es esencial para la vida diaria, hacer amigos y futuras oportunidades laborales en Alemania. <br>• <b>Centro de Idiomas de OTH-AW:</b> El 'Sprachenzentrum' de la universidad ofrece cursos de alemán en varios niveles (A1-C1) durante el semestre. Estos cursos están diseñados específicamente para estudiantes y suelen ser gratuitos o muy asequibles. Consulta su sitio web para ver el horario actual de los cursos y los plazos de inscripción. <br>• <b>Volkshochschule (VHS):</b> Los centros locales de educación para adultos en Amberg y Weiden también ofrecen una amplia gama de cursos de alemán, incluidas opciones más intensivas. Suelen ser más caros pero pueden ser una buena alternativa.",
+        "zh": "虽然您的学习可能是用英语进行的，但学习德语对于日常生活、交朋友以及未来在德国的工作机会至关重要。<br>• <b>OTH-AW语言中心：</b>大学的“语言中心”（Sprachenzentrum）在学期期间提供各种级别（A1-C1）的德语课程。这些课程专为学生设计，通常免费或非常实惠。请查看其网站以获取当前的课程表和注册截止日期。<br>• <b>成人教育学校 (VHS)：</b>安贝格和魏登当地的成人教育学校也提供各种德语课程，包括更密集的选项。这些通常更贵，但可能是一个不错的替代选择。"
+    },
+    "language_page_sub2_title": {
+        "en": "Language Tandems & Practice",
+        "de": "Sprachtandems & Üben",
+        "ar": "شراكات اللغة والممارسة",
+        "hi": "भाषा टेंडेम और अभ्यास",
+        "es": "Tándems de idiomas y práctica",
+        "zh": "语言伙伴与练习"
+    },
+    "language_page_sub2_text": {
+        "en": "The best way to learn a language is to speak it! <br>• <b>Tandem Program:</b> A language tandem is a fantastic method. You partner with a native German speaker who wants to learn your language. You meet regularly (e.g., for coffee) and spend half the time speaking German and the other half speaking your native language. It's free and you make a new friend! The International Office can help you find a tandem partner. <br>• <b>Stammtisch:</b> Many cities have a 'Stammtisch', an informal weekly meetup in a pub or café where international and German students get together to chat and practice languages. Ask the International Office or the Fachschaft if one exists.",
+        "de": "Der beste Weg, eine Sprache zu lernen, ist, sie zu sprechen! <br>• <b>Tandem-Programm:</b> Ein Sprachtandem ist eine fantastische Methode. Du tust dich mit einem deutschen Muttersprachler zusammen, der deine Sprache lernen möchte. Ihr trefft euch regelmäßig (z.B. auf einen Kaffee) und sprecht die Hälfte der Zeit Deutsch und die andere Hälfte deine Muttersprache. Es ist kostenlos und du findest einen neuen Freund! Das International Office kann dir helfen, einen Tandempartner zu finden. <br>• <b>Stammtisch:</b> Viele Städte haben einen 'Stammtisch', ein informelles wöchentliches Treffen in einer Kneipe oder einem Café, bei dem sich internationale und deutsche Studierende zum Plaudern und Sprachenüben treffen. Frage beim International Office oder der Fachschaft, ob es einen gibt.",
+        "ar": "أفضل طريقة لتعلم لغة هي التحدث بها! <br>• <b>برنامج الشراكة اللغوية (Tandem):</b> شراكة اللغة هي طريقة رائعة. أنت تشترك مع متحدث ألماني أصلي يرغب في تعلم لغتك. تلتقيان بانتظام (على سبيل المثال، لتناول القهوة) وتقضيان نصف الوقت في التحدث باللغة الألمانية والنصف الآخر في التحدث بلغتك الأم. إنه مجاني وتكوّن صديقًا جديدًا! يمكن للمكتب الدولي مساعدتك في العثور على شريك لغوي. <br>• <b>Stammtisch:</b> يوجد في العديد من المدن 'Stammtisch'، وهو لقاء أسبوعي غير رسمي في حانة أو مقهى حيث يجتمع الطلاب الدوليون والألمان للدردشة وممارسة اللغات. اسأل المكتب الدولي أو Fachschaft إذا كان هناك واحد.",
+        "hi": "किसी भाषा को सीखने का सबसे अच्छा तरीका उसे बोलना है! <br>• <b>टेंडेम कार्यक्रम:</b> एक भाषा टेंडेम एक शानदार तरीका है। आप एक देशी जर्मन वक्ता के साथ साझेदारी करते हैं जो आपकी भाषा सीखना चाहता है। आप नियमित रूप से मिलते हैं (जैसे, कॉफी के लिए) और आधा समय जर्मन में और आधा समय अपनी मूल भाषा में बात करते हैं। यह मुफ़्त है और आप एक नया दोस्त बनाते हैं! अंतर्राष्ट्रीय कार्यालय आपको एक टेंडेम साथी खोजने में मदद कर सकता है। <br>• <b>Stammtisch:</b> कई शहरों में एक 'Stammtisch' होता है, जो एक पब या कैफे में एक अनौपचारिक साप्ताहिक बैठक है जहाँ अंतर्राष्ट्रीय और जर्मन छात्र बातचीत करने और भाषाओं का अभ्यास करने के लिए एक साथ आते हैं। अंतर्राष्ट्रीय कार्यालय या Fachschaft से पूछें कि क्या कोई है।",
+        "es": "¡La mejor manera de aprender un idioma es hablarlo! <br>• <b>Programa Tándem:</b> Un tándem de idiomas es un método fantástico. Te asocias con un hablante nativo de alemán que quiere aprender tu idioma. Os reunís regularmente (p. ej., para tomar un café) y pasáis la mitad del tiempo hablando en alemán y la otra mitad en tu idioma nativo. ¡Es gratis y haces un nuevo amigo! La Oficina Internacional puede ayudarte a encontrar un compañero de tándem. <br>• <b>Stammtisch:</b> Muchas ciudades tienen un 'Stammtisch', un encuentro semanal informal en un pub o cafetería donde estudiantes internacionales y alemanes se reúnen para charlar y practicar idiomas. Pregunta en la Oficina Internacional o en la Fachschaft si existe uno.",
+        "zh": "学习一门语言最好的方法就是去说！<br>• <b>语言伙伴项目 (Tandem)：</b>语言伙伴是一种极好的方法。您可以与一位想学习您母语的德国人结成伙伴。你们定期见面（例如，喝咖啡），一半时间说德语，一半时间说您的母语。这是免费的，而且您还能交到一个新朋友！国际办公室可以帮助您找到语言伙伴。<br>• <b>固定聚会 (Stammtisch)：</b>许多城市都有“Stammtisch”，这是一种在酒吧或咖啡馆举行的非正式每周聚会，国际学生和德国学生会在这里聊天和练习语言。可以向国际办公室或学生会（Fachschaft）询问是否有这样的活动。"
+    },
+    "language_page_sub3_title": {
+        "en": "Helpful Apps & Online Resources",
+        "de": "Hilfreiche Apps & Online-Ressourcen",
+        "ar": "تطبيقات وموارد مفيدة عبر الإنترنت",
+        "hi": "सहायक ऐप्स और ऑनलाइन संसाधन",
+        "es": "Aplicaciones y recursos en línea útiles",
+        "zh": "有用的应用程序和在线资源"
+    },
+    "language_page_sub3_text": {
+        "en": "Supplement your learning with these excellent free resources: <br>• <b>Dictionaries:</b> LEO, Dict.cc, and Linguee are fantastic online dictionaries, much better than Google Translate for single words and phrases. <br>• <b>Grammar & Exercises:</b> The 'DW Learn German' website from Deutsche Welle is a goldmine of structured courses, videos, and news in slow German. <br>• <b>Vocabulary Apps:</b> Apps like Anki (a flashcard system), Duolingo, or Babbel can be great for building vocabulary on the go. <br>• <b>Real-life German:</b> Watch German series on Netflix (with subtitles), listen to German music, or watch YouTube channels like 'Easy German' to get a feel for the spoken language.",
+        "de": "Ergänze dein Lernen mit diesen ausgezeichneten kostenlosen Ressourcen: <br>• <b>Wörterbücher:</b> LEO, Dict.cc und Linguee sind fantastische Online-Wörterbücher, viel besser als Google Translate für einzelne Wörter und Phrasen. <br>• <b>Grammatik & Übungen:</b> Die Website 'DW Learn German' der Deutschen Welle ist eine Goldgrube mit strukturierten Kursen, Videos und Nachrichten in langsam gesprochenem Deutsch. <br>• <b>Vokabel-Apps:</b> Apps wie Anki (ein Karteikartensystem), Duolingo oder Babbel können großartig sein, um unterwegs Vokabeln zu lernen. <br>• <b>Echtes Deutsch:</b> Schaue deutsche Serien auf Netflix (mit Untertiteln), höre deutsche Musik oder schaue YouTube-Kanäle wie 'Easy German', um ein Gefühl für die gesprochene Sprache zu bekommen.",
+        "ar": "أكمل تعلمك بهذه الموارد المجانية الممتازة: <br>• <b>قواميس:</b> LEO و Dict.cc و Linguee هي قواميس رائعة عبر الإنترنت، أفضل بكثير من مترجم Google للكلمات والعبارات المفردة. <br>• <b>قواعد وتمارين:</b> موقع 'DW Learn German' من Deutsche Welle هو منجم ذهب من الدورات المنظمة ومقاطع الفيديو والأخبار باللغة الألمانية البطيئة. <br>• <b>تطبيقات المفردات:</b> يمكن أن تكون تطبيقات مثل Anki (نظام بطاقات تعليمية) أو Duolingo أو Babbel رائعة لبناء المفردات أثناء التنقل. <br>• <b>الألمانية الواقعية:</b> شاهد المسلسلات الألمانية على Netflix (مع ترجمة)، واستمع إلى الموسيقى الألمانية، أو شاهد قنوات YouTube مثل 'Easy German' لتتعرف على اللغة المنطوقة.",
+        "hi": "इन उत्कृष्ट मुफ्त संसाधनों के साथ अपने सीखने को पूरक करें: <br>• <b>शब्दकोश:</b> LEO, Dict.cc, और Linguee शानदार ऑनलाइन शब्दकोश हैं, जो एकल शब्दों और वाक्यांशों के लिए Google अनुवाद से बहुत बेहतर हैं। <br>• <b>व्याकरण और अभ्यास:</b> ड्यूश वेले की 'DW Learn German' वेबसाइट संरचित पाठ्यक्रमों, वीडियो और धीमी गति से जर्मन में समाचारों का एक खजाना है। <br>• <b>शब्दावली ऐप्स:</b> Anki (एक फ्लैशकार्ड प्रणाली), Duolingo, या Babbel जैसे ऐप्स चलते-फिरते शब्दावली बनाने के लिए बहुत अच्छे हो सकते हैं। <br>• <b>वास्तविक जीवन की जर्मन:</b> नेटफ्लिक्स पर जर्मन श्रृंखला देखें (उपशीर्षक के साथ), जर्मन संगीत सुनें, या बोली जाने वाली भाषा का अनुभव प्राप्त करने के लिए 'Easy German' जैसे YouTube चैनल देखें।",
+        "es": "Complementa tu aprendizaje con estos excelentes recursos gratuitos: <br>• <b>Diccionarios:</b> LEO, Dict.cc y Linguee son fantásticos diccionarios en línea, mucho mejores que Google Translate para palabras y frases sueltas. <br>• <b>Gramática y ejercicios:</b> El sitio web 'DW Learn German' de Deutsche Welle es una mina de oro de cursos estructurados, videos y noticias en alemán lento. <br>• <b>Aplicaciones de vocabulario:</b> Aplicaciones como Anki (un sistema de tarjetas), Duolingo o Babbel pueden ser geniales para construir vocabulario sobre la marcha. <br>• <b>Alemán de la vida real:</b> Mira series alemanas en Netflix (con subtítulos), escucha música alemana o mira canales de YouTube como 'Easy German' para familiarizarte con el idioma hablado.",
+        "zh": "用这些优秀的免费资源来补充您的学习：<br>• <b>词典：</b>LEO、Dict.cc 和 Linguee 是极好的在线词典，对于单个单词和短语来说，比谷歌翻译好得多。<br>• <b>语法与练习：</b>德国之声的“DW Learn German”网站是结构化课程、视频和慢速德语新闻的金矿。<br>• <b>词汇应用：</b>像Anki（一个抽认卡系统）、Duolingo或Babbel这样的应用非常适合在旅途中积累词汇。<br>• <b>现实生活中的德语：</b>在Netflix上观看德语系列剧（带字幕），听德语音乐，或观看像“Easy German”这样的YouTube频道，以感受口语。"
+    }
+}

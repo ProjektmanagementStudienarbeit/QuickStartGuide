@@ -226,7 +226,7 @@ p {
     justify-content: center;
     align-items: center;
     min-height: 150px; /* Adjusted height */
-    padding: 15px; /* Adjusted padding */
+    padding: 20px 15px; /* Adjusted padding */
     border: 1px solid var(--primary-color);
     border-radius: 8px; /* Slightly less rounded */
     background-color: var(--secondary-color);
@@ -250,6 +250,19 @@ p {
     box-shadow: 0 5px 12px rgba(0, 0, 0, 0.18);
     outline: none;
 }
+
+/* --- NEW ICON STYLES --- */
+.quickstart-box i {
+    font-size: 2.5rem; /* Icon size */
+    margin-bottom: 15px; /* Space between icon and text */
+    transition: transform 0.25s ease;
+}
+
+.quickstart-box:hover i {
+    transform: scale(1.1); /* Slightly enlarge icon on hover */
+}
+/* --- END OF ICON STYLES --- */
+
 
 .quickstart-box h3 {
     margin: 0;
@@ -291,7 +304,7 @@ p {
     margin-bottom: 0; /* Remove bottom margin if it's the only element */
 }
 
-/* --- NEW STYLES FOR CONTENT ELEMENTS --- */
+/* --- STYLES FOR CONTENT ELEMENTS --- */
 .content-section p b, 
 .content-section p strong {
     font-weight: 600; /* Make bold text stand out more */
@@ -320,7 +333,7 @@ p {
     color: #e07b00; /* Darker orange on hover */
     text-decoration: underline;
 }
-/* --- END OF NEW STYLES --- */
+/* --- END OF CONTENT STYLES --- */
 
 
 .back-link-container {
@@ -425,7 +438,7 @@ html[dir="rtl"] .quickstart-box {
     text-align: right;
 }
 
-/* NEW RTL STYLES */
+/* RTL STYLES */
 html[dir="rtl"] .content-section ul {
     padding-left: 0;
     padding-right: 20px; /* Indent list from the right */
@@ -486,8 +499,8 @@ html[dir="rtl"] .content-section ul {
      /* .quickstart-grid { grid-template-columns: 1fr; gap: 15px; } */
 
      .quickstart-box {
-        min-height: 110px;
-        padding: 12px;
+        min-height: 120px; /* A bit more space for icon */
+        padding: 15px 12px;
      }
      .quickstart-box h3 {
         font-size: 0.9rem;

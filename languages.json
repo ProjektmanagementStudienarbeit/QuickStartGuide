@@ -63,6 +63,16 @@
         "es": "Al sitio web de OTH",
         "zh": "访问OTH官网"
     },
+        "instagram_button": {
+        "en": "Instagram",
+        "de": "Instagram",
+        "ar": "Instagram",
+        "hi": "Instagram",
+        "es": "Instagram",
+        "zh": "Instagram"
+    },
+
+    
     "quickstart_title": {
         "en": "Quick Start Guide Topics",
         "de": "Themen des Quick Start Guides",
